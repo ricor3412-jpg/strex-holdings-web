@@ -14,20 +14,60 @@
   /* ---------------- Mobile nav ---------------- */
   const navToggle = document.getElementById("navToggle");
   const mobileNav = document.getElementById("mobileNav");
-  navToggle.addEventListener("click", () => {
-    const open = mobileNav.classList.toggle("open");
-    navToggle.innerHTML = open
-      ? '<svg class="icon"><use href="#i-close"/></svg>'
-      : '<svg class="icon"><use href="#i-menu"/></svg>';
-    document.body.style.overflow = open ? "hidden" : "";
+  const navClose = document.getElementById("mobileNavClose");
+  const navBackdrop = document.getElementById("mobileNavBackdrop");
+  let scrollLockY = 0;
+
+  const setNav = (open) => {
+    mobileNav.classList.toggle("open", open);
+    mobileNav.setAttribute("aria-hidden", String(!open));
+    navToggle.setAttribute("aria-expanded", String(open));
+    navToggle.setAttribute("aria-label", open ? "Cerrar menú" : "Abrir menú");
+
+    if (open) {
+      navBackdrop.hidden = false;
+      // forzar reflow para que la transición de opacidad se aplique
+      void navBackdrop.offsetWidth;
+      navBackdrop.classList.add("open");
+    } else {
+      navBackdrop.classList.remove("open");
+      setTimeout(() => { if (!mobileNav.classList.contains("open")) navBackdrop.hidden = true; }, 400);
+    }
+
+    // position:fixed evita que iOS Safari pierda la posición al bloquear el scroll
+    if (open) {
+      scrollLockY = window.scrollY;
+      document.body.style.position = "fixed";
+      document.body.style.top = `-${scrollLockY}px`;
+      document.body.style.width = "100%";
+      navClose.focus();
+    } else {
+      document.body.style.position = "";
+      document.body.style.top = "";
+      document.body.style.width = "";
+      window.scrollTo(0, scrollLockY);
+    }
+  };
+
+  navToggle.addEventListener("click", () => setNav(!mobileNav.classList.contains("open")));
+  navClose.addEventListener("click", () => { setNav(false); navToggle.focus(); });
+  navBackdrop.addEventListener("click", () => setNav(false));
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && mobileNav.classList.contains("open")) {
+      setNav(false);
+      navToggle.focus();
+    }
   });
+
   mobileNav.querySelectorAll("a").forEach((a) =>
-    a.addEventListener("click", () => {
-      mobileNav.classList.remove("open");
-      navToggle.innerHTML = '<svg class="icon"><use href="#i-menu"/></svg>';
-      document.body.style.overflow = "";
-    })
+    a.addEventListener("click", () => setNav(false))
   );
+
+  // Al volver a escritorio el drawer debe cerrarse y liberar el scroll
+  window.matchMedia("(min-width: 861px)").addEventListener("change", (e) => {
+    if (e.matches && mobileNav.classList.contains("open")) setNav(false);
+  });
 
   /* ---------------- Scroll reveal ---------------- */
   const revealEls = document.querySelectorAll("[data-reveal]");
@@ -91,25 +131,36 @@
       const target = document.querySelector(id);
       if (!target) return;
       e.preventDefault();
-      const offset = 84;
-      const top = target.getBoundingClientRect().top + window.scrollY - offset;
-      window.scrollTo({ top, behavior: reducedMotion ? "auto" : "smooth" });
+      // el header encoge al hacer scroll; compensar según su alto real
+      const offset = Math.min(header.offsetHeight + 16, 96);
+      // el drawer libera el scroll de forma asíncrona: esperar al siguiente frame
+      requestAnimationFrame(() => {
+        const top = target.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top, behavior: reducedMotion ? "auto" : "smooth" });
+      });
     });
   });
 
   /* ---------------- Hero network canvas ---------------- */
   const canvas = document.getElementById("network-canvas");
-  if (canvas && !reducedMotion) {
+  // El enlazado es O(n²); en móvil no compensa para una capa decorativa al 35% de opacidad
+  const isSmallScreen = window.matchMedia("(max-width: 640px)").matches;
+  if (canvas && isSmallScreen) canvas.style.display = "none";
+
+  if (canvas && !reducedMotion && !isSmallScreen) {
     const ctx = canvas.getContext("2d");
-    let width, height, nodes;
-    const NODE_COUNT = 46;
+    let nodes, rafId = null, visible = true;
+    // menos nodos en tablet: el coste crece con el cuadrado
+    const NODE_COUNT = window.innerWidth < 1024 ? 28 : 46;
     const LINK_DIST = 150;
+    // limitar el DPR evita rellenar 3x píxeles en pantallas retina
+    const dpr = Math.min(devicePixelRatio || 1, 2);
 
     const resize = () => {
       const rect = canvas.getBoundingClientRect();
-      width = canvas.width = rect.width * devicePixelRatio;
-      height = canvas.height = rect.height * devicePixelRatio;
-      ctx.setTransform(devicePixelRatio, 0, 0, devicePixelRatio, 0, 0);
+      canvas.width = rect.width * dpr;
+      canvas.height = rect.height * dpr;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     };
 
     const initNodes = () => {
@@ -156,15 +207,35 @@
         ctx.fill();
       });
 
-      requestAnimationFrame(draw);
+      rafId = requestAnimationFrame(draw);
     };
+
+    const start = () => { if (rafId === null) rafId = requestAnimationFrame(draw); };
+    const stop = () => { if (rafId !== null) { cancelAnimationFrame(rafId); rafId = null; } };
 
     resize();
     initNodes();
-    requestAnimationFrame(draw);
+    start();
+
+    // No gastar frames mientras el héroe está fuera de pantalla o la pestaña oculta
+    if ("IntersectionObserver" in window) {
+      new IntersectionObserver(
+        ([entry]) => { visible = entry.isIntersecting; visible ? start() : stop(); },
+        { threshold: 0 }
+      ).observe(canvas);
+    }
+    document.addEventListener("visibilitychange", () => {
+      document.hidden || !visible ? stop() : start();
+    });
+
+    let resizeTimer;
     window.addEventListener("resize", () => {
-      resize();
-      initNodes();
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        // el cambio de alto por la barra de URL móvil no debe reiniciar la animación
+        resize();
+        initNodes();
+      }, 150);
     });
   }
 })();

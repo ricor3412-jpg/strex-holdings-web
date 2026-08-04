@@ -30,6 +30,8 @@
   --shadow-lg: 0 24px 60px -20px rgba(10, 31, 53, 0.35);
   --shadow-sm: 0 8px 24px -12px rgba(10, 31, 53, 0.25);
   --container: 1200px;
+  --gutter: 32px;
+  --tap: 44px; /* mínimo táctil iOS/Android */
 }
 
 /* ---------- Reset ---------- */
@@ -55,12 +57,21 @@ section { position: relative; }
   width: 100%;
   max-width: var(--container);
   margin: 0 auto;
-  padding: 0 32px;
+  padding: 0 var(--gutter);
 }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+  /* Sin esto el marquee saltaría a translateX(-100%) y ocultaría las fases */
+  .cap-scroll { animation: none !important; }
+  .cap-track {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    mask-image: none;
+  }
+  .cap-step { scroll-snap-align: start; }
+  .cap-hint { display: flex; }
 }
 
 /* ---------- Utility ---------- */
@@ -207,7 +218,9 @@ section { position: relative; }
 .nav-toggle {
   display: none;
   background: none; border: none; color: var(--white);
-  width: 40px; height: 40px; align-items: center; justify-content: center;
+  width: var(--tap); height: var(--tap);
+  align-items: center; justify-content: center;
+  margin-right: -8px; /* compensa el padding extra para no romper la alineación óptica */
 }
 .nav-toggle svg { width: 24px; height: 24px; }
 
@@ -215,6 +228,7 @@ section { position: relative; }
 .hero {
   position: relative;
   min-height: 100vh;
+  min-height: 100svh; /* excluye la barra de URL móvil que colapsa */
   display: flex;
   align-items: center;
   padding: 150px 0 100px;
@@ -327,7 +341,8 @@ section { position: relative; }
 
 .scroll-cue {
   position: absolute;
-  bottom: 36px; left: 32px;
+  bottom: 36px;
+  left: var(--gutter);
   display: flex; align-items: center; gap: 12px;
   color: var(--slate-300);
   font-size: 12px;
@@ -486,7 +501,8 @@ section { position: relative; }
   gap: 0;
   animation: cap-marquee 32s linear infinite;
 }
-.cap-marquee:hover .cap-scroll { animation-play-state: paused; }
+.cap-marquee:hover .cap-scroll,
+.cap-track:focus-within .cap-scroll { animation-play-state: paused; }
 @keyframes cap-marquee {
   from { transform: translateX(0); }
   to { transform: translateX(-100%); }
@@ -740,40 +756,191 @@ section { position: relative; }
   .contact-grid { grid-template-columns: repeat(2, 1fr); }
   .contact-panel { padding: 48px 28px; }
   #network-canvas { width: 100%; opacity: 0.35; }
+  /* El drawer ya incluye este CTA; duplicarlo aprieta el header */
+  .header-actions .btn { display: none; }
+  .site-header { padding: 14px 0; }
+  .site-header.scrolled { padding: 10px 0; }
+  .logo-word { font-size: 17px; }
+  .logo-word small { font-size: 8px; letter-spacing: 0.24em; }
+  .logo-mark { height: 28px; }
 }
 
+/* ---------- Tablet / móvil ancho ---------- */
+@media (max-width: 860px) {
+  /* Secciones más compactas: 130px es demasiado aire en pantallas cortas */
+  .about, .services, .capability, .companies, .industries, .presence, .contact {
+    padding: 84px 0;
+  }
+  .section-head { margin-bottom: 36px; }
+  .section-head p { font-size: 15.5px; }
+
+  /* El thumbnail solapado choca con la grilla de misión/visión */
+  .about-visual { margin: 26px 0 30px; }
+  .about-visual-main { height: 220px; }
+  .about-visual-sub { width: 116px; height: 86px; right: 14px; bottom: -20px; }
+
+  /* Carrusel deslizable: el pause por :hover nunca dispara en táctil */
+  .cap-track {
+    margin-top: 40px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    mask-image: none;
+    padding-bottom: 4px;
+  }
+  .cap-track::-webkit-scrollbar { display: none; }
+  .cap-marquee { width: auto; }
+  .cap-scroll { animation: none; grid-auto-columns: 76vw; }
+  .cap-scroll[aria-hidden="true"] { display: none; } /* el duplicado solo sirve al loop infinito */
+  .cap-step { scroll-snap-align: start; padding-right: 16px; }
+  .cap-step .bar { display: none; }
+  .cap-hint { display: flex; }
+
+  .cap-footer { margin-top: 32px; gap: 10px; }
+  .cap-chip { font-size: 12.5px; padding: 10px 15px; }
+}
+
+/* ---------- Móvil ---------- */
 @media (max-width: 560px) {
-  .container { padding: 0 20px; }
+  :root { --gutter: 20px; }
+
   .values-list { grid-template-columns: 1fr; }
-  .services-grid { grid-template-columns: 1fr 1fr; }
+  /* 15 tarjetas a dos columnas rompen el ritmo: títulos largos envuelven a 4 líneas */
+  .services-grid { grid-template-columns: 1fr; gap: 12px; }
   .industries-grid { grid-template-columns: 1fr; }
   .diff-list { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
-  .hero { padding: 130px 0 70px; }
-  .hero-actions { flex-direction: column; align-items: stretch; }
+
+  /* Servicios en fila horizontal: aprovecha el ancho y reduce el scroll vertical */
+  .service-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 18px;
+  }
+  .service-card .icon { margin: 0; flex-shrink: 0; }
+  .service-card h4 { flex: 1; font-size: 15px; }
+  .service-card .num { order: -1; flex-shrink: 0; min-width: 22px; }
+
+  .hero { padding: 118px 0 88px; }
+  .hero h1 { margin-top: 16px; }
+  .hero p.lead { margin-top: 18px; font-size: 16px; }
+  .hero-actions { flex-direction: column; align-items: stretch; margin-top: 30px; }
   .hero-actions .btn { justify-content: center; }
+
+  /* 4 métricas a 2 columnas con separadores para que no floten sueltas */
+  .hero-stats { margin-top: 52px; padding-top: 26px; gap: 0 18px; row-gap: 22px; }
+  .hero-stat { padding-right: 0; }
+  .hero-stat .label { font-size: 12px; line-height: 1.35; }
+
+  .scroll-cue { bottom: 24px; font-size: 11px; }
+
+  .contact-panel { padding: 40px 22px; border-radius: 20px; }
+  .contact-top h2 { font-size: 26px; }
+  .contact-grid { margin-top: 34px; padding-top: 28px; gap: 24px; }
+
+  .quote-block { margin-top: 40px; padding-top: 30px; }
+
   .footer-top, .footer-bottom { flex-direction: column; align-items: flex-start; }
+  .footer-bottom { font-size: 12px; }
+
+  .cap-scroll { grid-auto-columns: 82vw; }
+}
+
+/* ---------- Objetivos táctiles ---------- */
+@media (hover: none) {
+  .footer-social a { width: var(--tap); height: var(--tap); }
+  .contact-item a { padding: 2px 0; display: inline-block; }
+  /* Sin hover real, los estados :hover se quedan "pegados" tras el tap */
+  .service-card:hover, .industry-card:hover, .company-card:hover,
+  .mv-card:hover, .value-item:hover, .btn:hover {
+    transform: none;
+  }
 }
 
 /* Mobile nav drawer */
-.mobile-nav {
+.mobile-nav-backdrop {
   position: fixed;
   inset: 0;
+  background: rgba(6, 15, 28, 0.6);
+  backdrop-filter: blur(2px);
+  z-index: 101;
+  opacity: 0;
+  transition: opacity 0.4s var(--ease);
+}
+.mobile-nav-backdrop.open { opacity: 1; }
+
+.mobile-nav {
+  position: fixed;
+  top: 0; right: 0; bottom: 0;
+  width: min(88vw, 400px);
   background: var(--navy-950);
-  z-index: 99;
+  border-left: 1px solid rgba(255,255,255,0.08);
+  /* por encima del header para que el botón de cierre nunca quede tapado */
+  z-index: 102;
   display: flex;
   flex-direction: column;
-  padding: 110px 32px 40px;
+  padding: calc(24px + env(safe-area-inset-top)) var(--gutter)
+           calc(32px + env(safe-area-inset-bottom));
   transform: translateX(100%);
   transition: transform 0.45s var(--ease);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  box-shadow: -24px 0 60px -30px rgba(0,0,0,0.8);
 }
 .mobile-nav.open { transform: translateX(0); }
-.mobile-nav a {
+
+.mobile-nav-close {
+  align-self: flex-end;
+  width: var(--tap); height: var(--tap);
+  display: flex; align-items: center; justify-content: center;
+  background: none;
+  border: 1px solid rgba(255,255,255,0.16);
+  border-radius: 50%;
+  color: var(--white);
+  margin-bottom: 22px;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+.mobile-nav-close:hover, .mobile-nav-close:focus-visible {
+  border-color: var(--blue-300);
+  background: rgba(79,168,224,0.12);
+}
+
+.mobile-nav-links { display: flex; flex-direction: column; }
+.mobile-nav-links a {
   font-family: var(--font-head);
-  font-size: 24px;
+  font-size: clamp(19px, 5.2vw, 23px);
   font-weight: 600;
   color: var(--white);
-  padding: 14px 0;
+  padding: 15px 0;
+  min-height: var(--tap);
+  display: flex;
+  align-items: center;
   border-bottom: 1px solid rgba(255,255,255,0.1);
+  transition: color 0.25s ease, padding-left 0.3s var(--ease);
 }
-.mobile-nav .btn { margin-top: 30px; align-self: flex-start; }
+.mobile-nav-links a:active { color: var(--blue-300); padding-left: 6px; }
+
+.mobile-nav-cta {
+  margin-top: auto;
+  padding-top: 15px; padding-bottom: 15px;
+  justify-content: center;
+}
+/* El drawer nunca debe quedar visible en escritorio */
+@media (min-width: 861px) {
+  .mobile-nav, .mobile-nav-backdrop { display: none; }
+}
+
+/* Pista de deslizamiento del carrusel de capacidad */
+.cap-hint {
+  display: none;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--slate-500);
+}
+.cap-hint .icon { width: 15px; height: 15px; color: var(--blue-300); }
