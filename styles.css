@@ -918,9 +918,10 @@ section { position: relative; }
   display: flex;
   align-items: center;
   border-bottom: 1px solid rgba(255,255,255,0.1);
-  transition: color 0.25s ease, padding-left 0.3s var(--ease);
+  /* transform en vez de padding-left: evita layout thrash en cada frame */
+  transition: color 0.25s ease, transform 0.3s var(--ease);
 }
-.mobile-nav-links a:active { color: var(--blue-300); padding-left: 6px; }
+.mobile-nav-links a:active { color: var(--blue-300); transform: translateX(6px); }
 
 .mobile-nav-cta {
   margin-top: auto;
