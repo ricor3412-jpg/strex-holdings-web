@@ -187,6 +187,10 @@ section { position: relative; }
   transition: background 0.4s var(--ease), box-shadow 0.4s var(--ease);
 }
 .site-header .container { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+/* El logo debe ceder espacio antes que solaparse con el CTA */
+.site-header .logo { min-width: 0; flex-shrink: 1; }
+.site-header .logo-word { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.header-actions { flex-shrink: 0; }
 .site-header.scrolled {
   padding: 13px 0;
   background: rgba(6, 15, 28, 0.82);
@@ -736,6 +740,10 @@ section { position: relative; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 1080px) {
+  /* Entre 861 y 1080px los 6 enlaces + CTA + logo no caben: el logo se solapaba */
+  .nav-links { gap: 22px; }
+  .nav-links a { font-size: 13.5px; }
+  .header-actions .btn { padding: 12px 18px; font-size: 13.5px; }
   .services-grid { grid-template-columns: repeat(3, 1fr); }
   .industries-grid { grid-template-columns: repeat(3, 1fr); }
   .companies-grid { grid-template-columns: repeat(2, 1fr); }
@@ -761,7 +769,8 @@ section { position: relative; }
   .site-header { padding: 14px 0; }
   .site-header.scrolled { padding: 10px 0; }
   .logo-word { font-size: 17px; }
-  .logo-word small { font-size: 8px; letter-spacing: 0.24em; }
+  /* El tagline se partía en 3 líneas y empujaba el logo contra el CTA */
+  .logo-word small { display: none; }
   .logo-mark { height: 28px; }
 }
 
