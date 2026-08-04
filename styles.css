@@ -167,13 +167,17 @@ section { position: relative; }
   line-height: 1;
 }
 .logo-word span { color: var(--blue-500); }
+/* Solo escritorio: en móvil se partía en 3 líneas y empujaba el logo al CTA */
 .logo-word small {
-  display: block;
+  display: none;
   font-size: 9px;
   font-weight: 600;
   letter-spacing: 0.32em;
   color: var(--slate-500);
   margin-top: 3px;
+}
+@media (min-width: 861px) {
+  .logo-word small { display: block; }
 }
 .logo.on-dark .logo-word { color: var(--white); }
 .logo.on-dark .logo-word small { color: var(--blue-200); }
@@ -218,7 +222,12 @@ section { position: relative; }
 }
 .nav-links a:hover { color: var(--white); }
 .nav-links a:hover::after { transform: scaleX(1); }
-.header-actions { display: flex; align-items: center; gap: 18px; }
+.header-actions { display: flex; align-items: center; gap: 18px; flex-shrink: 0; }
+/* El CTA del header es solo de escritorio: en móvil vive en el drawer */
+.header-actions .btn { display: none; }
+@media (min-width: 861px) {
+  .header-actions .btn { display: inline-flex; }
+}
 .nav-toggle {
   display: none;
   background: none; border: none; color: var(--white);
@@ -764,13 +773,9 @@ section { position: relative; }
   .contact-grid { grid-template-columns: repeat(2, 1fr); }
   .contact-panel { padding: 48px 28px; }
   #network-canvas { width: 100%; opacity: 0.35; }
-  /* El drawer ya incluye este CTA; duplicarlo aprieta el header */
-  .header-actions .btn { display: none; }
   .site-header { padding: 14px 0; }
   .site-header.scrolled { padding: 10px 0; }
   .logo-word { font-size: 17px; }
-  /* El tagline se partía en 3 líneas y empujaba el logo contra el CTA */
-  .logo-word small { display: none; }
   .logo-mark { height: 28px; }
 }
 
