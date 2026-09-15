@@ -152,6 +152,47 @@ Ejecuta el usuario en el VPS; la verificación la hago yo desde fuera.
 - [ ] Crear las 2 fichas de Google Business Profile (Highlands + Barranquilla)
 - [ ] Medir Core Web Vitals reales (el hero tiene canvas animado + JPGs grandes)
 
+### Fase 2.5 — Pulido de la web ✅ completada (misma rama)
+Hecha en paralelo mientras la Fase 2 sigue bloqueada por el acceso al VPS.
+
+**Rendimiento — imágenes: 783K → 201K (−74%)**
+- [x] WebP con ffmpeg, redimensionadas a su tamaño real de uso
+      (`crane.jpg`: 213K a 1000×1333px para mostrarse a 150×110px)
+- [x] `<picture>` con fallback JPG; `image-set()` en los fondos CSS
+- [x] `width`/`height` en todas las imágenes (evita CLS)
+- [x] `loading="lazy"` salvo el hero, con `fetchpriority="high"` por ser LCP
+
+**Accesibilidad**
+- [x] `<main>` + skip link (WCAG 2.4.1, nivel A)
+- [x] `aria-labelledby` en las 8 secciones
+- [x] 54 `h4` → `h3`: 6 secciones saltaban de h2 a h4. CSS sincronizado
+- [x] 3 fallos de contraste WCAG AA corregidos (ver tabla abajo)
+- [x] `:focus-visible` explícito en enlaces y botones
+- [x] `#capTrack` ahora es scrollable de verdad en escritorio
+
+| Elemento | Antes | Ahora |
+|---|---|---|
+| `.service-card .num` (blue-300 / blanco) | 2.62:1 ❌ | 5.04:1 ✅ |
+| `.cap-hint` (slate-500 / navy-950) | 3.80:1 ❌ | 8.82:1 ✅ |
+| `.footer-bottom` (slate-500 / navy-950) | 3.80:1 ❌ | 8.82:1 ✅ |
+
+**Maquetación y contenido**
+- [x] `.contact-grid` de 4 a 3 columnas (5 items dejaban uno huérfano)
+- [x] "Houston, Texas — Sede central" → "Highlands, Texas — Sede principal"
+- [x] Logos y banderas con `alt=""` (el lector los duplicaba)
+
+**Verificado en Chromium vía Playwright** a 1440/900/390px: sin errores de
+consola, sin 404, el hero sirve WebP, el icono de Instagram renderiza como
+logo de marca, skip link funcional, sin scroll horizontal.
+
+### Pendientes de accesibilidad (no bloqueantes)
+- [ ] `.cap-hint` tiene `aria-hidden="true"` y es la única pista de que el
+      carrusel es deslizable: un lector de pantalla no la recibe
+- [ ] `.logo-word small` a 9px con tracking 0.32em es ilegible para baja
+      visión. Es branding, prioridad baja
+- [ ] `.footer-bottom a:hover` es código muerto: no hay enlaces ahí.
+      Sugiere que faltan avisos legales (privacidad / términos)
+
 ### Fase 3 — Datos pendientes del cliente ⛔
 - [ ] Dirección de Venezuela
 - [ ] URL de LinkedIn y YouTube (si existen)
@@ -217,9 +258,14 @@ Si el cliente confirma que quiere conservar Inter, persistir con:
 - El sitio **no abre con doble clic** de forma fiable si se usan rutas absolutas;
   para previsualizar: `uv run python -m http.server 8901` en la raíz del repo.
 - `python` **no está en el PATH** de esta máquina. Usar `uv run python`.
-- Obscura (navegador headless) **no logró conectar** al servidor local en esta
-  sesión: timeout a los 30s en `browser_navigate`, probablemente por el canvas
-  animado del hero. La verificación visual se hizo por análisis de código.
+- Obscura (navegador headless) **no logra conectar** al servidor local: timeout
+  a los 30s en `browser_navigate`, reproducido en dos sesiones con `127.0.0.1`
+  y con `localhost`. **Alternativa que sí funciona:** Playwright con Chromium vía
+  `uv run --with playwright python script.py`. Es lo que se usó para verificar
+  el render. No insistir con Obscura para previews locales de este proyecto.
+- Las imágenes tienen versión `.webp` **y** `.jpg`. Si se reemplaza una foto hay
+  que regenerar el WebP, o el navegador seguirá sirviendo la versión vieja:
+  `ffmpeg -i foto.jpg -vf "scale=ANCHO:-2" -c:v libwebp -quality 80 foto.webp`
 - Los iconos del sprite usan `stroke` con `fill:none`. Los logos de marca son
   siluetas sólidas y necesitan la clase `.icon-brand`, que invierte eso. Sin
   ella se ven como manchas negras.
