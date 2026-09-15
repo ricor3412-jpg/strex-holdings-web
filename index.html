@@ -68,11 +68,14 @@
 </defs>
 </svg>
 
+<a href="#main" class="skip-link">Saltar al contenido principal</a>
+
 <!-- ============ HEADER ============ -->
 <header class="site-header" id="siteHeader">
   <div class="container">
     <a href="#top" class="logo on-dark">
-      <img src="assets/logo-mark.png" alt="STREX Holdings" class="logo-mark">
+      <img src="assets/logo-mark.png" alt="" aria-hidden="true" class="logo-mark"
+           width="200" height="69" fetchpriority="high" decoding="async">
       <span class="logo-word">STREX <span>HOLDINGS</span><small>WHERE INDUSTRY CONNECTS</small></span>
     </a>
 
@@ -113,15 +116,21 @@
   <a href="#contacto" class="btn btn-primary mobile-nav-cta">Solicitar asesoría <svg class="icon"><use href="#i-arrow"/></svg></a>
 </nav>
 
+<main id="main">
+
 <!-- ============ HERO ============ -->
-<section class="hero" id="top">
-  <img src="assets/hero-refinery.jpg" alt="" class="hero-bg" aria-hidden="true">
+<section class="hero" id="top" aria-labelledby="hero-title">
+  <picture>
+    <source srcset="assets/hero-refinery.webp" type="image/webp">
+    <img src="assets/hero-refinery.jpg" alt="" class="hero-bg" aria-hidden="true"
+         width="1920" height="559" fetchpriority="high" decoding="async">
+  </picture>
   <div class="hero-diagonal"></div>
   <div class="hero-glow"></div>
   <canvas id="network-canvas"></canvas>
   <div class="container">
     <div class="hero-content">
-      <h1 data-reveal style="transition-delay:.08s">Conectamos industrias.<br>Construimos <em>futuro</em>.</h1>
+      <h1 id="hero-title" data-reveal style="transition-delay:.08s">Conectamos industrias.<br>Construimos <em>futuro</em>.</h1>
       <p class="lead" data-reveal style="transition-delay:.16s">
         Un holding internacional que conecta empresas líderes para ofrecer soluciones integrales, innovadoras y sostenibles a los sectores de energía, industria, minería, infraestructura y petroquímica en América y el mundo.
       </p>
@@ -143,10 +152,10 @@
 </section>
 
 <!-- ============ NOSOTROS ============ -->
-<section class="about" id="nosotros">
+<section class="about" id="nosotros" aria-labelledby="about-title">
   <div class="container">
     <div class="section-head" data-reveal>
-      <h2>Nuestra esencia</h2>
+      <h2 id="about-title">Nuestra esencia</h2>
     </div>
 
     <div class="about-grid">
@@ -155,19 +164,25 @@
         <p>Integramos experiencia, tecnología y capital humano para generar valor en cada etapa del proyecto y en cada relación que construimos.</p>
 
         <div class="about-visual">
-          <img src="assets/about-refinery.jpg" alt="Planta de refinación STREX Holdings" class="about-visual-main">
-          <img src="assets/crane.jpg" alt="Montaje industrial STREX Holdings" class="about-visual-sub">
+          <picture>
+            <source srcset="assets/about-refinery.webp" type="image/webp">
+            <img src="assets/about-refinery.jpg" alt="Planta de refinación operada por STREX Holdings" class="about-visual-main"
+                 width="1000" height="517" loading="lazy" decoding="async">
+          </picture>
+          <!-- Sin <picture>: .about-visual-sub es position:absolute y el wrapper rompería el posicionamiento -->
+          <img src="assets/crane.webp" alt="Montaje industrial con grúa de gran tonelaje" class="about-visual-sub"
+               width="400" height="533" loading="lazy" decoding="async">
         </div>
 
         <div class="mv-grid">
           <div class="mv-card">
             <div class="icon-badge"><svg class="icon"><use href="#i-target"/></svg></div>
-            <h4>Nuestra misión</h4>
+            <h3>Nuestra misión</h3>
             <p>Conectar industrias, personas y posibilidades. Impulsamos el crecimiento y la innovación a través de soluciones estratégicas y alianzas que construyen el futuro.</p>
           </div>
           <div class="mv-card">
             <div class="icon-badge"><svg class="icon"><use href="#i-eye"/></svg></div>
-            <h4>Nuestra visión</h4>
+            <h3>Nuestra visión</h3>
             <p>Ser el holding industrial más confiable y reconocido de América Latina por nuestra capacidad de conectar industrias y construir un futuro sostenible.</p>
           </div>
         </div>
@@ -189,38 +204,38 @@
 </section>
 
 <!-- ============ SERVICIOS ============ -->
-<section class="services" id="servicios">
+<section class="services" id="servicios" aria-labelledby="services-title">
   <div class="container">
     <div class="section-head" data-reveal>
-      <h2>Servicios integrales de STREX Holdings</h2>
+      <h2 id="services-title">Servicios integrales de STREX Holdings</h2>
       <p>Ofrecemos soluciones integrales y de alto valor en cada etapa del ciclo de vida de los proyectos industriales, con estándares internacionales de calidad, seguridad y sostenibilidad.</p>
     </div>
 
     <div class="services-grid" data-reveal-group>
-      <div class="service-card" data-reveal style="--i:0"><div class="num">01</div><svg class="icon"><use href="#i-crane"/></svg><h4>Ingeniería y consultoría</h4></div>
-      <div class="service-card" data-reveal style="--i:1"><div class="num">02</div><svg class="icon"><use href="#i-flask"/></svg><h4>Petroquímica</h4></div>
-      <div class="service-card" data-reveal style="--i:2"><div class="num">03</div><svg class="icon"><use href="#i-cart"/></svg><h4>Procura internacional</h4></div>
-      <div class="service-card" data-reveal style="--i:3"><div class="num">04</div><svg class="icon"><use href="#i-building"/></svg><h4>Construcción e infraestructura</h4></div>
-      <div class="service-card" data-reveal style="--i:4"><div class="num">05</div><svg class="icon"><use href="#i-gear"/></svg><h4>Montajes industriales</h4></div>
-      <div class="service-card" data-reveal style="--i:5"><div class="num">06</div><svg class="icon"><use href="#i-shield"/></svg><h4>Integridad mecánica</h4></div>
-      <div class="service-card" data-reveal style="--i:6"><div class="num">07</div><svg class="icon"><use href="#i-wrench"/></svg><h4>Operación y mantenimiento</h4></div>
-      <div class="service-card" data-reveal style="--i:7"><div class="num">08</div><svg class="icon"><use href="#i-globe"/></svg><h4>Logística integral</h4></div>
-      <div class="service-card" data-reveal style="--i:8"><div class="num">09</div><svg class="icon"><use href="#i-truck"/></svg><h4>Minería</h4></div>
-      <div class="service-card" data-reveal style="--i:9"><div class="num">10</div><svg class="icon"><use href="#i-factory"/></svg><h4>Soluciones metalmecánicas</h4></div>
-      <div class="service-card" data-reveal style="--i:10"><div class="num">11</div><svg class="icon"><use href="#i-bolt"/></svg><h4>Energía</h4></div>
-      <div class="service-card" data-reveal style="--i:11"><div class="num">12</div><svg class="icon"><use href="#i-drop"/></svg><h4>Sistemas de almacenamiento</h4></div>
-      <div class="service-card" data-reveal style="--i:12"><div class="num">13</div><svg class="icon"><use href="#i-drop"/></svg><h4>Lubricación industrial</h4></div>
-      <div class="service-card" data-reveal style="--i:13"><div class="num">14</div><svg class="icon"><use href="#i-leaf"/></svg><h4>Soluciones ambientales</h4></div>
-      <div class="service-card" data-reveal style="--i:14"><div class="num">15</div><svg class="icon"><use href="#i-shield"/></svg><h4>Seguridad, salud y medio ambiente</h4></div>
+      <div class="service-card" data-reveal style="--i:0"><div class="num">01</div><svg class="icon"><use href="#i-crane"/></svg><h3>Ingeniería y consultoría</h3></div>
+      <div class="service-card" data-reveal style="--i:1"><div class="num">02</div><svg class="icon"><use href="#i-flask"/></svg><h3>Petroquímica</h3></div>
+      <div class="service-card" data-reveal style="--i:2"><div class="num">03</div><svg class="icon"><use href="#i-cart"/></svg><h3>Procura internacional</h3></div>
+      <div class="service-card" data-reveal style="--i:3"><div class="num">04</div><svg class="icon"><use href="#i-building"/></svg><h3>Construcción e infraestructura</h3></div>
+      <div class="service-card" data-reveal style="--i:4"><div class="num">05</div><svg class="icon"><use href="#i-gear"/></svg><h3>Montajes industriales</h3></div>
+      <div class="service-card" data-reveal style="--i:5"><div class="num">06</div><svg class="icon"><use href="#i-shield"/></svg><h3>Integridad mecánica</h3></div>
+      <div class="service-card" data-reveal style="--i:6"><div class="num">07</div><svg class="icon"><use href="#i-wrench"/></svg><h3>Operación y mantenimiento</h3></div>
+      <div class="service-card" data-reveal style="--i:7"><div class="num">08</div><svg class="icon"><use href="#i-globe"/></svg><h3>Logística integral</h3></div>
+      <div class="service-card" data-reveal style="--i:8"><div class="num">09</div><svg class="icon"><use href="#i-truck"/></svg><h3>Minería</h3></div>
+      <div class="service-card" data-reveal style="--i:9"><div class="num">10</div><svg class="icon"><use href="#i-factory"/></svg><h3>Soluciones metalmecánicas</h3></div>
+      <div class="service-card" data-reveal style="--i:10"><div class="num">11</div><svg class="icon"><use href="#i-bolt"/></svg><h3>Energía</h3></div>
+      <div class="service-card" data-reveal style="--i:11"><div class="num">12</div><svg class="icon"><use href="#i-drop"/></svg><h3>Sistemas de almacenamiento</h3></div>
+      <div class="service-card" data-reveal style="--i:12"><div class="num">13</div><svg class="icon"><use href="#i-drop"/></svg><h3>Lubricación industrial</h3></div>
+      <div class="service-card" data-reveal style="--i:13"><div class="num">14</div><svg class="icon"><use href="#i-leaf"/></svg><h3>Soluciones ambientales</h3></div>
+      <div class="service-card" data-reveal style="--i:14"><div class="num">15</div><svg class="icon"><use href="#i-shield"/></svg><h3>Seguridad, salud y medio ambiente</h3></div>
     </div>
   </div>
 </section>
 
 <!-- ============ CAPACIDAD INTEGRADA ============ -->
-<section class="capability" id="capacidad">
+<section class="capability" id="capacidad" aria-labelledby="capability-title">
   <div class="container">
     <div class="section-head light" data-reveal>
-      <h2>Nuestra capacidad integrada</h2>
+      <h2 id="capability-title">Nuestra capacidad integrada</h2>
       <p>Conectamos todas las disciplinas, recursos y empresas de nuestro ecosistema para desarrollar proyectos industriales completos, desde la concepción hasta la operación y mantenimiento.</p>
       <div class="cap-note">Entregamos proyectos llave en mano <span>(EPC)</span></div>
     </div>
@@ -228,28 +243,28 @@
     <div class="cap-track" id="capTrack" role="region" aria-label="Fases de nuestra capacidad integrada" tabindex="0">
       <div class="cap-marquee" id="capMarquee">
         <div class="cap-scroll">
-          <div class="cap-step"><div class="dot-line"><div class="dot">01</div><div class="bar"></div></div><h4>Desarrollo del proyecto</h4><p>Identificación de oportunidades, estudios de factibilidad y análisis de riesgo.</p></div>
-          <div class="cap-step"><div class="dot-line"><div class="dot">02</div><div class="bar"></div></div><h4>Ingeniería</h4><p>Ingeniería conceptual, básica y de detalle con los más altos estándares.</p></div>
-          <div class="cap-step"><div class="dot-line"><div class="dot">03</div><div class="bar"></div></div><h4>Procura internacional</h4><p>Sourcing global, compra de equipos y materiales optimizando costos y tiempos.</p></div>
-          <div class="cap-step"><div class="dot-line"><div class="dot">04</div><div class="bar"></div></div><h4>Petroquímica</h4><p>Suministro de materias primas químicas, solventes y especialidades.</p></div>
-          <div class="cap-step"><div class="dot-line"><div class="dot">05</div><div class="bar"></div></div><h4>Fabricación</h4><p>Fabricación y prefabricación metalmecánica con altos estándares de calidad.</p></div>
-          <div class="cap-step"><div class="dot-line"><div class="dot">06</div><div class="bar"></div></div><h4>Construcción</h4><p>Obras civiles, obras industriales, EPC y plantas de proceso.</p></div>
-          <div class="cap-step"><div class="dot-line"><div class="dot">07</div><div class="bar"></div></div><h4>Montaje</h4><p>Montaje mecánico, eléctrico, instrumentación, tuberías y estructuras.</p></div>
-          <div class="cap-step"><div class="dot-line"><div class="dot">08</div><div class="bar"></div></div><h4>Logística</h4><p>Transporte nacional e internacional, almacenamiento y gestión logística integral.</p></div>
-          <div class="cap-step"><div class="dot-line"><div class="dot">09</div><div class="bar"></div></div><h4>Integridad mecánica</h4><p>Ensayos no destructivos, inspección, QA/QC y gestión de integridad de activos.</p></div>
-          <div class="cap-step"><div class="dot-line"><div class="dot">10</div><div class="bar"></div></div><h4>Operación y mantenimiento</h4><p>Operación, mantenimiento industrial, paradas de planta y gestión de confiabilidad.</p></div>
+          <div class="cap-step"><div class="dot-line"><div class="dot">01</div><div class="bar"></div></div><h3>Desarrollo del proyecto</h3><p>Identificación de oportunidades, estudios de factibilidad y análisis de riesgo.</p></div>
+          <div class="cap-step"><div class="dot-line"><div class="dot">02</div><div class="bar"></div></div><h3>Ingeniería</h3><p>Ingeniería conceptual, básica y de detalle con los más altos estándares.</p></div>
+          <div class="cap-step"><div class="dot-line"><div class="dot">03</div><div class="bar"></div></div><h3>Procura internacional</h3><p>Sourcing global, compra de equipos y materiales optimizando costos y tiempos.</p></div>
+          <div class="cap-step"><div class="dot-line"><div class="dot">04</div><div class="bar"></div></div><h3>Petroquímica</h3><p>Suministro de materias primas químicas, solventes y especialidades.</p></div>
+          <div class="cap-step"><div class="dot-line"><div class="dot">05</div><div class="bar"></div></div><h3>Fabricación</h3><p>Fabricación y prefabricación metalmecánica con altos estándares de calidad.</p></div>
+          <div class="cap-step"><div class="dot-line"><div class="dot">06</div><div class="bar"></div></div><h3>Construcción</h3><p>Obras civiles, obras industriales, EPC y plantas de proceso.</p></div>
+          <div class="cap-step"><div class="dot-line"><div class="dot">07</div><div class="bar"></div></div><h3>Montaje</h3><p>Montaje mecánico, eléctrico, instrumentación, tuberías y estructuras.</p></div>
+          <div class="cap-step"><div class="dot-line"><div class="dot">08</div><div class="bar"></div></div><h3>Logística</h3><p>Transporte nacional e internacional, almacenamiento y gestión logística integral.</p></div>
+          <div class="cap-step"><div class="dot-line"><div class="dot">09</div><div class="bar"></div></div><h3>Integridad mecánica</h3><p>Ensayos no destructivos, inspección, QA/QC y gestión de integridad de activos.</p></div>
+          <div class="cap-step"><div class="dot-line"><div class="dot">10</div><div class="bar"></div></div><h3>Operación y mantenimiento</h3><p>Operación, mantenimiento industrial, paradas de planta y gestión de confiabilidad.</p></div>
         </div>
         <div class="cap-scroll" aria-hidden="true">
-          <div class="cap-step"><div class="dot-line"><div class="dot">01</div><div class="bar"></div></div><h4>Desarrollo del proyecto</h4><p>Identificación de oportunidades, estudios de factibilidad y análisis de riesgo.</p></div>
-          <div class="cap-step"><div class="dot-line"><div class="dot">02</div><div class="bar"></div></div><h4>Ingeniería</h4><p>Ingeniería conceptual, básica y de detalle con los más altos estándares.</p></div>
-          <div class="cap-step"><div class="dot-line"><div class="dot">03</div><div class="bar"></div></div><h4>Procura internacional</h4><p>Sourcing global, compra de equipos y materiales optimizando costos y tiempos.</p></div>
-          <div class="cap-step"><div class="dot-line"><div class="dot">04</div><div class="bar"></div></div><h4>Petroquímica</h4><p>Suministro de materias primas químicas, solventes y especialidades.</p></div>
-          <div class="cap-step"><div class="dot-line"><div class="dot">05</div><div class="bar"></div></div><h4>Fabricación</h4><p>Fabricación y prefabricación metalmecánica con altos estándares de calidad.</p></div>
-          <div class="cap-step"><div class="dot-line"><div class="dot">06</div><div class="bar"></div></div><h4>Construcción</h4><p>Obras civiles, obras industriales, EPC y plantas de proceso.</p></div>
-          <div class="cap-step"><div class="dot-line"><div class="dot">07</div><div class="bar"></div></div><h4>Montaje</h4><p>Montaje mecánico, eléctrico, instrumentación, tuberías y estructuras.</p></div>
-          <div class="cap-step"><div class="dot-line"><div class="dot">08</div><div class="bar"></div></div><h4>Logística</h4><p>Transporte nacional e internacional, almacenamiento y gestión logística integral.</p></div>
-          <div class="cap-step"><div class="dot-line"><div class="dot">09</div><div class="bar"></div></div><h4>Integridad mecánica</h4><p>Ensayos no destructivos, inspección, QA/QC y gestión de integridad de activos.</p></div>
-          <div class="cap-step"><div class="dot-line"><div class="dot">10</div><div class="bar"></div></div><h4>Operación y mantenimiento</h4><p>Operación, mantenimiento industrial, paradas de planta y gestión de confiabilidad.</p></div>
+          <div class="cap-step"><div class="dot-line"><div class="dot">01</div><div class="bar"></div></div><h3>Desarrollo del proyecto</h3><p>Identificación de oportunidades, estudios de factibilidad y análisis de riesgo.</p></div>
+          <div class="cap-step"><div class="dot-line"><div class="dot">02</div><div class="bar"></div></div><h3>Ingeniería</h3><p>Ingeniería conceptual, básica y de detalle con los más altos estándares.</p></div>
+          <div class="cap-step"><div class="dot-line"><div class="dot">03</div><div class="bar"></div></div><h3>Procura internacional</h3><p>Sourcing global, compra de equipos y materiales optimizando costos y tiempos.</p></div>
+          <div class="cap-step"><div class="dot-line"><div class="dot">04</div><div class="bar"></div></div><h3>Petroquímica</h3><p>Suministro de materias primas químicas, solventes y especialidades.</p></div>
+          <div class="cap-step"><div class="dot-line"><div class="dot">05</div><div class="bar"></div></div><h3>Fabricación</h3><p>Fabricación y prefabricación metalmecánica con altos estándares de calidad.</p></div>
+          <div class="cap-step"><div class="dot-line"><div class="dot">06</div><div class="bar"></div></div><h3>Construcción</h3><p>Obras civiles, obras industriales, EPC y plantas de proceso.</p></div>
+          <div class="cap-step"><div class="dot-line"><div class="dot">07</div><div class="bar"></div></div><h3>Montaje</h3><p>Montaje mecánico, eléctrico, instrumentación, tuberías y estructuras.</p></div>
+          <div class="cap-step"><div class="dot-line"><div class="dot">08</div><div class="bar"></div></div><h3>Logística</h3><p>Transporte nacional e internacional, almacenamiento y gestión logística integral.</p></div>
+          <div class="cap-step"><div class="dot-line"><div class="dot">09</div><div class="bar"></div></div><h3>Integridad mecánica</h3><p>Ensayos no destructivos, inspección, QA/QC y gestión de integridad de activos.</p></div>
+          <div class="cap-step"><div class="dot-line"><div class="dot">10</div><div class="bar"></div></div><h3>Operación y mantenimiento</h3><p>Operación, mantenimiento industrial, paradas de planta y gestión de confiabilidad.</p></div>
         </div>
       </div>
     </div>
@@ -269,10 +284,10 @@
 </section>
 
 <!-- ============ EMPRESAS ============ -->
-<section class="companies" id="empresas">
+<section class="companies" id="empresas" aria-labelledby="companies-title">
   <div class="container">
     <div class="section-head" data-reveal>
-      <h2>Nuestras empresas</h2>
+      <h2 id="companies-title">Nuestras empresas</h2>
       <p>Empresas que hacen posible una integración real, cada una experta en su disciplina, operando bajo un mismo estándar de calidad y seguridad.</p>
     </div>
 
@@ -288,47 +303,47 @@
 </section>
 
 <!-- ============ INDUSTRIAS ============ -->
-<section class="industries" id="industrias">
+<section class="industries" id="industrias" aria-labelledby="industries-title">
   <div class="container">
     <div class="section-head" data-reveal>
-      <h2>Industrias que atendemos</h2>
+      <h2 id="industries-title">Industrias que atendemos</h2>
     </div>
 
     <div class="industries-grid" data-reveal-group>
-      <div class="industry-card has-photo" data-reveal style="--i:0;--photo:url('assets/hero-refinery.jpg')"><svg class="icon"><use href="#i-drop"/></svg><h4>Oil &amp; Gas</h4><p>Soluciones integrales para exploración, producción, transporte y refinación de hidrocarburos.</p></div>
-      <div class="industry-card" data-reveal style="--i:1"><svg class="icon"><use href="#i-flask"/></svg><h4>Petroquímica</h4><p>Suministro de químicos, solventes y especialidades para la industria petroquímica.</p></div>
-      <div class="industry-card has-photo" data-reveal style="--i:2;--photo:url('assets/mining.jpg')"><svg class="icon"><use href="#i-truck"/></svg><h4>Minería</h4><p>Operación minera, plantas de beneficio e infraestructura para la industria minera.</p></div>
-      <div class="industry-card" data-reveal style="--i:3"><svg class="icon"><use href="#i-bolt"/></svg><h4>Energía</h4><p>Soluciones para generación, transmisión y distribución de energía convencional y renovable.</p></div>
-      <div class="industry-card" data-reveal style="--i:4"><svg class="icon"><use href="#i-factory"/></svg><h4>Industria</h4><p>Soluciones industriales para procesos de manufactura y producción.</p></div>
-      <div class="industry-card has-photo" data-reveal style="--i:5;--photo:url('assets/crane.jpg')"><svg class="icon"><use href="#i-bridge"/></svg><h4>Infraestructura</h4><p>Obras civiles, infraestructura urbana, industrial y obras de gran escala.</p></div>
-      <div class="industry-card has-photo" data-reveal style="--i:6;--photo:url('assets/port.jpg')"><svg class="icon"><use href="#i-ship"/></svg><h4>Marítimo y portuario</h4><p>Servicios marítimos, portuarios y logística para el comercio internacional.</p></div>
-      <div class="industry-card" data-reveal style="--i:7"><svg class="icon"><use href="#i-building"/></svg><h4>Construcción</h4><p>Construcción de obras civiles, industrias y edificaciones de alto impacto.</p></div>
+      <div class="industry-card has-photo" data-reveal style="--i:0;--photo:image-set(url('assets/hero-refinery.webp') type('image/webp'), url('assets/hero-refinery.jpg') type('image/jpeg'))"><svg class="icon"><use href="#i-drop"/></svg><h3>Oil &amp; Gas</h3><p>Soluciones integrales para exploración, producción, transporte y refinación de hidrocarburos.</p></div>
+      <div class="industry-card" data-reveal style="--i:1"><svg class="icon"><use href="#i-flask"/></svg><h3>Petroquímica</h3><p>Suministro de químicos, solventes y especialidades para la industria petroquímica.</p></div>
+      <div class="industry-card has-photo" data-reveal style="--i:2;--photo:image-set(url('assets/mining.webp') type('image/webp'), url('assets/mining.jpg') type('image/jpeg'))"><svg class="icon"><use href="#i-truck"/></svg><h3>Minería</h3><p>Operación minera, plantas de beneficio e infraestructura para la industria minera.</p></div>
+      <div class="industry-card" data-reveal style="--i:3"><svg class="icon"><use href="#i-bolt"/></svg><h3>Energía</h3><p>Soluciones para generación, transmisión y distribución de energía convencional y renovable.</p></div>
+      <div class="industry-card" data-reveal style="--i:4"><svg class="icon"><use href="#i-factory"/></svg><h3>Industria</h3><p>Soluciones industriales para procesos de manufactura y producción.</p></div>
+      <div class="industry-card has-photo" data-reveal style="--i:5;--photo:image-set(url('assets/crane.webp') type('image/webp'), url('assets/crane.jpg') type('image/jpeg'))"><svg class="icon"><use href="#i-bridge"/></svg><h3>Infraestructura</h3><p>Obras civiles, infraestructura urbana, industrial y obras de gran escala.</p></div>
+      <div class="industry-card has-photo" data-reveal style="--i:6;--photo:image-set(url('assets/port.webp') type('image/webp'), url('assets/port.jpg') type('image/jpeg'))"><svg class="icon"><use href="#i-ship"/></svg><h3>Marítimo y portuario</h3><p>Servicios marítimos, portuarios y logística para el comercio internacional.</p></div>
+      <div class="industry-card" data-reveal style="--i:7"><svg class="icon"><use href="#i-building"/></svg><h3>Construcción</h3><p>Construcción de obras civiles, industrias y edificaciones de alto impacto.</p></div>
     </div>
   </div>
 </section>
 
 <!-- ============ PRESENCIA + DIFERENCIADORES ============ -->
-<section class="presence">
+<section class="presence" aria-labelledby="presence-title">
   <div class="container">
     <div class="presence-grid">
       <div data-reveal>
-        <h2 style="color:#fff;margin-top:14px;font-size:clamp(26px,3.4vw,36px)">Dónde operamos</h2>
+        <h2 id="presence-title" style="color:#fff;margin-top:14px;font-size:clamp(26px,3.4vw,36px)">Dónde operamos</h2>
         <div class="locations">
-          <div class="location-item"><div class="flag"><img src="assets/flag-us.svg" alt="Estados Unidos"></div><div><h4>Estados Unidos</h4><p>Houston, Texas — Sede central</p></div><span class="badge">HQ</span></div>
-          <div class="location-item"><div class="flag"><img src="assets/flag-co.svg" alt="Colombia"></div><div><h4>Colombia</h4><p>Presencia operativa</p></div></div>
-          <div class="location-item"><div class="flag"><img src="assets/flag-ve.svg" alt="Venezuela"></div><div><h4>Venezuela</h4><p>Presencia operativa</p></div></div>
+          <div class="location-item"><div class="flag"><img src="assets/flag-us.svg" alt="" aria-hidden="true" width="24" height="16" loading="lazy" decoding="async"></div><div><h3>Estados Unidos</h3><p>Highlands, Texas — Sede principal</p></div><span class="badge">HQ</span></div>
+          <div class="location-item"><div class="flag"><img src="assets/flag-co.svg" alt="" aria-hidden="true" width="24" height="16" loading="lazy" decoding="async"></div><div><h3>Colombia</h3><p>Barranquilla — Oficina comercial</p></div></div>
+          <div class="location-item"><div class="flag"><img src="assets/flag-ve.svg" alt="" aria-hidden="true" width="24" height="16" loading="lazy" decoding="async"></div><div><h3>Venezuela</h3><p>Presencia operativa</p></div></div>
         </div>
       </div>
 
       <div data-reveal style="transition-delay:.1s">
         <h2 style="color:#fff;margin-top:14px;font-size:clamp(26px,3.4vw,36px)">Por qué elegir STREX</h2>
         <div class="diff-list" data-reveal-group>
-          <div class="diff-item" data-reveal style="--i:0"><div class="check"><svg class="icon"><use href="#i-check"/></svg></div><div><h4>Soluciones integradas</h4><p>Bajo un solo holding, un solo punto de contacto.</p></div></div>
-          <div class="diff-item" data-reveal style="--i:1"><div class="check"><svg class="icon"><use href="#i-check"/></svg></div><div><h4>Experiencia internacional</h4><p>Trayectoria comprobada en proyectos de alto impacto.</p></div></div>
-          <div class="diff-item" data-reveal style="--i:2"><div class="check"><svg class="icon"><use href="#i-check"/></svg></div><div><h4>Tecnología de última generación</h4><p>Equipos y herramientas de vanguardia en cada proyecto.</p></div></div>
-          <div class="diff-item" data-reveal style="--i:3"><div class="check"><svg class="icon"><use href="#i-check"/></svg></div><div><h4>Estándares internacionales</h4><p>Cumplimiento riguroso en calidad, seguridad y sostenibilidad.</p></div></div>
-          <div class="diff-item" data-reveal style="--i:4"><div class="check"><svg class="icon"><use href="#i-check"/></svg></div><div><h4>Presencia regional, visión global</h4><p>Comprensión local para generar impacto real.</p></div></div>
-          <div class="diff-item" data-reveal style="--i:5"><div class="check"><svg class="icon"><use href="#i-check"/></svg></div><div><h4>Compromiso genuino</h4><p>Con la seguridad, el ambiente y las comunidades.</p></div></div>
+          <div class="diff-item" data-reveal style="--i:0"><div class="check"><svg class="icon"><use href="#i-check"/></svg></div><div><h3>Soluciones integradas</h3><p>Bajo un solo holding, un solo punto de contacto.</p></div></div>
+          <div class="diff-item" data-reveal style="--i:1"><div class="check"><svg class="icon"><use href="#i-check"/></svg></div><div><h3>Experiencia internacional</h3><p>Trayectoria comprobada en proyectos de alto impacto.</p></div></div>
+          <div class="diff-item" data-reveal style="--i:2"><div class="check"><svg class="icon"><use href="#i-check"/></svg></div><div><h3>Tecnología de última generación</h3><p>Equipos y herramientas de vanguardia en cada proyecto.</p></div></div>
+          <div class="diff-item" data-reveal style="--i:3"><div class="check"><svg class="icon"><use href="#i-check"/></svg></div><div><h3>Estándares internacionales</h3><p>Cumplimiento riguroso en calidad, seguridad y sostenibilidad.</p></div></div>
+          <div class="diff-item" data-reveal style="--i:4"><div class="check"><svg class="icon"><use href="#i-check"/></svg></div><div><h3>Presencia regional, visión global</h3><p>Comprensión local para generar impacto real.</p></div></div>
+          <div class="diff-item" data-reveal style="--i:5"><div class="check"><svg class="icon"><use href="#i-check"/></svg></div><div><h3>Compromiso genuino</h3><p>Con la seguridad, el ambiente y las comunidades.</p></div></div>
         </div>
       </div>
     </div>
@@ -340,11 +355,11 @@
 </section>
 
 <!-- ============ CONTACTO ============ -->
-<section class="contact" id="contacto">
+<section class="contact" id="contacto" aria-labelledby="contact-title">
   <div class="container">
     <div class="contact-panel" data-reveal>
       <div class="contact-top">
-        <h2>¿Listo para impulsar tu próximo proyecto?</h2>
+        <h2 id="contact-title">¿Listo para impulsar tu próximo proyecto?</h2>
         <p>Estamos listos para ser su aliado estratégico en proyectos industriales de alto impacto. Un solo aliado, soluciones completas.</p>
       </div>
 
@@ -366,12 +381,12 @@
         </div>
         <div class="contact-item">
           <div class="icon-badge"><svg class="icon"><use href="#i-pin"/></svg></div>
-          <span class="label">Sede principal — Estados Unidos</span>
+          <span class="label">Sede · Estados Unidos</span>
           <span class="val">1919 S. Canal St<br>Highlands, TX 77562</span>
         </div>
         <div class="contact-item">
           <div class="icon-badge"><svg class="icon"><use href="#i-pin"/></svg></div>
-          <span class="label">Oficina — Colombia</span>
+          <span class="label">Oficina · Colombia</span>
           <span class="val">Cra. 51B #80-58, Oficina 909<br>Barranquilla, Atlántico</span>
         </div>
       </div>
@@ -379,12 +394,15 @@
   </div>
 </section>
 
+</main>
+
 <!-- ============ FOOTER ============ -->
 <footer class="site-footer">
   <div class="container">
     <div class="footer-top">
       <a href="#top" class="logo on-dark">
-        <img src="assets/logo-mark.png" alt="STREX Holdings" class="logo-mark">
+        <img src="assets/logo-mark.png" alt="" aria-hidden="true" class="logo-mark"
+             width="200" height="69" loading="lazy" decoding="async">
         <span class="logo-word" style="color:#fff">STREX <span>HOLDINGS</span></span>
       </a>
       <div class="footer-social">
