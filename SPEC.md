@@ -246,8 +246,11 @@ de SEO. **No se ha persistido ningún ignore** — requieren confirmación del u
 
 | Hallazgo | Veredicto | Razón |
 |---|---|---|
-| `side-tab` — `styles.css:571` | Falso positivo | No es un acento estático: la línea de 3px arranca en `scaleX(0)` (invisible) y se despliega solo en hover. Es una animación de revelado, no el borde permanente que la regla persigue. |
-| `codex-grid-background` — `styles.css:254` | Falso positivo | La propia regla exceptúa superficies de tipo *blueprint*. Es una retícula de plano técnico sobre el hero de una empresa de ingeniería EPC, con `mask-image` que la desvanece. Uso domésticamente correcto. |
+| `side-tab` — `.company-card::before` | Falso positivo | No es un acento estático: la línea de 3px arranca en `scaleX(0)` (invisible) y se despliega solo en hover. Es una animación de revelado, no el borde permanente que la regla persigue. |
+| `codex-grid-background` — `.hero::before` | Falso positivo | La propia regla exceptúa superficies de tipo *blueprint*. Es una retícula de plano técnico sobre el hero de una empresa de ingeniería EPC, con `mask-image` que la desvanece. Uso domésticamente correcto. |
+
+> Se identifican por selector, no por número de línea: las ediciones los
+> desplazan y la tabla quedaba desfasada en cada sesión.
 | `overused-font` — Inter | **Real, no corregido** | Inter es efectivamente genérica. Pero los titulares ya usan Bricolage Grotesque (distintiva) e Inter solo carga el cuerpo, donde la neutralidad ayuda. Cambiar la tipografía base es **decisión de marca del cliente**, no un fix técnico a colar en un commit de SEO. Proponer aparte. |
 
 Si el cliente confirma que quiere conservar Inter, persistir con:
