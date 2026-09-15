@@ -179,7 +179,21 @@ estrategia distinta (registro SAM.gov, no SEO). **Aclarar antes de invertir.**
 
 ---
 
-## 8. Trampas del proyecto
+## 8. Auditoría de diseño (impeccable) — hallazgos evaluados
+
+Revisados el 2026-09-15. Los tres son de código preexistente, no de los cambios
+de SEO. **No se ha persistido ningún ignore** — requieren confirmación del usuario.
+
+| Hallazgo | Veredicto | Razón |
+|---|---|---|
+| `side-tab` — `styles.css:571` | Falso positivo | No es un acento estático: la línea de 3px arranca en `scaleX(0)` (invisible) y se despliega solo en hover. Es una animación de revelado, no el borde permanente que la regla persigue. |
+| `codex-grid-background` — `styles.css:254` | Falso positivo | La propia regla exceptúa superficies de tipo *blueprint*. Es una retícula de plano técnico sobre el hero de una empresa de ingeniería EPC, con `mask-image` que la desvanece. Uso domésticamente correcto. |
+| `overused-font` — Inter | **Real, no corregido** | Inter es efectivamente genérica. Pero los titulares ya usan Bricolage Grotesque (distintiva) e Inter solo carga el cuerpo, donde la neutralidad ayuda. Cambiar la tipografía base es **decisión de marca del cliente**, no un fix técnico a colar en un commit de SEO. Proponer aparte. |
+
+Si el cliente confirma que quiere conservar Inter, persistir con:
+`/impeccable hooks ignore-value overused-font "Inter" --shared`
+
+## 9. Trampas del proyecto
 
 - El sitio **no abre con doble clic** de forma fiable si se usan rutas absolutas;
   para previsualizar: `uv run python -m http.server 8901` en la raíz del repo.
