@@ -145,6 +145,8 @@ section { position: relative; }
   stroke-linecap: round;
   stroke-linejoin: round;
 }
+/* Los logos de marca son siluetas sólidas, no trazos: invierten stroke/fill */
+.icon-brand { fill: currentColor; stroke: none; }
 
 /* ---------- Reveal animation ---------- */
 [data-reveal] {
