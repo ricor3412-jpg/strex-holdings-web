@@ -25,9 +25,18 @@ SEO local por sede. Ver sección 7.
 |---|---|
 | Tipo | Sitio estático: HTML + CSS + JS vanilla. Sin build, sin dependencias |
 | Archivos | `index.html`, `styles.css`, `script.js`, `assets/` |
-| Hosting | VPS propio en Hostinger |
-| Proxy | Traefik (el cert por defecto delata Traefik, probablemente vía Coolify) |
+| Hosting | VPS Hostinger — **`31.97.147.5`** (el mismo de clubkabanna) |
+| Servidor web | nginx 1.31.3 detrás de Traefik (Coolify) |
 | Dominio | `strexholdings.com` — **solo responde sin www** |
+| DNS | **GoDaddy** (`ns47/ns48.domaincontrol.com`) — no Hostinger |
+| Correo | **Google Workspace** (MX de Google) |
+| TXT existente | `google-site-verification=rloPWM69jaitUN9xJHL-c3N8HuH4BwC6tT5XrB_RyNE` |
+
+⚠️ **El DNS de `www` ya es correcto** (CNAME → dominio raíz). El fallo es de
+configuración en Coolify, no de DNS. Ver [RUNBOOK_FASE_2.md](RUNBOOK_FASE_2.md).
+
+⚠️ **No borrar el TXT de google-site-verification:** usan Google Workspace para
+el correo. Reemplazarlo en vez de añadir uno nuevo podría tumbar el email.
 
 ---
 
@@ -125,12 +134,22 @@ Requiere acceso al VPS. **No resuelto — pendiente.**
 - [x] `robots.txt` y `sitemap.xml`
 - [x] Corregir enlace interno a la versión www rota
 
-### Fase 2 — Infraestructura ⛔ bloqueada (requiere acceso VPS)
-- [ ] **Arreglar `www` en Traefik + redirección 301** ← máxima prioridad
-- [ ] Desplegar la rama `seo/fase-1-fundacion` a producción
-- [ ] Verificar dominio en Google Search Console
-- [ ] Enviar `sitemap.xml` desde Search Console
-- [ ] Validar el JSON-LD con la Prueba de Resultados Enriquecidos de Google
+### Fase 2 — Infraestructura 🟡 en curso
+Diagnóstico completo y runbook listo: **[RUNBOOK_FASE_2.md](RUNBOOK_FASE_2.md)**.
+Ejecuta el usuario en el VPS; la verificación la hago yo desde fuera.
+
+- [x] Diagnosticar la causa raíz del fallo de `www` (config de Coolify, no DNS)
+- [x] Localizar el DNS (GoDaddy) y detectar Google Workspace + TXT existente
+- [x] Redactar el runbook con los valores exactos de Coolify
+- [ ] **Añadir `www` al campo Domains + "Redirect to non-www" en Coolify** ← ahora
+- [ ] Verificar que el redirect sea **301** y no 302 (Anexo A del runbook)
+- [ ] Revisar el icono de Instagram en navegador antes de desplegar
+- [ ] Merge de `seo/fase-1-fundacion` y despliegue a producción
+- [ ] Pedir acceso delegado a Search Console (el cliente tiene la cuenta)
+- [ ] Verificar propiedad tipo **Dominio** vía TXT en GoDaddy (añadir, no reemplazar)
+- [ ] Enviar `sitemap.xml` y solicitar indexación de la home
+- [ ] Validar el JSON-LD con la Prueba de Resultados Enriquecidos
+- [ ] Crear las 2 fichas de Google Business Profile (Highlands + Barranquilla)
 - [ ] Medir Core Web Vitals reales (el hero tiene canvas animado + JPGs grandes)
 
 ### Fase 3 — Datos pendientes del cliente ⛔
