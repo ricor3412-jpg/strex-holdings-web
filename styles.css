@@ -501,6 +501,22 @@ section { position: relative; }
   box-shadow: var(--shadow-sm);
   border-color: transparent;
 }
+/* Las tarjetas que ya tienen página propia son <a>: inline por defecto,
+   hay que devolverlas a block o colapsan dentro de la rejilla. */
+.service-card.is-link { display: block; color: inherit; }
+.service-card.is-link:hover { border-color: var(--blue-300); }
+.svc-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 12px;
+  font-family: var(--font-head);
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--blue-500);
+}
+.svc-more .icon { width: 14px; height: 14px; transition: transform 0.35s var(--ease); }
+.service-card.is-link:hover .svc-more .icon { transform: translateX(3px); }
 .service-card .num {
   font-family: var(--font-head);
   font-size: 12px;
