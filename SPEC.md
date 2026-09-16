@@ -299,8 +299,11 @@ de SEO. **No se ha persistido ningún ignore** — requieren confirmación del u
 > desplazan y la tabla quedaba desfasada en cada sesión.
 | `overused-font` — Inter (en `index.html` y en cada página de servicio) | **Real, no corregido** | Inter es efectivamente genérica. Pero los titulares ya usan Bricolage Grotesque (distintiva) e Inter solo carga el cuerpo, donde la neutralidad ayuda. Cambiar la tipografía base es **decisión de marca del cliente**, no un fix técnico a colar en un commit de SEO. Además debe cambiarse en **todas** las páginas a la vez: hacerlo solo en una la desalinearía del resto. Proponer aparte. |
 
-> El hallazgo de `overused-font` reaparecerá en cada página de servicio nueva:
-> todas cargan la misma línea de Google Fonts que la home, a propósito.
+> El hallazgo de `overused-font` reaparece en cada página que carga la línea de
+> Google Fonts, a propósito. **Si algún día se cambia la tipografía**, hay que
+> tocar dos sitios: `index.html` y la plantilla de `_build/generar.js` (esa
+> edición actualiza las 9 generadas), además de `servicios/montajes-industriales.html`,
+> que está escrita a mano.
 
 Si el cliente confirma que quiere conservar Inter, persistir con:
 `/impeccable hooks ignore-value overused-font "Inter" --shared`
