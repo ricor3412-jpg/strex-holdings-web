@@ -93,7 +93,7 @@ siempre que un perfil o mención sea de STREX antes de enlazarlo.
 
 ## 5. Estado actual — bugs de producción
 
-### 🔴 CRÍTICO — `www.strexholdings.com` caído
+### 🔴 CRÍTICO — `www.strexholdings.com` caído · **sigue pendiente**
 
 | Host | HTTP | Certificado |
 |---|---|---|
@@ -145,8 +145,8 @@ Ejecuta el usuario en el VPS; la verificación la hago yo desde fuera.
 - [ ] Verificar que el redirect sea **301** y no 302 (Anexo A del runbook)
 - [ ] Revisar el icono de Instagram en navegador antes de desplegar
 - [x] Merge a `main` y push a GitHub (2026-09-16)
-- [ ] **Que el VPS recoja los cambios** — Coolify no auto-despliega: producción
-      sigue en la versión del 4 de agosto tras el push. Ver RUNBOOK paso 2
+- [x] **Desplegado en producción** (2026-09-16). Las 11 URLs responden 200,
+      sitemap y robots servidos, WebP activo, sin errores de consola
 - [ ] Pedir acceso delegado a Search Console (el cliente tiene la cuenta)
 - [ ] Verificar propiedad tipo **Dominio** vía TXT en GoDaddy (añadir, no reemplazar)
 - [ ] Enviar `sitemap.xml` y solicitar indexación de la home

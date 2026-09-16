@@ -27,7 +27,11 @@ propagación.
 
 ---
 
-## PASO 1 — Arreglar `www` en Coolify 🔴 prioridad máxima
+## PASO 1 — Arreglar `www` en Coolify 🔴 **PENDIENTE — único bloqueo activo**
+
+> Recomprobado el 2026-09-16 tras el despliegue: **sigue roto, sin cambios.**
+> `https://www` → 503 con `CN=TRAEFIK DEFAULT CERT` · `http://www` → 404.
+> El despliegue del contenido no lo arregla: es configuración de dominio.
 
 1. Entrar a Coolify en el VPS `31.97.147.5` y abrir el servicio de
    **strexholdings**.
@@ -52,54 +56,29 @@ propagación.
 
 ---
 
-## PASO 2 — Publicar en producción ⬅️ **AQUÍ ESTAMOS**
+## PASO 2 — Publicar en producción ✅ COMPLETADO (2026-09-16)
 
-### ✅ Hecho (2026-09-16)
-Merge a `main` y push a GitHub. El repositorio remoto ya tiene los 12 commits:
-SEO técnico, NAP corregido, optimización de imágenes, accesibilidad y las 10
-páginas de servicio. **36 archivos en `origin/main`.**
-
-### ⛔ Falta: que el VPS recoja los cambios
-
-**Comprobado tras el push:** producción sigue sirviendo la versión del
-**4 de agosto**. Evidencia:
+Merge a `main`, push a GitHub y despliegue en el VPS. **Verificado en vivo:**
 
 ```
-Last-Modified: Tue, 04 Aug 2026 19:10:48 GMT   ← sin cambios tras el push
-<title>STREX Holdings — Where Industry Connects</title>   ← título viejo
-702-2422                                        ← teléfono viejo
-/servicios/montajes-industriales.html → HTTP 404
-/sitemap.xml                          → HTTP 404
+Last-Modified: Wed, 16 Sep 2026 21:33:15 GMT   ← actualizado
+<title>STREX Holdings | Proyectos EPC, Montajes Industriales…</title>
+704-2432 · Highlands · canonical presentes
 ```
 
-**Conclusión: Coolify no está desplegando automáticamente desde el repo.**
-O el servicio no está conectado a GitHub, o no tiene webhook de auto-deploy.
+| Comprobación en producción | Resultado |
+|---|---|
+| Las 11 URLs del sitemap | **200** todas |
+| `robots.txt` y `sitemap.xml` | 200 · sitemap con 11 `<loc>` |
+| JSON-LD en la home | presente |
+| WebP del hero | se sirve (44 KB, no el JPG) |
+| Errores de consola / recursos 404 | ninguno |
+| Tarjetas de servicio enlazadas | 10 |
+| Instagram en el footer | enlaza a @strexholdings |
+| Clic en tarjeta → página de servicio | funciona |
+| Scroll horizontal en móvil | no |
 
-### Qué hacer en Coolify
-
-1. Entrar a Coolify en `31.97.147.5` y abrir el servicio de **strexholdings**.
-2. Revisar **Source**: ¿apunta a `github.com/ricor3412-jpg/strex-holdings-web`,
-   rama `main`?
-   - **Si NO está conectado:** conectarlo al repositorio y rama `main`.
-   - **Si sí está conectado:** activar **Auto Deploy** para que los próximos
-     push se publiquen solos.
-3. Pulsar **Redeploy**.
-4. Aprovechar para hacer el **PASO 1** (arreglar `www`) en la misma visita.
-
-> Si el sitio se subió por FTP o copia manual en su día, hay que subir el
-> contenido del repo al directorio que sirve nginx, incluyendo la carpeta
-> `servicios/` y los archivos `robots.txt` y `sitemap.xml` de la raíz.
-
-### Cómo saber que funcionó
-
-```bash
-curl -sI https://strexholdings.com | grep -i last-modified   # debe cambiar
-curl -s  https://strexholdings.com | grep -o "704-2432"      # teléfono nuevo
-curl -sI https://strexholdings.com/sitemap.xml               # 200, no 404
-curl -sI https://strexholdings.com/servicios/montajes-industriales.html  # 200
-```
-
-Avísame cuando lo hagas y verifico las 11 URLs desde fuera.
+Verificado con `curl` y con Chromium sobre el dominio real.
 
 ---
 
