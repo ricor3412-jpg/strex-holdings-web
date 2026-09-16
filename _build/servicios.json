@@ -1,0 +1,1118 @@
+{
+  "ingenieria-y-consultoria": {
+    "num": "01",
+    "nombre": "Ingeniería y consultoría",
+    "title": "Ingeniería y Consultoría Industrial | STREX Holdings",
+    "desc": "Ingeniería conceptual, básica y de detalle para proyectos industriales: estudios de factibilidad, análisis de riesgo y diseño multidisciplinario.",
+    "icon": "i-crane",
+    "lead": "Ingeniería conceptual, básica y de detalle para proyectos industriales. Convertimos una necesidad de negocio en documentación construible: planos, especificaciones y estimados con los que se puede licitar y ejecutar.",
+    "facts": [
+      [
+        "Fases",
+        "Conceptual, básica (FEED) y de detalle"
+      ],
+      [
+        "Disciplinas",
+        "Proceso, mecánica, civil, eléctrica, instrumentación"
+      ],
+      [
+        "Cobertura",
+        "Colombia · Venezuela · Estados Unidos"
+      ],
+      [
+        "Entregables",
+        "Planos, especificaciones, estimados y memorias"
+      ]
+    ],
+    "alcance_intro": "Desde la evaluación temprana de una idea hasta el paquete de ingeniería con el que se construye.",
+    "alcance": [
+      [
+        "i-bulb",
+        "Estudios de factibilidad",
+        "Evaluación técnica y económica de alternativas, estimados de clase 4 y 5, y análisis de viabilidad para decidir si un proyecto avanza."
+      ],
+      [
+        "i-gear",
+        "Ingeniería conceptual y básica",
+        "Definición del proceso, balances de masa y energía, diagramas de flujo, P&ID preliminares y filosofía de operación."
+      ],
+      [
+        "i-wrench",
+        "Ingeniería de detalle",
+        "Planos constructivos, isométricos, listas de materiales, especificaciones de equipos y planos as-built."
+      ],
+      [
+        "i-shield",
+        "Análisis de riesgo",
+        "HAZOP, análisis de capas de protección y estudios de seguridad de proceso, con seguimiento de las recomendaciones."
+      ],
+      [
+        "i-bolt",
+        "Diseño eléctrico e instrumentación",
+        "Estudios de cortocircuito y coordinación de protecciones, diagramas unifilares, arquitectura de control y listas de instrumentos."
+      ],
+      [
+        "i-check",
+        "Interventoría y revisión",
+        "Revisión técnica de ingeniería de terceros, constructabilidad y verificación de cumplimiento normativo."
+      ]
+    ],
+    "proceso_intro": "Ingeniería entregada por fases, para que cada decisión se tome con la información disponible en ese momento.",
+    "proceso": [
+      [
+        "Definición del alcance",
+        "Levantamiento de requerimientos, condiciones de sitio y bases de diseño acordadas con el cliente."
+      ],
+      [
+        "Ingeniería conceptual",
+        "Evaluación de alternativas y selección de la solución técnica, con estimado de orden de magnitud."
+      ],
+      [
+        "Ingeniería básica",
+        "Desarrollo del paquete FEED: P&ID, especificaciones de equipos principales y estimado refinado."
+      ],
+      [
+        "Ingeniería de detalle",
+        "Planos y documentos constructivos por disciplina, con revisiones formales y control de cambios."
+      ],
+      [
+        "Soporte a la construcción",
+        "Atención de consultas de obra, aprobación de cambios y emisión de planos as-built."
+      ]
+    ],
+    "porque": [
+      [
+        "La ingeniería no termina en el plano",
+        "Como también construimos y montamos, el diseño sale pensado para ser ejecutable, no solo para cumplir en papel."
+      ],
+      [
+        "Estimados con base real",
+        "Los costos se apoyan en precios de procura y rendimientos de montaje propios, no en índices genéricos."
+      ],
+      [
+        "Continuidad hasta la obra",
+        "El mismo grupo que diseña puede ejecutar, así que no se pierde información en el traspaso entre empresas."
+      ]
+    ],
+    "faq": [
+      [
+        "¿Hacen solo la ingeniería o también la ejecución?",
+        "Ambas. Podemos entregar únicamente el paquete de ingeniería, o continuar con procura, construcción y montaje bajo un esquema EPC. Muchos clientes empiezan por un estudio de factibilidad y deciden después."
+      ],
+      [
+        "¿Qué necesitan para empezar un estudio de factibilidad?",
+        "La necesidad de negocio, las condiciones del sitio y cualquier información existente de proceso o de planta. Con eso definimos bases de diseño y alcance del estudio."
+      ],
+      [
+        "¿Trabajan con ingeniería ya desarrollada por otro?",
+        "Sí. Hacemos revisión de constructabilidad e interventoría técnica sobre ingeniería de terceros, y podemos retomarla para llevarla a detalle."
+      ],
+      [
+        "¿Qué precisión tienen sus estimados de costo?",
+        "Depende de la fase: clase 5 en conceptual, clase 4 en factibilidad y clase 3 al cerrar la básica. La precisión aumenta conforme madura la ingeniería."
+      ],
+      [
+        "¿Emiten planos as-built al final de la obra?",
+        "Sí. El paquete de cierre incluye planos as-built, memorias de cálculo y documentación técnica del proyecto."
+      ]
+    ],
+    "rel": [
+      "montajes-industriales",
+      "construccion-e-infraestructura",
+      "procura-internacional",
+      "integridad-mecanica"
+    ]
+  },
+  "integridad-mecanica": {
+    "num": "02",
+    "nombre": "Integridad mecánica",
+    "title": "Integridad Mecánica y Ensayos No Destructivos | STREX Holdings",
+    "desc": "Gestión de integridad de activos, ensayos no destructivos e inspección bajo API 510, 570 y 653. Evaluación de corrosión y vida remanente.",
+    "icon": "i-shield",
+    "lead": "Gestión de integridad de activos industriales: inspección, ensayos no destructivos y evaluación de aptitud para el servicio. Saber en qué estado real están sus equipos antes de que lo diga una falla.",
+    "facts": [
+      [
+        "Ejecuta",
+        "PTSC — Petro Testing and Services Colombia"
+      ],
+      [
+        "Métodos",
+        "UT, RT, PT, MT, medición de espesores"
+      ],
+      [
+        "Normativa",
+        "API 510, API 570, API 653, ASME"
+      ],
+      [
+        "Cobertura",
+        "Colombia · Venezuela · Estados Unidos"
+      ]
+    ],
+    "alcance_intro": "Inspección y evaluación con personal certificado y procedimientos trazables.",
+    "alcance": [
+      [
+        "i-shield",
+        "Ensayos no destructivos",
+        "Ultrasonido, radiografía, líquidos penetrantes, partículas magnéticas y medición de espesores, con personal certificado."
+      ],
+      [
+        "i-flask",
+        "Gestión de corrosión",
+        "Identificación de mecanismos de daño, monitoreo de velocidad de corrosión y definición de estrategias de mitigación."
+      ],
+      [
+        "i-gear",
+        "Inspección de equipos estáticos",
+        "Recipientes a presión, tanques de almacenamiento, calderas e intercambiadores bajo API 510, 653 y normativa aplicable."
+      ],
+      [
+        "i-drop",
+        "Inspección de tuberías",
+        "Circuitos de tubería de proceso bajo API 570, con definición de puntos de medición y frecuencias de inspección."
+      ],
+      [
+        "i-check",
+        "QA/QC de construcción",
+        "Control de calidad de soldadura, verificación dimensional, liberación por disciplina y elaboración de dossier."
+      ],
+      [
+        "i-award",
+        "Aptitud para el servicio",
+        "Evaluación de vida remanente y cálculo de aptitud para el servicio en equipos con daño detectado."
+      ]
+    ],
+    "proceso_intro": "Un programa de integridad que produce decisiones, no solo reportes.",
+    "proceso": [
+      [
+        "Levantamiento de activos",
+        "Inventario de equipos, condiciones de operación e historial disponible de inspección y fallas."
+      ],
+      [
+        "Plan de inspección",
+        "Definición de mecanismos de daño esperados, métodos de ensayo, puntos de medición y frecuencias."
+      ],
+      [
+        "Ejecución en campo",
+        "Inspección y ensayos con personal certificado, equipos calibrados y procedimientos aprobados."
+      ],
+      [
+        "Evaluación técnica",
+        "Cálculo de espesores mínimos, velocidad de corrosión y vida remanente por equipo o circuito."
+      ],
+      [
+        "Recomendaciones y seguimiento",
+        "Informe con priorización de hallazgos, acciones correctivas y próxima fecha de inspección."
+      ]
+    ],
+    "porque": [
+      [
+        "Inspección que no depende de un tercero",
+        "PTSC forma parte del grupo, así que la inspección de nuestros propios montajes no queda en manos de un contratista ajeno al proyecto."
+      ],
+      [
+        "Del diagnóstico a la reparación",
+        "Si la inspección detecta un problema, el mismo holding puede ejecutar la reparación o el reemplazo sin volver a licitar."
+      ],
+      [
+        "Datos para decidir",
+        "Los informes se entregan con criterio de aceptación y vida remanente, no solo con mediciones sueltas."
+      ]
+    ],
+    "faq": [
+      [
+        "¿Qué ensayos no destructivos realizan?",
+        "Ultrasonido convencional y de medición de espesores, radiografía industrial, líquidos penetrantes y partículas magnéticas. El método se selecciona según el mecanismo de daño esperado y la geometría del componente."
+      ],
+      [
+        "¿Su personal está certificado?",
+        "Sí. Los inspectores de END trabajan con certificación vigente según el método, y la inspección de equipos estáticos se realiza bajo los códigos API correspondientes."
+      ],
+      [
+        "¿Pueden inspeccionar durante una parada de planta?",
+        "Sí. Es el escenario habitual: se planifica el alcance antes de la parada para aprovechar la ventana de indisponibilidad, y se reporta en tiempo real para que las reparaciones se decidan sin perder días."
+      ],
+      [
+        "¿Evalúan equipos que ya presentan daño?",
+        "Sí. Realizamos evaluación de aptitud para el servicio, que determina si un equipo con corrosión o defectos puede seguir operando, bajo qué condiciones y por cuánto tiempo."
+      ],
+      [
+        "¿Entregan un programa de inspección o solo el servicio puntual?",
+        "Ambos. Podemos ejecutar una inspección puntual o estructurar el programa de integridad completo, con planes por equipo, frecuencias y seguimiento en el tiempo."
+      ]
+    ],
+    "rel": [
+      "operacion-y-mantenimiento",
+      "montajes-industriales",
+      "sistemas-de-almacenamiento",
+      "soluciones-metalmecanicas"
+    ]
+  },
+  "operacion-y-mantenimiento": {
+    "num": "03",
+    "nombre": "Operación y mantenimiento",
+    "title": "Mantenimiento Industrial y Paradas de Planta | STREX Holdings",
+    "desc": "Mantenimiento industrial preventivo, correctivo y predictivo, paradas de planta y gestión de confiabilidad de activos.",
+    "icon": "i-wrench",
+    "lead": "Mantenimiento industrial y operación de activos: preventivo, correctivo, predictivo y paradas de planta. Mantener la planta produciendo, con el menor tiempo fuera de servicio posible.",
+    "facts": [
+      [
+        "Modalidades",
+        "Por contrato permanente o por evento"
+      ],
+      [
+        "Especialidad",
+        "Paradas de planta con ventana fija"
+      ],
+      [
+        "Disciplinas",
+        "Mecánica, eléctrica, instrumentación, civil"
+      ],
+      [
+        "Cobertura",
+        "Colombia · Venezuela · Estados Unidos"
+      ]
+    ],
+    "alcance_intro": "Desde el contrato de mantenimiento permanente hasta la parada mayor programada.",
+    "alcance": [
+      [
+        "i-wrench",
+        "Mantenimiento correctivo",
+        "Atención de fallas y reparaciones en equipos estáticos y rotativos, con disponibilidad para atención prioritaria."
+      ],
+      [
+        "i-gear",
+        "Mantenimiento preventivo",
+        "Rutinas programadas por equipo, con planes de lubricación, cambio de componentes y registro de intervenciones."
+      ],
+      [
+        "i-target",
+        "Mantenimiento predictivo",
+        "Análisis de vibraciones, termografía y análisis de aceite para anticipar fallas antes de que detengan la planta."
+      ],
+      [
+        "i-crane",
+        "Paradas de planta",
+        "Planificación y ejecución de paradas mayores y menores, con prefabricación anticipada y trabajo por turnos."
+      ],
+      [
+        "i-bolt",
+        "Mantenimiento eléctrico",
+        "Subestaciones, motores, tableros y sistemas de protección, con pruebas eléctricas y termografía."
+      ],
+      [
+        "i-award",
+        "Gestión de confiabilidad",
+        "Análisis de causa raíz de fallas recurrentes y ajuste de planes de mantenimiento según criticidad."
+      ]
+    ],
+    "proceso_intro": "En mantenimiento la planificación vale más que la velocidad: lo que no se planifica, se paga en tiempo de planta parada.",
+    "proceso": [
+      [
+        "Diagnóstico inicial",
+        "Levantamiento de activos, criticidad, historial de fallas y estado de los planes de mantenimiento existentes."
+      ],
+      [
+        "Planificación",
+        "Definición de rutinas, repuestos críticos, recursos y cronograma. En paradas, planificación detallada hora por hora."
+      ],
+      [
+        "Movilización",
+        "Personal, herramienta certificada y materiales en sitio antes de iniciar la ventana de ejecución."
+      ],
+      [
+        "Ejecución y control",
+        "Trabajo con reporte diario de avance, control de permisos y seguimiento de imprevistos."
+      ],
+      [
+        "Cierre y mejora",
+        "Entrega de registros, análisis de lo ocurrido y ajuste de los planes para el siguiente ciclo."
+      ]
+    ],
+    "porque": [
+      [
+        "Capacidad para la parada completa",
+        "Montaje, metalmecánica, integridad y logística salen del mismo grupo: en una parada eso evita coordinar contratistas que se bloquean entre sí."
+      ],
+      [
+        "Prefabricación anticipada",
+        "Todo lo que puede hacerse fuera de la ruta crítica se fabrica antes, para que la ventana de parada se use solo en lo que exige planta detenida."
+      ],
+      [
+        "Inspección incluida",
+        "Los ensayos no destructivos y la liberación de calidad los cubre PTSC, empresa del grupo."
+      ]
+    ],
+    "faq": [
+      [
+        "¿Atienden paradas de planta con ventana de tiempo fija?",
+        "Sí, es una de nuestras especialidades. Se planifica el alcance con anticipación, se prefabrica todo lo posible y se trabaja por turnos para cumplir la ventana comprometida."
+      ],
+      [
+        "¿Ofrecen contratos de mantenimiento permanente?",
+        "Sí. Podemos operar con personal residente en planta bajo contrato de largo plazo, o atender por evento según la necesidad."
+      ],
+      [
+        "¿Qué incluye el mantenimiento predictivo?",
+        "Análisis de vibraciones en equipos rotativos, termografía en sistemas eléctricos y mecánicos, y análisis de aceite. El objetivo es detectar la falla antes de que obligue a parar."
+      ],
+      [
+        "¿Manejan la procura de repuestos?",
+        "Sí. Nuestra área de procura internacional puede gestionar repuestos y equipos importados dentro del mismo contrato, incluyendo los de tiempo de entrega largo."
+      ],
+      [
+        "¿Hacen análisis de causa raíz cuando una falla se repite?",
+        "Sí. Ante fallas recurrentes realizamos análisis de causa raíz y ajustamos el plan de mantenimiento, en lugar de seguir reparando el mismo equipo indefinidamente."
+      ]
+    ],
+    "rel": [
+      "integridad-mecanica",
+      "montajes-industriales",
+      "soluciones-metalmecanicas",
+      "ingenieria-y-consultoria"
+    ]
+  },
+  "procura-internacional": {
+    "num": "04",
+    "nombre": "Procura internacional",
+    "title": "Procura Internacional Industrial | Sourcing y Compra de Equipos",
+    "desc": "Sourcing global, compra de equipos industriales, expediting e importación. Controlamos el tiempo de entrega, no solo el precio.",
+    "icon": "i-cart",
+    "lead": "Sourcing global y compra de equipos y materiales industriales. Encontrar el proveedor correcto, negociar el precio y, sobre todo, asegurar que el equipo llegue a tiempo al sitio.",
+    "facts": [
+      [
+        "Alcance",
+        "Sourcing, compra, expediting e importación"
+      ],
+      [
+        "Origen",
+        "Norteamérica, Europa y Asia"
+      ],
+      [
+        "Ventaja",
+        "Presencia propia en Estados Unidos"
+      ],
+      [
+        "Incluye",
+        "Inspección en origen y control documental"
+      ]
+    ],
+    "alcance_intro": "La procura falla casi siempre por tiempo de entrega, no por precio. El proceso está armado para controlar eso.",
+    "alcance": [
+      [
+        "i-globe",
+        "Sourcing global",
+        "Identificación y calificación de proveedores en Norteamérica, Europa y Asia, con evaluación técnica y comercial comparativa."
+      ],
+      [
+        "i-cart",
+        "Compra de equipos y materiales",
+        "Gestión de órdenes de compra de equipos de proceso, materiales de tubería, estructura, instrumentación y eléctricos."
+      ],
+      [
+        "i-target",
+        "Expediting",
+        "Seguimiento activo de fabricación en planta del proveedor, para detectar atrasos mientras todavía se pueden corregir."
+      ],
+      [
+        "i-check",
+        "Inspección en origen",
+        "Verificación de calidad y pruebas en fábrica antes del embarque, para no descubrir el defecto cuando el equipo ya está en sitio."
+      ],
+      [
+        "i-ship",
+        "Importación y nacionalización",
+        "Gestión documental, trámites aduaneros y coordinación del transporte internacional hasta el sitio del proyecto."
+      ],
+      [
+        "i-shield",
+        "Control documental",
+        "Certificados de materiales, data books y documentación técnica exigida por el proyecto."
+      ]
+    ],
+    "proceso_intro": "Un proceso pensado para que el equipo llegue cuando el cronograma de montaje lo necesita.",
+    "proceso": [
+      [
+        "Definición técnica",
+        "Revisión de especificaciones y listas de materiales para asegurar que se compra lo que el proyecto realmente requiere."
+      ],
+      [
+        "Cotización y evaluación",
+        "Solicitud a proveedores calificados y comparación técnico-económica, incluyendo tiempo de entrega como criterio."
+      ],
+      [
+        "Colocación de la orden",
+        "Negociación de condiciones, plazos y garantías, con hitos de pago ligados a avance verificable."
+      ],
+      [
+        "Expediting e inspección",
+        "Seguimiento de fabricación e inspección en origen antes del embarque."
+      ],
+      [
+        "Transporte y entrega",
+        "Coordinación logística, nacionalización y entrega en sitio con la documentación completa."
+      ]
+    ],
+    "porque": [
+      [
+        "Sede en Estados Unidos",
+        "Nuestra presencia en Texas facilita la compra y consolidación de equipos de origen norteamericano."
+      ],
+      [
+        "Procura que entiende el montaje",
+        "Quien compra conoce el cronograma de obra, así que la prioridad no es solo el precio: es la fecha en que el equipo debe estar en sitio."
+      ],
+      [
+        "Logística integrada",
+        "El transporte internacional y la logística en destino los cubre el mismo grupo."
+      ]
+    ],
+    "faq": [
+      [
+        "¿Compran solo para sus propios proyectos o también para terceros?",
+        "Ambos. Podemos ejecutar la procura como parte de un contrato EPC o prestarla como servicio independiente para un proyecto que otro esté construyendo."
+      ],
+      [
+        "¿Cómo manejan los equipos con tiempo de entrega largo?",
+        "Se identifican al inicio del proyecto y se colocan primero, porque suelen definir la ruta crítica del cronograma. El expediting sobre esos equipos es continuo, no por muestreo."
+      ],
+      [
+        "¿Realizan inspección antes del embarque?",
+        "Sí. Según la criticidad del equipo se realiza inspección y presenciamiento de pruebas en fábrica, para no descubrir un defecto cuando el equipo ya está en el sitio."
+      ],
+      [
+        "¿Se encargan de la nacionalización?",
+        "Sí. Gestionamos la documentación de importación, los trámites aduaneros y la coordinación del transporte hasta el sitio del proyecto."
+      ],
+      [
+        "¿Qué tipo de materiales manejan?",
+        "Equipos de proceso, materiales de tubería y accesorios, estructura metálica, instrumentación, equipos eléctricos y materiales de consumo para construcción y montaje."
+      ]
+    ],
+    "rel": [
+      "logistica-integral",
+      "montajes-industriales",
+      "ingenieria-y-consultoria",
+      "sistemas-de-almacenamiento"
+    ]
+  },
+  "construccion-e-infraestructura": {
+    "num": "06",
+    "nombre": "Construcción e infraestructura",
+    "title": "Construcción Industrial y Obras Civiles | Proyectos EPC",
+    "desc": "Obras civiles industriales, cimentaciones, estructuras, plantas de proceso y proyectos EPC llave en mano. Ejecutamos en Colombia, Venezuela y Estados Unidos.",
+    "icon": "i-building",
+    "lead": "Obras civiles e industriales, plantas de proceso y proyectos EPC llave en mano. Desde la cimentación de un equipo hasta la construcción completa de una planta.",
+    "facts": [
+      [
+        "Modalidades",
+        "EPC llave en mano, precio global o administración"
+      ],
+      [
+        "Tipologías",
+        "Obra civil industrial, plantas, infraestructura"
+      ],
+      [
+        "Incluye",
+        "Ingeniería, procura, construcción y montaje"
+      ],
+      [
+        "Cobertura",
+        "Colombia · Venezuela · Estados Unidos"
+      ]
+    ],
+    "alcance_intro": "Obra civil pensada para operación industrial, no para edificación convencional.",
+    "alcance": [
+      [
+        "i-building",
+        "Obra civil industrial",
+        "Cimentaciones de equipos, pedestales, pavimentos industriales, diques de contención y obras de drenaje."
+      ],
+      [
+        "i-factory",
+        "Plantas de proceso",
+        "Construcción de plantas completas, incluyendo obra civil, estructura, tubería, equipos y sistemas auxiliares."
+      ],
+      [
+        "i-crane",
+        "Estructura metálica",
+        "Fabricación y montaje de estructura pesada y liviana, racks de tubería, plataformas y edificios industriales."
+      ],
+      [
+        "i-bridge",
+        "Infraestructura",
+        "Vías internas, obras de urbanismo industrial, estructuras de soporte y obras de gran escala."
+      ],
+      [
+        "i-gear",
+        "Proyectos EPC",
+        "Ejecución integral bajo un solo contrato: ingeniería, procura, construcción y puesta en marcha."
+      ],
+      [
+        "i-shield",
+        "Adecuaciones y ampliaciones",
+        "Intervención sobre planta en operación, con planes de trabajo que minimizan la interferencia con la producción."
+      ]
+    ],
+    "proceso_intro": "Construcción con control de avance medible y no solo con informe de porcentaje.",
+    "proceso": [
+      [
+        "Planeación de obra",
+        "Revisión de ingeniería, plan de ejecución, cronograma, plan de calidad y matriz de riesgos del proyecto."
+      ],
+      [
+        "Movilización e instalaciones",
+        "Campamento, instalaciones temporales, acometidas y dotación de equipos y personal en sitio."
+      ],
+      [
+        "Obra civil",
+        "Excavaciones, cimentaciones, concretos y obras de soporte, con control topográfico y ensayos de materiales."
+      ],
+      [
+        "Estructura y montaje",
+        "Montaje de estructura, equipos y tubería, integrando las disciplinas según la secuencia constructiva."
+      ],
+      [
+        "Pruebas y entrega",
+        "Pruebas por sistema, punch list, puesta en marcha asistida y entrega con dossier completo."
+      ]
+    ],
+    "porque": [
+      [
+        "Un solo contrato para todo el proyecto",
+        "Bajo esquema EPC el cliente tiene un único responsable: no hay discusión sobre si el atraso fue de la ingeniería, del proveedor o del constructor."
+      ],
+      [
+        "Obra civil que conoce el equipo que va encima",
+        "Como también montamos, las cimentaciones y estructuras se diseñan y construyen pensando en el montaje posterior."
+      ],
+      [
+        "Calidad verificada internamente",
+        "El control de calidad de obra lo cubre PTSC, con ensayos y liberación documentada."
+      ]
+    ],
+    "faq": [
+      [
+        "¿Qué significa un proyecto EPC llave en mano?",
+        "Que asumimos ingeniería, procura, construcción y puesta en marcha bajo un solo contrato y una sola responsabilidad. El cliente recibe la planta funcionando, no un conjunto de contratos que debe coordinar."
+      ],
+      [
+        "¿Pueden construir sobre una planta en operación?",
+        "Sí. Las ampliaciones y adecuaciones sobre planta operativa requieren planes de trabajo específicos, permisos y coordinación con producción para minimizar la interferencia."
+      ],
+      [
+        "¿Trabajan con ingeniería del cliente?",
+        "Sí. Podemos construir a partir de ingeniería entregada por el cliente o por un tercero; en ese caso realizamos primero una revisión de constructabilidad."
+      ],
+      [
+        "¿Qué modalidades de contrato manejan?",
+        "Precio global fijo, precios unitarios o administración delegada, según el nivel de definición de la ingeniería y el reparto de riesgo que el cliente prefiera."
+      ],
+      [
+        "¿Incluyen la puesta en marcha?",
+        "Sí. El alcance puede llegar hasta precomisionado, comisionado y acompañamiento en el arranque, con entrega del dossier de calidad y planos as-built."
+      ]
+    ],
+    "rel": [
+      "montajes-industriales",
+      "ingenieria-y-consultoria",
+      "soluciones-metalmecanicas",
+      "procura-internacional"
+    ]
+  },
+  "soluciones-metalmecanicas": {
+    "num": "07",
+    "nombre": "Soluciones metalmecánicas",
+    "title": "Fabricación Metalmecánica Industrial | Estructuras y Tuberías",
+    "desc": "Fabricación y prefabricación metalmecánica: estructura metálica, spools de tubería, tanques y recipientes. Soldadura calificada bajo ASME y AWS D1.1.",
+    "icon": "i-factory",
+    "lead": "Fabricación y prefabricación metalmecánica en taller: estructura, spools de tubería, tanques y componentes especiales. Producir en condiciones controladas lo que en campo costaría el doble.",
+    "facts": [
+      [
+        "Ejecuta",
+        "Metalprest Group"
+      ],
+      [
+        "Materiales",
+        "Acero al carbono, inoxidable y aleaciones"
+      ],
+      [
+        "Normativa",
+        "ASME Sección IX, AWS D1.1"
+      ],
+      [
+        "Ventaja",
+        "Prefabricación fuera de la ruta crítica"
+      ]
+    ],
+    "alcance_intro": "Fabricación con trazabilidad de material y soldadura desde el primer corte.",
+    "alcance": [
+      [
+        "i-crane",
+        "Estructura metálica",
+        "Fabricación de estructura pesada y liviana, racks de tubería, plataformas, escaleras y soportería industrial."
+      ],
+      [
+        "i-drop",
+        "Spools de tubería",
+        "Prefabricación de spools en acero al carbono, inoxidable y aleaciones, con control dimensional contra isométricos."
+      ],
+      [
+        "i-flask",
+        "Recipientes y tanques",
+        "Fabricación de recipientes a presión, tanques de almacenamiento y equipos a la medida bajo código aplicable."
+      ],
+      [
+        "i-gear",
+        "Componentes especiales",
+        "Piezas y conjuntos a la medida, reparación de componentes y trabajos de mecanizado."
+      ],
+      [
+        "i-shield",
+        "Soldadura calificada",
+        "Procedimientos WPS y PQR homologados, con soldadores calificados antes de iniciar producción."
+      ],
+      [
+        "i-check",
+        "Control de calidad",
+        "Inspección dimensional, ensayos no destructivos y trazabilidad de materiales con certificados."
+      ]
+    ],
+    "proceso_intro": "Lo que se fabrica en taller llega a obra listo para montar, no para corregir.",
+    "proceso": [
+      [
+        "Revisión de ingeniería",
+        "Verificación de planos e isométricos, despiece y lista de materiales antes de iniciar fabricación."
+      ],
+      [
+        "Calificación de soldadura",
+        "Homologación de procedimientos y calificación de soldadores según el material y el código aplicable."
+      ],
+      [
+        "Aprovisionamiento",
+        "Compra de material con certificados de calidad y trazabilidad por colada."
+      ],
+      [
+        "Fabricación",
+        "Corte, armado y soldadura con control dimensional en proceso, no solo al final."
+      ],
+      [
+        "Inspección y despacho",
+        "Ensayos no destructivos, tratamiento superficial, pintura y despacho con identificación por pieza."
+      ]
+    ],
+    "porque": [
+      [
+        "Taller propio del grupo",
+        "Metalprest forma parte del holding: la fabricación no depende de la disponibilidad de un taller externo."
+      ],
+      [
+        "Sincronizado con el montaje",
+        "La secuencia de fabricación se ordena según la necesidad de obra, no según la conveniencia del taller."
+      ],
+      [
+        "Menos trabajo en altura",
+        "Todo lo que se prefabrica en taller reduce horas de soldadura en campo, que son más caras, más lentas y más riesgosas."
+      ]
+    ],
+    "faq": [
+      [
+        "¿Qué normativa aplican en soldadura?",
+        "ASME Sección IX para calificación de procedimientos y soldadores, y AWS D1.1 para estructura. Cada proyecto se ejecuta con WPS y PQR homologados para el material y el espesor específicos."
+      ],
+      [
+        "¿Fabrican para proyectos de otras empresas?",
+        "Sí. El taller atiende tanto proyectos propios del grupo como fabricación para terceros que estén ejecutando su propia obra."
+      ],
+      [
+        "¿Trabajan acero inoxidable y aleaciones?",
+        "Sí, además de acero al carbono. Cada material exige procedimientos de soldadura y manejo específicos, con separación de herramienta para evitar contaminación."
+      ],
+      [
+        "¿Incluyen pintura y tratamiento superficial?",
+        "Sí. El alcance puede incluir preparación de superficie, aplicación de sistemas de recubrimiento y control de espesor de película."
+      ],
+      [
+        "¿Entregan certificados de material?",
+        "Sí. Se entrega trazabilidad completa con certificados de colada, registros de soldadura y resultados de ensayos no destructivos."
+      ]
+    ],
+    "rel": [
+      "montajes-industriales",
+      "integridad-mecanica",
+      "sistemas-de-almacenamiento",
+      "construccion-e-infraestructura"
+    ]
+  },
+  "sistemas-de-almacenamiento": {
+    "num": "08",
+    "nombre": "Sistemas de almacenamiento",
+    "title": "Tanques de Almacenamiento | Montaje y Reparación",
+    "desc": "Diseño, montaje, reparación y mantenimiento de tanques de almacenamiento de hidrocarburos y sistemas asociados. Inspección bajo API 653.",
+    "icon": "i-drop",
+    "lead": "Tanques de almacenamiento de hidrocarburos y sistemas asociados: montaje, reparación, mantenimiento e inspección. Desde la obra nueva hasta la reparación de fondo de un tanque en servicio.",
+    "facts": [
+      [
+        "Ejecuta",
+        "Totalmontajes S.A.S."
+      ],
+      [
+        "Normativa",
+        "API 650 para construcción, API 653 para inspección"
+      ],
+      [
+        "Alcance",
+        "Obra nueva, reparación y mantenimiento"
+      ],
+      [
+        "Incluye",
+        "Sistemas de tubería y contraincendio asociados"
+      ]
+    ],
+    "alcance_intro": "Tanques y su entorno completo: el tanque casi nunca es el único alcance.",
+    "alcance": [
+      [
+        "i-drop",
+        "Montaje de tanques",
+        "Construcción y montaje de tanques de almacenamiento atmosféricos, de techo fijo y flotante, bajo API 650."
+      ],
+      [
+        "i-wrench",
+        "Reparación y reacondicionamiento",
+        "Reparación de fondo, cambio de anillos, reparación de techo y rehabilitación de tanques en servicio."
+      ],
+      [
+        "i-shield",
+        "Inspección API 653",
+        "Inspección en servicio y fuera de servicio, evaluación de espesores y determinación de aptitud e intervalos."
+      ],
+      [
+        "i-gear",
+        "Sistemas asociados",
+        "Tubería de proceso, válvulas, bombas, instrumentación de nivel y sistemas de medición."
+      ],
+      [
+        "i-flask",
+        "Recubrimientos",
+        "Aplicación de recubrimientos internos y externos, y sistemas de protección contra corrosión."
+      ],
+      [
+        "i-bolt",
+        "Sistemas contraincendio",
+        "Montaje de sistemas de espuma, anillos de enfriamiento y protección contraincendio asociada al patio de tanques."
+      ]
+    ],
+    "proceso_intro": "Trabajar sobre tanques exige que la secuencia y la seguridad se definan antes del primer corte.",
+    "proceso": [
+      [
+        "Evaluación inicial",
+        "Inspección del estado actual, revisión de historial y definición del alcance real de la intervención."
+      ],
+      [
+        "Ingeniería y permisos",
+        "Diseño de la reparación o del tanque nuevo, plan de trabajo, análisis de riesgo y gestión de permisos."
+      ],
+      [
+        "Preparación",
+        "Vaciado, limpieza, desgasificación y certificación de atmósfera segura cuando se interviene un tanque en servicio."
+      ],
+      [
+        "Ejecución",
+        "Montaje o reparación con control dimensional, soldadura calificada y ensayos no destructivos en proceso."
+      ],
+      [
+        "Pruebas y entrega",
+        "Prueba hidrostática, calibración, recubrimientos y entrega con dossier e informe de inspección."
+      ]
+    ],
+    "porque": [
+      [
+        "Especialidad, no servicio secundario",
+        "Totalmontajes trabaja específicamente en almacenamiento de hidrocarburos: no es un alcance ocasional dentro de otra cosa."
+      ],
+      [
+        "Inspección y ejecución integradas",
+        "La inspección API 653 y la reparación resultante se ejecutan dentro del mismo grupo, sin renegociar con un tercero."
+      ],
+      [
+        "Trabajo sobre planta en operación",
+        "Experiencia en intervenir patios de tanques activos, con la gestión de permisos y seguridad que eso exige."
+      ]
+    ],
+    "faq": [
+      [
+        "¿Pueden reparar un tanque sin sacarlo de servicio?",
+        "Depende del alcance. Algunas reparaciones externas y trabajos de recubrimiento se ejecutan con el tanque en servicio; las intervenciones en fondo o internas exigen vaciado, limpieza y certificación de atmósfera segura."
+      ],
+      [
+        "¿Qué normativa aplican?",
+        "API 650 para construcción de tanques nuevos y API 653 para inspección, reparación, alteración y reconstrucción de tanques existentes."
+      ],
+      [
+        "¿Realizan la inspección además de la reparación?",
+        "Sí. La inspección bajo API 653 la ejecuta PTSC, empresa del grupo, y con base en sus hallazgos se define y ejecuta la reparación."
+      ],
+      [
+        "¿Incluyen los sistemas de tubería y bombeo asociados?",
+        "Sí. El alcance habitual cubre tubería de proceso, válvulas, bombas, instrumentación de nivel y sistemas de medición del patio de tanques."
+      ],
+      [
+        "¿Manejan la prueba hidrostática final?",
+        "Sí. La entrega incluye prueba hidrostática, verificación de asentamiento, calibración del tanque y el dossier de calidad completo."
+      ]
+    ],
+    "rel": [
+      "integridad-mecanica",
+      "montajes-industriales",
+      "soluciones-metalmecanicas",
+      "operacion-y-mantenimiento"
+    ]
+  },
+  "logistica-integral": {
+    "num": "09",
+    "nombre": "Logística integral",
+    "title": "Logística Industrial y Transporte de Carga Sobredimensionada",
+    "desc": "Transporte nacional e internacional de carga industrial y sobredimensionada, almacenamiento y logística de proyecto.",
+    "icon": "i-globe",
+    "lead": "Transporte nacional e internacional, carga sobredimensionada, almacenamiento y gestión logística de proyecto. Mover un equipo de 80 toneladas hasta el sitio es un proyecto en sí mismo.",
+    "facts": [
+      [
+        "Ejecuta",
+        "TCT Logística Integrada"
+      ],
+      [
+        "Especialidad",
+        "Carga sobredimensionada y extrapesada"
+      ],
+      [
+        "Alcance",
+        "Nacional, internacional y en sitio"
+      ],
+      [
+        "Incluye",
+        "Estudios de ruta y permisos de movilización"
+      ]
+    ],
+    "alcance_intro": "Logística de proyecto industrial, que no es lo mismo que transporte de carga general.",
+    "alcance": [
+      [
+        "i-truck",
+        "Transporte terrestre",
+        "Transporte de carga industrial nacional, incluyendo materiales de construcción, estructura y equipos de proceso."
+      ],
+      [
+        "i-crane",
+        "Carga sobredimensionada",
+        "Movilización de equipos extrapesados y sobredimensionados, con estudio de ruta, permisos y escoltas."
+      ],
+      [
+        "i-ship",
+        "Transporte internacional",
+        "Coordinación de carga marítima y aérea, consolidación en origen y seguimiento hasta el sitio del proyecto."
+      ],
+      [
+        "i-building",
+        "Almacenamiento",
+        "Bodegaje de materiales y equipos de proyecto, con control de inventario y preservación según requerimiento."
+      ],
+      [
+        "i-gear",
+        "Logística en sitio",
+        "Recepción, descarga, movimiento interno y entrega de materiales al frente de obra según secuencia de montaje."
+      ],
+      [
+        "i-check",
+        "Gestión documental",
+        "Documentación de transporte, seguros de carga y trazabilidad de cada envío."
+      ]
+    ],
+    "proceso_intro": "En logística de proyecto lo caro no es el flete: es el equipo que llega tarde y detiene el montaje.",
+    "proceso": [
+      [
+        "Planeación logística",
+        "Análisis de la carga, definición de modos de transporte y cronograma alineado con la secuencia de montaje."
+      ],
+      [
+        "Estudio de ruta",
+        "Para carga sobredimensionada: verificación de gálibos, capacidad de puentes, obras requeridas y permisos."
+      ],
+      [
+        "Gestión de permisos",
+        "Trámite de permisos de movilización, coordinación con autoridades y programación de escoltas."
+      ],
+      [
+        "Ejecución del transporte",
+        "Movilización con seguimiento y reporte de posición, y atención de contingencias en ruta."
+      ],
+      [
+        "Entrega en sitio",
+        "Descarga, verificación contra documentos y entrega al frente de obra o al almacén del proyecto."
+      ]
+    ],
+    "porque": [
+      [
+        "Logística que conoce el cronograma de obra",
+        "El transporte se programa según cuándo se necesita el equipo montado, no según cuándo conviene despacharlo."
+      ],
+      [
+        "Capacidad para carga crítica",
+        "TCT maneja carga sobredimensionada y extrapesada, que es donde un transportador general no puede responder."
+      ],
+      [
+        "Integrada con la procura",
+        "Si nosotros compramos el equipo, el transporte internacional y la entrega en sitio quedan bajo el mismo control."
+      ]
+    ],
+    "faq": [
+      [
+        "¿Transportan equipos sobredimensionados?",
+        "Sí. Es una de las especialidades: incluye estudio de ruta, verificación de gálibos y capacidad de puentes, trámite de permisos y coordinación de escoltas."
+      ],
+      [
+        "¿Qué es un estudio de ruta y cuándo se necesita?",
+        "Es la verificación previa de que la carga puede pasar físicamente por la ruta: alturas, anchos, radios de giro y capacidad de estructuras. Se requiere para cualquier carga que exceda las dimensiones o pesos normales."
+      ],
+      [
+        "¿Ofrecen almacenamiento de materiales de proyecto?",
+        "Sí. Disponemos de bodegaje con control de inventario, y para proyectos grandes se puede habilitar almacén en el sitio con administración de entregas al frente de obra."
+      ],
+      [
+        "¿Manejan transporte internacional?",
+        "Sí. Coordinamos carga marítima y aérea, consolidación en origen y seguimiento hasta el sitio, en conjunto con el área de procura cuando la compra también es nuestra."
+      ],
+      [
+        "¿Cómo se maneja el riesgo de daño durante el transporte?",
+        "Con embalaje y aseguramiento adecuados al tipo de carga, seguro de transporte, y verificación documentada del estado del equipo en origen y en destino."
+      ]
+    ],
+    "rel": [
+      "procura-internacional",
+      "montajes-industriales",
+      "construccion-e-infraestructura",
+      "sistemas-de-almacenamiento"
+    ]
+  },
+  "seguridad-salud-y-medio-ambiente": {
+    "num": "10",
+    "nombre": "Seguridad, salud y medio ambiente",
+    "title": "Seguridad Industrial y Gestión SSMA | STREX",
+    "desc": "Gestión SSMA en proyectos industriales: seguridad industrial, salud ocupacional, gestión ambiental, permisos de trabajo y control de riesgos en obra.",
+    "icon": "i-shield",
+    "lead": "Gestión de seguridad, salud ocupacional y medio ambiente en proyectos industriales. No como requisito contractual que se cumple en papel, sino como la condición que permite que la obra avance sin detenerse.",
+    "facts": [
+      [
+        "Alcance",
+        "Seguridad industrial, salud ocupacional y ambiental"
+      ],
+      [
+        "En obra",
+        "Permisos de trabajo, inducción y supervisión"
+      ],
+      [
+        "Aplica a",
+        "Todos los proyectos del grupo"
+      ],
+      [
+        "Incluye",
+        "Planes de emergencia y gestión de residuos"
+      ]
+    ],
+    "alcance_intro": "Gestión SSMA aplicada a las condiciones reales de un frente de obra industrial.",
+    "alcance": [
+      [
+        "i-shield",
+        "Seguridad industrial",
+        "Identificación de peligros, análisis de riesgo por tarea, permisos de trabajo y control de trabajos de alto riesgo."
+      ],
+      [
+        "i-eye",
+        "Supervisión en campo",
+        "Inspectores SSMA en obra, verificación de condiciones y control de cumplimiento en el frente de trabajo."
+      ],
+      [
+        "i-award",
+        "Salud ocupacional",
+        "Exámenes ocupacionales, seguimiento de aptitud del personal y control de exposición a riesgos higiénicos."
+      ],
+      [
+        "i-leaf",
+        "Gestión ambiental",
+        "Manejo de residuos, control de derrames, protección de recursos y cumplimiento de la normativa ambiental aplicable."
+      ],
+      [
+        "i-bulb",
+        "Formación y cultura",
+        "Inducción de ingreso, charlas diarias, capacitación en trabajos de alto riesgo y reforzamiento continuo."
+      ],
+      [
+        "i-bolt",
+        "Preparación ante emergencias",
+        "Planes de emergencia, brigadas, simulacros y coordinación con los planes del cliente."
+      ]
+    ],
+    "proceso_intro": "La gestión SSMA se define antes de movilizar, no cuando ya hay gente trabajando.",
+    "proceso": [
+      [
+        "Planificación",
+        "Elaboración del plan SSMA del proyecto, matriz de riesgos y requisitos legales aplicables al sitio."
+      ],
+      [
+        "Alineación con el cliente",
+        "Integración con los procedimientos y permisos del cliente, que en planta en operación siempre prevalecen."
+      ],
+      [
+        "Inducción y habilitación",
+        "Inducción de ingreso, verificación de competencias, aptitud médica y dotación del personal."
+      ],
+      [
+        "Control diario",
+        "Permisos de trabajo, análisis de riesgo de la tarea, inspecciones y charlas previas al inicio de cada jornada."
+      ],
+      [
+        "Medición y mejora",
+        "Indicadores, investigación de incidentes y ajuste de controles con base en lo ocurrido en obra."
+      ]
+    ],
+    "porque": [
+      [
+        "Seguridad como condición de operación",
+        "Un accidente detiene la obra. La gestión SSMA protege a las personas y, con ello, el cronograma del proyecto."
+      ],
+      [
+        "Transversal a todo el grupo",
+        "El mismo estándar aplica en montaje, construcción, mantenimiento y logística, sin importar qué empresa del holding ejecute."
+      ],
+      [
+        "Preparados para planta en operación",
+        "Trabajar dentro de instalaciones activas exige disciplina de permisos y coordinación con el cliente, y es donde más se ejecuta."
+      ]
+    ],
+    "faq": [
+      [
+        "¿La gestión SSMA es un servicio aparte o va incluida?",
+        "Va incluida en todos nuestros contratos de ejecución. También puede prestarse como acompañamiento específico para un proyecto que esté ejecutando un tercero."
+      ],
+      [
+        "¿Cómo manejan los trabajos de alto riesgo?",
+        "Trabajo en altura, espacios confinados, trabajo en caliente e izajes críticos requieren permiso específico, análisis de riesgo de la tarea, personal certificado y supervisión permanente durante la ejecución."
+      ],
+      [
+        "¿Se integran a los procedimientos del cliente?",
+        "Sí, y prevalecen los del cliente. Al trabajar dentro de una planta en operación nuestro plan se alinea a su sistema de permisos, sus estándares y sus planes de emergencia."
+      ],
+      [
+        "¿Qué indicadores reportan?",
+        "Indicadores de frecuencia y severidad, horas hombre trabajadas, resultados de inspecciones, cierre de acciones correctivas y seguimiento de hallazgos."
+      ],
+      [
+        "¿Incluyen la gestión ambiental del proyecto?",
+        "Sí: manejo y disposición de residuos, control de derrames, protección de recursos naturales en el área de influencia y cumplimiento de la normativa ambiental aplicable."
+      ]
+    ],
+    "rel": [
+      "montajes-industriales",
+      "construccion-e-infraestructura",
+      "operacion-y-mantenimiento",
+      "integridad-mecanica"
+    ]
+  }
+}
