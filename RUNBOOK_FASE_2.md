@@ -52,28 +52,54 @@ propagación.
 
 ---
 
-## PASO 2 — Desplegar la rama con los cambios de SEO
+## PASO 2 — Publicar en producción ⬅️ **AQUÍ ESTAMOS**
 
-Los cambios de Fase 1 están en la rama `seo/fase-1-fundacion`, **sin desplegar**.
-El sitio en producción sigue con el teléfono viejo y sin robots/sitemap.
+### ✅ Hecho (2026-09-16)
+Merge a `main` y push a GitHub. El repositorio remoto ya tiene los 12 commits:
+SEO técnico, NAP corregido, optimización de imágenes, accesibilidad y las 10
+páginas de servicio. **36 archivos en `origin/main`.**
 
-Opciones:
-- **Si Coolify despliega desde `main`:** hacer merge de la rama a `main` y push.
-- **Si despliega desde otra rama:** cambiar la rama del servicio, o hacer merge
-  a la que corresponda.
+### ⛔ Falta: que el VPS recoja los cambios
 
-```bash
-cd "C:/anti/CLIENTES/AMIGO OSVALDO/strex-holdings-web"
-git checkout main
-git merge seo/fase-1-fundacion
-git push origin main
+**Comprobado tras el push:** producción sigue sirviendo la versión del
+**4 de agosto**. Evidencia:
+
+```
+Last-Modified: Tue, 04 Aug 2026 19:10:48 GMT   ← sin cambios tras el push
+<title>STREX Holdings — Where Industry Connects</title>   ← título viejo
+702-2422                                        ← teléfono viejo
+/servicios/montajes-industriales.html → HTTP 404
+/sitemap.xml                          → HTTP 404
 ```
 
-> ❗ **Antes del merge, abre el sitio en el navegador** y revisa el footer: el
-> icono de Instagram debe verse como el logo de Instagram, no como una mancha
-> negra. No pude verificarlo visualmente (Obscura dio timeout contra el
-> servidor local). Para previsualizar:
-> `uv run python -m http.server 8901` y abrir `http://127.0.0.1:8901`
+**Conclusión: Coolify no está desplegando automáticamente desde el repo.**
+O el servicio no está conectado a GitHub, o no tiene webhook de auto-deploy.
+
+### Qué hacer en Coolify
+
+1. Entrar a Coolify en `31.97.147.5` y abrir el servicio de **strexholdings**.
+2. Revisar **Source**: ¿apunta a `github.com/ricor3412-jpg/strex-holdings-web`,
+   rama `main`?
+   - **Si NO está conectado:** conectarlo al repositorio y rama `main`.
+   - **Si sí está conectado:** activar **Auto Deploy** para que los próximos
+     push se publiquen solos.
+3. Pulsar **Redeploy**.
+4. Aprovechar para hacer el **PASO 1** (arreglar `www`) en la misma visita.
+
+> Si el sitio se subió por FTP o copia manual en su día, hay que subir el
+> contenido del repo al directorio que sirve nginx, incluyendo la carpeta
+> `servicios/` y los archivos `robots.txt` y `sitemap.xml` de la raíz.
+
+### Cómo saber que funcionó
+
+```bash
+curl -sI https://strexholdings.com | grep -i last-modified   # debe cambiar
+curl -s  https://strexholdings.com | grep -o "704-2432"      # teléfono nuevo
+curl -sI https://strexholdings.com/sitemap.xml               # 200, no 404
+curl -sI https://strexholdings.com/servicios/montajes-industriales.html  # 200
+```
+
+Avísame cuando lo hagas y verifico las 11 URLs desde fuera.
 
 ---
 

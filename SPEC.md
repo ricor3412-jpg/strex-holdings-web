@@ -144,7 +144,9 @@ Ejecuta el usuario en el VPS; la verificación la hago yo desde fuera.
 - [ ] **Añadir `www` al campo Domains + "Redirect to non-www" en Coolify** ← ahora
 - [ ] Verificar que el redirect sea **301** y no 302 (Anexo A del runbook)
 - [ ] Revisar el icono de Instagram en navegador antes de desplegar
-- [ ] Merge de `seo/fase-1-fundacion` y despliegue a producción
+- [x] Merge a `main` y push a GitHub (2026-09-16)
+- [ ] **Que el VPS recoja los cambios** — Coolify no auto-despliega: producción
+      sigue en la versión del 4 de agosto tras el push. Ver RUNBOOK paso 2
 - [ ] Pedir acceso delegado a Search Console (el cliente tiene la cuenta)
 - [ ] Verificar propiedad tipo **Dominio** vía TXT en GoDaddy (añadir, no reemplazar)
 - [ ] Enviar `sitemap.xml` y solicitar indexación de la home
