@@ -201,12 +201,58 @@ logo de marca, skip link funcional, sin scroll horizontal.
 - [ ] Confirmar si las cifras del hero son reales (6 empresas, +15 años,
       3 países, 100+ proyectos) — si van en Schema.org deben ser verificables
 
-### Fase 4 — Arquitectura de contenido (no iniciada)
-- [ ] Página dedicada por servicio (hoy los 15 son solo `<h4>` sin URL propia)
+### Fase 4 — Arquitectura de contenido 🟡 en curso
+- [x] **10 páginas de servicio** con URL propia, generadas desde plantilla
+- [x] Malla de enlaces internos: home → servicio → 4 relacionados
+- [x] `sitemap.xml` con 11 URLs
 - [ ] Páginas por sede para SEO local
 - [ ] Google Business Profile en Highlands/Houston y Barranquilla
-- [ ] Investigación de keywords real por país
+- [ ] Investigación de keywords real por país (**bloqueada**, ver abajo)
 - [ ] Blog: definir arquitectura y automatización
+
+#### Las 10 páginas y por qué esas
+Se descartaron 5 de los 15 servicios de la home:
+
+| Descartado | Motivo |
+|---|---|
+| Petroquímica, Energía, Minería | Ya tienen tarjeta en la sección **industrias**. Dos URLs por el mismo término se canibalizan |
+| Lubricación industrial, Soluciones ambientales | Alcance específico de Biomax, demasiado de nicho para sostener página propia |
+
+Las 10 publicadas: montajes industriales, ingeniería y consultoría, integridad
+mecánica, operación y mantenimiento, procura internacional, construcción e
+infraestructura, soluciones metalmecánicas, sistemas de almacenamiento,
+logística integral, y seguridad salud y medio ambiente.
+
+#### Cómo se regeneran
+El contenido vive en `_build/servicios.json`; `_build/generar.js` lo convierte
+en HTML y reescribe el `sitemap.xml`.
+
+```bash
+node _build/generar.js
+```
+
+Es **idempotente**: corregir la plantilla y volver a ejecutar actualiza las 9
+páginas a la vez. **`servicios/montajes-industriales.html` NO se regenera** —
+está escrita a mano como referencia visual, así que un cambio de plantilla hay
+que replicarlo ahí manualmente.
+
+#### ⛔ Herramientas de keywords no disponibles
+Ninguna funcionó al intentar la investigación (2026-09-16):
+
+| Herramienta | Error |
+|---|---|
+| Ahrefs | `Insufficient plan` |
+| Semrush | `API UNITS BALANCE IS ZERO` |
+| Ubersuggest | Requiere OAuth, no ejecutable en sesión no interactiva |
+
+La estructura de las páginas se apoyó en análisis de competencia real, no en
+volúmenes inventados:
+- **INTAC Ingeniería** usa URL propia por servicio → patrón confirmado
+- **MRS Industrial** repite la ciudad en títulos y subtítulos
+- **Ninguno de los dos tiene blog** → hueco de contenido técnico abierto
+
+Para obtener volúmenes reales hay que recargar créditos de Semrush o autorizar
+Ubersuggest desde los conectores de claude.ai.
 
 ---
 

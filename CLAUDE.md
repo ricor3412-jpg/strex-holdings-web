@@ -30,6 +30,19 @@ contacto, el JSON-LD del final de `index.html`, la SPEC y este archivo.
 - ⚠️ No confundir con **Stratex Oil & Gas Holdings** (STTX), empresa cotizada
   distinta, mismo sector, nombre casi idéntico.
 
+## Páginas de servicio
+10 páginas bajo `servicios/`, generadas desde plantilla:
+
+```bash
+node _build/generar.js     # regenera las 9 + el sitemap
+```
+
+- Contenido en `_build/servicios.json`, plantilla en `_build/generar.js`
+- ⚠️ **`servicios/montajes-industriales.html` NO se regenera**: está escrita a
+  mano. Un cambio de plantilla hay que replicarlo ahí a mano.
+- Al añadir una página hay que enlazarla desde su tarjeta en `index.html`, o
+  queda huérfana para Google.
+
 ## Estado
-Fase 1 (SEO técnico base) completada en la rama `seo/fase-1-fundacion`, **sin
-desplegar**. Lo siguiente es arreglar el `www` en el VPS. Ver SPEC §6.
+Todo en la rama `seo/fase-1-fundacion`, **sin desplegar**. Lo siguiente es
+arreglar el `www` en el VPS. Ver [RUNBOOK_FASE_2.md](RUNBOOK_FASE_2.md).
