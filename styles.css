@@ -1006,15 +1006,34 @@ section { position: relative; }
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 0;
+  position: relative; /* ancla del subrayado ::after */
   background: none;
   border: 0;
   font-family: inherit;
-  font-size: 14.5px;
+  /* Mismos valores que .nav-links a: un <button> no hereda el color del
+     enlace, y con `inherit` tomaba el del contenedor oscuro y se veía
+     apagado junto al resto de la navegación. */
+  font-size: 14px;
   font-weight: 500;
-  color: inherit;
-  letter-spacing: 0.01em;
+  color: rgba(255,255,255,0.82);
+  padding: 4px 0;
+  cursor: pointer;
+  transition: color 0.25s ease;
 }
+.nav-mega-trigger:hover { color: var(--white); }
+/* Mismo subrayado animado que los demás enlaces de la nav */
+.nav-mega-trigger::after {
+  content: "";
+  position: absolute;
+  left: 0; bottom: -2px;
+  width: 100%; height: 1.5px;
+  background: var(--blue-300);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s var(--ease);
+}
+.nav-mega-trigger:hover::after,
+.nav-mega-trigger[aria-expanded="true"]::after { transform: scaleX(1); }
 .nav-mega-trigger .chev {
   width: 14px; height: 14px;
   transition: transform 0.3s var(--ease);
