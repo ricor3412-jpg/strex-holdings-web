@@ -1171,7 +1171,9 @@ section { position: relative; }
 }
 .ally-logo img {
   max-height: 100%;
-  max-width: 78%;
+  /* 92%: los logos muy apaisados (Red Post, Metalprest) topan antes con el
+     ancho que con el alto, y al 78% quedaban visiblemente más pequeños. */
+  max-width: 92%;
   width: auto;
   height: auto;
   object-fit: contain;
