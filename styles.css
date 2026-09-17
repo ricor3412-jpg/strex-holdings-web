@@ -621,35 +621,6 @@ section { position: relative; }
 
 /* ---------- Empresas ---------- */
 .companies { padding: 130px 0; background: var(--white); }
-.companies-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-.company-card {
-  padding: 30px 26px;
-  border-radius: var(--radius);
-  border: 1px solid var(--paper-dim);
-  transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease), border-color 0.4s var(--ease);
-  position: relative;
-  overflow: hidden;
-}
-.company-card::before {
-  content: "";
-  position: absolute; top: 0; left: 0; right: 0; height: 3px;
-  background: linear-gradient(90deg, var(--blue-500), var(--blue-300));
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.45s var(--ease);
-}
-.company-card:hover::before { transform: scaleX(1); }
-.company-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-sm); }
-.company-card .tag {
-  font-family: var(--font-head);
-  font-size: 11.5px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  color: var(--blue-500);
-}
-.company-card h3 { font-size: 19px; margin: 10px 0 4px; color: var(--navy-900); }
-.company-card .sub { font-size: 12.5px; color: var(--slate-500); font-weight: 600; margin-bottom: 12px; }
-.company-card p { font-size: 14px; line-height: 1.6; color: var(--slate-500); }
 
 /* ---------- Industrias ---------- */
 .industries { padding: 130px 0; background: var(--paper); }
@@ -823,7 +794,6 @@ section { position: relative; }
   .header-actions .btn { padding: 12px 18px; font-size: 13.5px; }
   .services-grid { grid-template-columns: repeat(3, 1fr); }
   .industries-grid { grid-template-columns: repeat(3, 1fr); }
-  .companies-grid { grid-template-columns: repeat(2, 1fr); }
   .presence-grid { grid-template-columns: 1fr; gap: 50px; }
   .diff-list { grid-template-columns: 1fr 1fr; }
 }
@@ -836,7 +806,6 @@ section { position: relative; }
   .values-list { grid-template-columns: 1fr 1fr; }
   .services-grid { grid-template-columns: repeat(2, 1fr); }
   .industries-grid { grid-template-columns: repeat(2, 1fr); }
-  .companies-grid { grid-template-columns: 1fr; }
   .hero-stats { grid-template-columns: repeat(2, 1fr); row-gap: 30px; }
   .contact-grid { grid-template-columns: repeat(2, 1fr); }
   .contact-panel { padding: 48px 28px; }
@@ -935,7 +904,7 @@ section { position: relative; }
   .footer-social a { width: var(--tap); height: var(--tap); }
   .contact-item a { padding: 2px 0; display: inline-block; }
   /* Sin hover real, los estados :hover se quedan "pegados" tras el tap */
-  .service-card:hover, .industry-card:hover, .company-card:hover,
+  .service-card:hover, .industry-card:hover, .ally-card:hover,
   .mv-card:hover, .value-item:hover, .btn:hover {
     transform: none;
   }
