@@ -69,6 +69,49 @@
     if (e.matches && mobileNav.classList.contains("open")) setNav(false);
   });
 
+
+  /* ---------------- Megamenú de servicios ---------------- */
+  const megaTrigger = document.getElementById("megaTrigger");
+  const megaPanel = document.getElementById("megaPanel");
+
+  if (megaTrigger && megaPanel) {
+    let megaOpen = false;
+
+    const setMega = (open) => {
+      megaOpen = open;
+      megaTrigger.setAttribute("aria-expanded", String(open));
+      if (open) {
+        megaPanel.hidden = false;
+        // reflow para que la transición de opacidad se aplique
+        void megaPanel.offsetWidth;
+        megaPanel.classList.add("open");
+      } else {
+        megaPanel.classList.remove("open");
+        setTimeout(() => { if (!megaOpen) megaPanel.hidden = true; }, 320);
+      }
+    };
+
+    megaTrigger.addEventListener("click", (e) => {
+      e.stopPropagation();
+      setMega(!megaOpen);
+    });
+
+    // Cerrar al hacer clic fuera, al pulsar Escape o al elegir un servicio
+    document.addEventListener("click", (e) => {
+      if (megaOpen && !megaPanel.contains(e.target) && e.target !== megaTrigger) setMega(false);
+    });
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && megaOpen) { setMega(false); megaTrigger.focus(); }
+    });
+    megaPanel.querySelectorAll("a").forEach((a) =>
+      a.addEventListener("click", () => setMega(false))
+    );
+    // Al pasar a móvil el panel no aplica: el drawer tiene su propio desplegable
+    window.matchMedia("(max-width: 860px)").addEventListener("change", (e) => {
+      if (e.matches && megaOpen) setMega(false);
+    });
+  }
+
   /* ---------------- Scroll reveal ---------------- */
   const revealEls = document.querySelectorAll("[data-reveal]");
   if (reducedMotion || !("IntersectionObserver" in window)) {

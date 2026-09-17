@@ -501,15 +501,22 @@ section { position: relative; }
   box-shadow: var(--shadow-sm);
   border-color: transparent;
 }
-/* Las tarjetas que ya tienen página propia son <a>: inline por defecto,
-   hay que devolverlas a block o colapsan dentro de la rejilla. */
-.service-card.is-link { display: block; color: inherit; }
+/* Las tarjetas enlazadas son <a>. Se maquetan como columna flex para que
+   "Ver servicio" caiga siempre al fondo: con títulos de 1, 2 o 3 líneas las
+   flechas quedaban a alturas distintas y la fila se veía desordenada. */
+.service-card.is-link {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: inherit;
+}
+.service-card.is-link h3 { margin-bottom: 14px; }
 .service-card.is-link:hover { border-color: var(--blue-300); }
 .svc-more {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  margin-top: 12px;
+  margin-top: auto; /* empuja la flecha al fondo de la tarjeta */
   font-family: var(--font-head);
   font-size: 12.5px;
   font-weight: 600;
@@ -1021,3 +1028,206 @@ section { position: relative; }
   color: var(--slate-300);
 }
 .cap-hint .icon { width: 15px; height: 15px; color: var(--blue-300); }
+
+/* =========================================================
+   MEGAMENÚ DE SERVICIOS
+   ========================================================= */
+.nav-mega { position: relative; display: flex; align-items: center; }
+.nav-mega-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0;
+  background: none;
+  border: 0;
+  font-family: inherit;
+  font-size: 14.5px;
+  font-weight: 500;
+  color: inherit;
+  letter-spacing: 0.01em;
+}
+.nav-mega-trigger .chev {
+  width: 14px; height: 14px;
+  transition: transform 0.3s var(--ease);
+}
+.nav-mega-trigger[aria-expanded="true"] .chev { transform: rotate(180deg); }
+/* Con el panel abierto el disparador debe seguir legible y marcar que es
+   el que está activo; por herencia quedaba casi invisible sobre el panel. */
+.nav-mega-trigger[aria-expanded="true"] { color: var(--white); }
+
+/* Panel a todo el ancho, anclado bajo el header fijo. Hereda el mismo
+   fondo translúcido del header scrolled para leerse como una extensión suya. */
+.mega-panel {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 99;
+  padding: 104px 0 36px;
+  background: rgba(6, 15, 28, 0.94);
+  backdrop-filter: blur(16px) saturate(140%);
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 30px 60px -30px rgba(0,0,0,0.7);
+  opacity: 0;
+  transform: translateY(-12px);
+  pointer-events: none;
+  transition: opacity 0.3s var(--ease), transform 0.3s var(--ease);
+}
+.mega-panel.open { opacity: 1; transform: translateY(0); pointer-events: auto; }
+.site-header.scrolled ~ .mega-panel { padding-top: 78px; }
+
+.mega-head {
+  display: flex;
+  align-items: baseline;
+  gap: 18px;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.mega-head .eyebrow { color: var(--blue-300); }
+.mega-head .eyebrow::before { background: var(--blue-300); }
+.mega-head p { font-size: 14px; color: var(--slate-300); }
+
+/* 5 columnas × 3 filas = los 15 servicios */
+.mega-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-flow: column;
+  grid-template-rows: repeat(3, auto);
+  gap: 4px 20px;
+}
+.mega-grid a {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 11px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  line-height: 1.35;
+  color: var(--slate-300);
+  transition: background 0.22s var(--ease), color 0.22s var(--ease);
+}
+.mega-grid a:hover { background: rgba(255,255,255,0.07); color: var(--white); }
+.mega-grid .n {
+  flex-shrink: 0;
+  font-family: var(--font-head);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--blue-300);
+  letter-spacing: 0.05em;
+}
+
+/* En móvil el megamenú no aplica: el drawer tiene su propio desplegable */
+@media (max-width: 860px) {
+  .mega-panel { display: none; }
+}
+
+/* Desplegable de servicios dentro del drawer móvil */
+.mobile-svc summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 13px 0;
+  min-height: var(--tap);
+  font-family: var(--font-head);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--white);
+  cursor: pointer;
+  list-style: none;
+}
+.mobile-svc summary::-webkit-details-marker { display: none; }
+.mobile-svc summary .chev { width: 16px; height: 16px; transition: transform 0.3s var(--ease); }
+.mobile-svc[open] summary .chev { transform: rotate(180deg); }
+.mobile-svc-list { display: grid; padding: 4px 0 10px 14px; border-left: 1px solid rgba(255,255,255,0.14); }
+.mobile-svc-list a {
+  padding: 10px 0;
+  min-height: var(--tap);
+  display: flex;
+  align-items: center;
+  font-size: 14.5px;
+  color: var(--slate-300);
+}
+.mobile-svc-list a:active { color: var(--blue-300); }
+
+/* =========================================================
+   ALIADOS (logos)
+   ========================================================= */
+.allies-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.ally-card {
+  display: flex;
+  flex-direction: column;
+  padding: 26px 22px;
+  background: var(--white);
+  border: 1px solid var(--paper-dim);
+  border-radius: var(--radius);
+  transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease), border-color 0.4s var(--ease);
+}
+.ally-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-sm);
+  border-color: var(--blue-200);
+}
+/* Caja de altura fija: los logos vienen con proporciones muy distintas y sin
+   ella cada tarjeta empezaba el texto a una altura diferente. */
+.ally-logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 62px;
+  margin-bottom: 18px;
+}
+.ally-logo img {
+  max-height: 100%;
+  max-width: 78%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  object-position: left center;
+}
+/* Varios logos (Ingecar, Metalprest, Totalmontajes) llevan texto en blanco:
+   sobre la tarjeta clara la palabra desaparece y sólo se ve el isotipo.
+   Se les da su propio recuadro oscuro, que es el fondo para el que fueron
+   diseñados, en vez de mostrarlos rotos. */
+.ally-logo.dark {
+  background: var(--navy-950);
+  border-radius: var(--radius-sm);
+  padding: 10px 16px;
+  align-self: flex-start;
+  justify-content: center;
+  height: 62px;
+  min-width: 132px;
+}
+.ally-logo.dark img { max-width: 100%; max-height: 100%; object-position: center; }
+/* Aliado sin logo disponible: marca tipográfica con el mismo peso visual */
+.ally-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 52px;
+  padding: 0 18px;
+  border: 1px solid var(--paper-dim);
+  border-radius: var(--radius-sm);
+  background: var(--paper);
+  font-family: var(--font-head);
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--navy-900);
+}
+.ally-card h3 { font-size: 17px; color: var(--navy-900); margin-bottom: 8px; }
+.ally-card p { font-size: 14px; line-height: 1.6; color: var(--slate-700); }
+
+@media (max-width: 1024px) {
+  .allies-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .allies-grid { grid-template-columns: 1fr; }
+}
+@media (hover: none) {
+  .ally-card:hover { transform: none; }
+}

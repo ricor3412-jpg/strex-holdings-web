@@ -207,11 +207,11 @@
     "porque": [
       [
         "Inspección que no depende de un tercero",
-        "PTSC forma parte del grupo, así que la inspección de nuestros propios montajes no queda en manos de un contratista ajeno al proyecto."
+        "PTSC es nuestro aliado en integridad, así que la inspección de nuestros propios montajes no queda en manos de un contratista ajeno al proyecto."
       ],
       [
         "Del diagnóstico a la reparación",
-        "Si la inspección detecta un problema, el mismo holding puede ejecutar la reparación o el reemplazo sin volver a licitar."
+        "Si la inspección detecta un problema, podemos ejecutar la reparación o el reemplazo sin volver a licitar."
       ],
       [
         "Datos para decidir",
@@ -331,7 +331,7 @@
     "porque": [
       [
         "Capacidad para la parada completa",
-        "Montaje, metalmecánica, integridad y logística salen del mismo grupo: en una parada eso evita coordinar contratistas que se bloquean entre sí."
+        "Montaje, metalmecánica, integridad y logística se coordinan bajo un mismo contrato: en una parada eso evita coordinar contratistas que se bloquean entre sí."
       ],
       [
         "Prefabricación anticipada",
@@ -339,7 +339,7 @@
       ],
       [
         "Inspección incluida",
-        "Los ensayos no destructivos y la liberación de calidad los cubre PTSC, empresa del grupo."
+        "Los ensayos no destructivos y la liberación de calidad los cubre PTSC, empresa aliada."
       ]
     ],
     "faq": [
@@ -463,7 +463,7 @@
       ],
       [
         "Logística integrada",
-        "El transporte internacional y la logística en destino los cubre el mismo grupo."
+        "El transporte internacional y la logística en destino los cubre nuestra red."
       ]
     ],
     "faq": [
@@ -703,7 +703,7 @@
     "porque": [
       [
         "Taller propio del grupo",
-        "Metalprest forma parte del holding: la fabricación no depende de la disponibilidad de un taller externo."
+        "Metalprest es nuestro aliado metalmecánico: la fabricación no depende de la disponibilidad de un taller externo."
       ],
       [
         "Sincronizado con el montaje",
@@ -831,7 +831,7 @@
       ],
       [
         "Inspección y ejecución integradas",
-        "La inspección API 653 y la reparación resultante se ejecutan dentro del mismo grupo, sin renegociar con un tercero."
+        "La inspección API 653 y la reparación resultante se ejecutan dentro de nuestra red de aliados, sin renegociar con un tercero."
       ],
       [
         "Trabajo sobre planta en operación",
@@ -849,7 +849,7 @@
       ],
       [
         "¿Realizan la inspección además de la reparación?",
-        "Sí. La inspección bajo API 653 la ejecuta PTSC, empresa del grupo, y con base en sus hallazgos se define y ejecuta la reparación."
+        "Sí. La inspección bajo API 653 la ejecuta PTSC, empresa aliada, y con base en sus hallazgos se define y ejecuta la reparación."
       ],
       [
         "¿Incluyen los sistemas de tubería y bombeo asociados?",
@@ -1113,6 +1113,626 @@
       "construccion-e-infraestructura",
       "operacion-y-mantenimiento",
       "integridad-mecanica"
+    ]
+  },
+  "petroquimica": {
+    "num": "02",
+    "nombre": "Petroquímica",
+    "title": "Suministro de Productos Químicos Industriales | STREX",
+    "desc": "Suministro de materias primas químicas, solventes y especialidades para la industria petroquímica, con control de calidad y trazabilidad documental.",
+    "icon": "i-flask",
+    "lead": "Suministro de materias primas químicas, solventes y especialidades para plantas de proceso. Producto con certificado de análisis, entregado donde y cuando la operación lo necesita.",
+    "facts": [
+      [
+        "Línea",
+        "Materias primas, solventes y especialidades"
+      ],
+      [
+        "Incluye",
+        "Certificado de análisis por lote"
+      ],
+      [
+        "Logística",
+        "Transporte de carga clasificada"
+      ],
+      [
+        "Cobertura",
+        "Colombia · Venezuela · Estados Unidos"
+      ]
+    ],
+    "alcance_intro": "Suministro con la documentación y la logística que exige el manejo de producto químico industrial.",
+    "alcance": [
+      [
+        "i-flask",
+        "Materias primas químicas",
+        "Suministro de insumos químicos para procesos de manufactura y transformación industrial."
+      ],
+      [
+        "i-drop",
+        "Solventes industriales",
+        "Solventes para limpieza, dilución y procesos, con las fichas de seguridad correspondientes."
+      ],
+      [
+        "i-gear",
+        "Especialidades químicas",
+        "Aditivos, inhibidores de corrosión y productos formulados para aplicaciones específicas."
+      ],
+      [
+        "i-check",
+        "Control de calidad",
+        "Certificado de análisis por lote y trazabilidad desde el fabricante hasta la entrega."
+      ],
+      [
+        "i-truck",
+        "Logística especializada",
+        "Transporte de carga clasificada con el embalaje, rotulado y documentación que exige la normativa."
+      ],
+      [
+        "i-shield",
+        "Manejo seguro",
+        "Fichas de datos de seguridad, asesoría en almacenamiento y manejo del producto en sitio."
+      ]
+    ],
+    "proceso_intro": "En suministro químico la trazabilidad no es un extra: es lo que permite auditar un lote cuando algo sale mal.",
+    "proceso": [
+      [
+        "Definición técnica",
+        "Revisión de la especificación requerida, grado de pureza, presentación y volumen."
+      ],
+      [
+        "Sourcing",
+        "Identificación del fabricante y verificación de que el producto cumple la especificación."
+      ],
+      [
+        "Compra y documentación",
+        "Colocación del pedido con certificado de análisis y fichas de seguridad."
+      ],
+      [
+        "Transporte",
+        "Movilización con embalaje, rotulado y permisos según la clasificación del producto."
+      ],
+      [
+        "Entrega",
+        "Recepción verificada contra especificación, con la documentación completa del lote."
+      ]
+    ],
+    "porque": [
+      [
+        "Procura que ya existe",
+        "El área de procura internacional del grupo gestiona el sourcing, así que no dependemos de un intermediario."
+      ],
+      [
+        "Logística propia",
+        "TCT maneja el transporte, incluida la carga que requiere manejo especial."
+      ],
+      [
+        "Trazabilidad real",
+        "Cada entrega llega con certificado de análisis del lote, no con una declaración genérica."
+      ]
+    ],
+    "faq": [
+      [
+        "¿Entregan certificado de análisis?",
+        "Sí. Cada lote se entrega con su certificado de análisis del fabricante, que es lo que permite auditar la trazabilidad si aparece un problema de calidad en el proceso."
+      ],
+      [
+        "¿Manejan productos con clasificación de peligrosidad?",
+        "Sí. El transporte se realiza con el embalaje, rotulado, documentación y permisos que exige la normativa según la clasificación del producto."
+      ],
+      [
+        "¿Qué volúmenes manejan?",
+        "Depende del producto y del origen. Podemos atender desde requerimientos puntuales de planta hasta suministro programado para operación continua."
+      ],
+      [
+        "¿Suministran para proyectos o para operación?",
+        "Ambos. Para proyectos, el suministro se coordina con el cronograma de construcción; para operación, con programación de entregas recurrentes."
+      ],
+      [
+        "¿Asesoran sobre almacenamiento del producto?",
+        "Sí. Entregamos las fichas de datos de seguridad y podemos asesorar sobre condiciones de almacenamiento y manejo seguro en sitio."
+      ]
+    ],
+    "rel": [
+      "procura-internacional",
+      "logistica-integral",
+      "sistemas-de-almacenamiento",
+      "integridad-mecanica"
+    ]
+  },
+  "energia": {
+    "num": "11",
+    "nombre": "Energía",
+    "title": "Montaje Eléctrico y Proyectos de Energía | STREX Holdings",
+    "desc": "Montaje eléctrico industrial, subestaciones, sistemas de generación y distribución. Pruebas de energización y puesta en servicio.",
+    "icon": "i-bolt",
+    "lead": "Montaje y mantenimiento de sistemas eléctricos industriales: subestaciones, distribución, generación convencional y renovable. Desde el diagrama unifilar hasta la energización probada.",
+    "facts": [
+      [
+        "Alcance",
+        "Montaje, pruebas y puesta en servicio"
+      ],
+      [
+        "Sistemas",
+        "Media y baja tensión, distribución industrial"
+      ],
+      [
+        "Incluye",
+        "Pruebas eléctricas y termografía"
+      ],
+      [
+        "Cobertura",
+        "Colombia · Venezuela · Estados Unidos"
+      ]
+    ],
+    "alcance_intro": "Trabajo eléctrico industrial, con las pruebas que respaldan la energización.",
+    "alcance": [
+      [
+        "i-bolt",
+        "Subestaciones",
+        "Montaje de subestaciones de media y baja tensión, transformadores, celdas y sistemas de protección."
+      ],
+      [
+        "i-gear",
+        "Distribución industrial",
+        "Tableros, centros de control de motores, bandejas portacables, canalizaciones y cableado de fuerza."
+      ],
+      [
+        "i-shield",
+        "Puesta a tierra",
+        "Sistemas de puesta a tierra y protección contra descargas atmosféricas, con medición de resistencia."
+      ],
+      [
+        "i-check",
+        "Pruebas eléctricas",
+        "Pruebas de aislamiento, resistencia de contactos, relación de transformación y coordinación de protecciones."
+      ],
+      [
+        "i-factory",
+        "Generación",
+        "Montaje de equipos de generación convencional y sistemas de energía renovable."
+      ],
+      [
+        "i-wrench",
+        "Mantenimiento eléctrico",
+        "Mantenimiento de motores, tableros y subestaciones, con termografía y análisis predictivo."
+      ]
+    ],
+    "proceso_intro": "En montaje eléctrico lo que no se prueba antes de energizar se paga después.",
+    "proceso": [
+      [
+        "Revisión de ingeniería",
+        "Verificación de diagramas unifilares, cuadros de carga, estudios de cortocircuito y coordinación."
+      ],
+      [
+        "Montaje",
+        "Instalación de equipos, canalizaciones y cableado, con control de calidad por circuito."
+      ],
+      [
+        "Pruebas previas",
+        "Megado, continuidad, pruebas de aislamiento y verificación de ajustes de protecciones."
+      ],
+      [
+        "Energización",
+        "Puesta en tensión progresiva con protocolo de seguridad y verificación por etapas."
+      ],
+      [
+        "Entrega",
+        "Protocolos de prueba firmados, planos as-built y dossier de calidad."
+      ]
+    ],
+    "porque": [
+      [
+        "Integrado al montaje mecánico",
+        "En una planta lo eléctrico y lo mecánico se cruzan: tener ambos en el mismo contrato evita interferencias entre contratistas."
+      ],
+      [
+        "Pruebas documentadas",
+        "Cada circuito se entrega con protocolo de prueba, no con una energización a ciegas."
+      ],
+      [
+        "Mantenimiento posterior",
+        "El mismo grupo puede asumir el mantenimiento eléctrico tras la entrega."
+      ]
+    ],
+    "faq": [
+      [
+        "¿Trabajan en media tensión?",
+        "Sí. El alcance cubre montaje de subestaciones y sistemas de media y baja tensión, con las pruebas eléctricas y protocolos que exige la puesta en servicio."
+      ],
+      [
+        "¿Incluyen las pruebas antes de energizar?",
+        "Sí, y es parte esencial del servicio: pruebas de aislamiento, continuidad, resistencia de contactos y verificación de los ajustes de protecciones antes de poner en tensión."
+      ],
+      [
+        "¿Hacen proyectos de energía renovable?",
+        "Sí. Ejecutamos montaje de sistemas de generación renovable, además de generación convencional."
+      ],
+      [
+        "¿Ofrecen mantenimiento eléctrico continuo?",
+        "Sí. Puede contratarse mantenimiento preventivo y predictivo de motores, tableros y subestaciones, incluyendo termografía."
+      ],
+      [
+        "¿Realizan estudios eléctricos?",
+        "Sí. El área de ingeniería realiza estudios de cortocircuito, coordinación de protecciones y flujo de carga, ya sea como paso previo al montaje o como servicio independiente."
+      ]
+    ],
+    "rel": [
+      "montajes-industriales",
+      "ingenieria-y-consultoria",
+      "operacion-y-mantenimiento",
+      "construccion-e-infraestructura"
+    ]
+  },
+  "mineria": {
+    "num": "09",
+    "nombre": "Minería",
+    "title": "Operación Minera y Plantas de Beneficio | STREX Holdings",
+    "desc": "Operación minera integral: superficie, subterránea y plantas de beneficio. Infraestructura, montaje y mantenimiento de equipo minero.",
+    "icon": "i-truck",
+    "lead": "Operación minera integral y la infraestructura que la sostiene: superficie, subterránea, plantas de beneficio y el mantenimiento del equipo que no puede parar.",
+    "facts": [
+      [
+        "Ejecuta",
+        "TCT Logística Integrada"
+      ],
+      [
+        "Modalidades",
+        "Superficie, subterránea y plantas"
+      ],
+      [
+        "Incluye",
+        "Infraestructura y mantenimiento de equipo"
+      ],
+      [
+        "Cobertura",
+        "Colombia · Venezuela · Estados Unidos"
+      ]
+    ],
+    "alcance_intro": "Desde la operación de la mina hasta la planta que procesa el mineral.",
+    "alcance": [
+      [
+        "i-truck",
+        "Operación de superficie",
+        "Operación minera a cielo abierto, movimiento de tierras, cargue y transporte de mineral."
+      ],
+      [
+        "i-building",
+        "Operación subterránea",
+        "Desarrollo y explotación subterránea, con los sistemas de ventilación y soporte requeridos."
+      ],
+      [
+        "i-factory",
+        "Plantas de beneficio",
+        "Montaje, operación y mantenimiento de plantas de procesamiento y beneficio de mineral."
+      ],
+      [
+        "i-crane",
+        "Infraestructura minera",
+        "Obras civiles, vías internas, patios, campamentos y estructuras de soporte a la operación."
+      ],
+      [
+        "i-wrench",
+        "Mantenimiento de equipo",
+        "Mantenimiento de equipo minero móvil y fijo, con disponibilidad para atención en sitio."
+      ],
+      [
+        "i-shield",
+        "Seguridad operativa",
+        "Gestión SSMA adaptada a las condiciones específicas de la operación minera."
+      ]
+    ],
+    "proceso_intro": "En minería la disponibilidad del equipo es el negocio: todo el proceso se ordena alrededor de eso.",
+    "proceso": [
+      [
+        "Evaluación de la operación",
+        "Análisis de las condiciones del yacimiento, equipo disponible y metas de producción."
+      ],
+      [
+        "Plan de operación",
+        "Definición de secuencia, recursos, plan de mantenimiento y indicadores de productividad."
+      ],
+      [
+        "Movilización",
+        "Equipo, personal calificado e instalaciones de apoyo en sitio."
+      ],
+      [
+        "Operación y control",
+        "Ejecución con medición diaria de producción, disponibilidad de equipo y costos."
+      ],
+      [
+        "Mejora continua",
+        "Ajuste del plan según rendimiento real y análisis de las causas de parada."
+      ]
+    ],
+    "porque": [
+      [
+        "Operación y mantenimiento juntos",
+        "Quien opera el equipo también lo mantiene: eso alinea el incentivo hacia la disponibilidad, no hacia facturar reparaciones."
+      ],
+      [
+        "Capacidad de infraestructura",
+        "Las obras civiles, el montaje de planta y la logística se coordinan bajo un mismo contrato."
+      ],
+      [
+        "Logística de carga pesada",
+        "TCT moviliza equipo minero sobredimensionado, que es donde un transportador general no responde."
+      ]
+    ],
+    "faq": [
+      [
+        "¿Operan la mina o solo prestan servicios puntuales?",
+        "Ambos esquemas. Podemos asumir la operación minera integral bajo contrato, o prestar servicios específicos como movimiento de tierras, mantenimiento de equipo o montaje de planta."
+      ],
+      [
+        "¿Trabajan en minería subterránea?",
+        "Sí, además de superficie. La operación subterránea exige sistemas de ventilación, soporte y protocolos de seguridad específicos que forman parte del alcance."
+      ],
+      [
+        "¿Montan plantas de beneficio?",
+        "Sí. Cubrimos el montaje de la planta, su operación y el mantenimiento posterior, aprovechando la capacidad de montaje industrial del grupo."
+      ],
+      [
+        "¿Mantienen el equipo minero?",
+        "Sí. Mantenimiento de equipo móvil y fijo, con enfoque en disponibilidad: en minería una máquina parada detiene toda la cadena de producción."
+      ],
+      [
+        "¿Pueden movilizar equipo pesado al sitio?",
+        "Sí. TCT Logística maneja carga sobredimensionada y extrapesada, con estudio de ruta y gestión de permisos de movilización."
+      ]
+    ],
+    "rel": [
+      "logistica-integral",
+      "operacion-y-mantenimiento",
+      "construccion-e-infraestructura",
+      "montajes-industriales"
+    ]
+  },
+  "lubricacion-industrial": {
+    "num": "13",
+    "nombre": "Lubricación industrial",
+    "title": "Lubricantes Industriales y Sintéticos | STREX Holdings",
+    "desc": "Lubricantes sintéticos industriales y marítimos, programas de lubricación y análisis de aceite para extender la vida útil de los equipos.",
+    "icon": "i-drop",
+    "lead": "Lubricantes sintéticos industriales y marítimos, con el programa de lubricación detrás. El aceite correcto, en el intervalo correcto, evita la mayoría de fallas de equipo rotativo.",
+    "facts": [
+      [
+        "Ejecuta",
+        "Biomax"
+      ],
+      [
+        "Línea",
+        "Lubricantes sintéticos industriales y marítimos"
+      ],
+      [
+        "Incluye",
+        "Análisis de aceite y programa de lubricación"
+      ],
+      [
+        "Aplica a",
+        "Equipo rotativo, hidráulico y motores"
+      ]
+    ],
+    "alcance_intro": "Producto y programa: vender el aceite sin definir el intervalo no resuelve el problema.",
+    "alcance": [
+      [
+        "i-drop",
+        "Lubricantes sintéticos",
+        "Aceites y grasas sintéticas para aplicaciones industriales de alta exigencia térmica y de carga."
+      ],
+      [
+        "i-ship",
+        "Lubricantes marítimos",
+        "Productos formulados para motores y sistemas de equipo marítimo y portuario."
+      ],
+      [
+        "i-target",
+        "Análisis de aceite",
+        "Análisis de muestras para detectar desgaste, contaminación y degradación antes de que haya falla."
+      ],
+      [
+        "i-gear",
+        "Programa de lubricación",
+        "Definición de puntos, productos, intervalos y responsables por equipo."
+      ],
+      [
+        "i-bulb",
+        "Asesoría técnica",
+        "Selección del lubricante adecuado según condiciones de operación, carga y temperatura."
+      ],
+      [
+        "i-leaf",
+        "Manejo de residuos",
+        "Gestión y disposición del aceite usado conforme a la normativa ambiental."
+      ]
+    ],
+    "proceso_intro": "Un programa de lubricación convierte el mantenimiento reactivo en predictivo.",
+    "proceso": [
+      [
+        "Levantamiento de equipos",
+        "Inventario de puntos de lubricación, condiciones de operación y productos en uso."
+      ],
+      [
+        "Selección de producto",
+        "Definición del lubricante adecuado por equipo según carga, temperatura y entorno."
+      ],
+      [
+        "Diseño del programa",
+        "Intervalos, cantidades, métodos de aplicación y responsables por punto."
+      ],
+      [
+        "Ejecución y muestreo",
+        "Aplicación según programa y toma periódica de muestras para análisis."
+      ],
+      [
+        "Análisis y ajuste",
+        "Interpretación de resultados y ajuste de intervalos según el estado real del aceite."
+      ]
+    ],
+    "porque": [
+      [
+        "Producto con criterio detrás",
+        "Biomax no solo suministra: define qué producto corresponde a cada equipo y con qué intervalo."
+      ],
+      [
+        "Análisis como diagnóstico",
+        "El análisis de aceite detecta desgaste interno sin abrir el equipo, que es información que el mantenimiento preventivo por calendario no da."
+      ],
+      [
+        "Integrado al mantenimiento",
+        "Si el análisis revela un problema, nuestra red puede ejecutar la intervención."
+      ]
+    ],
+    "faq": [
+      [
+        "¿Solo venden el lubricante o también el programa?",
+        "Ambos, y el programa es lo que produce el resultado. Suministrar aceite sin definir intervalos y puntos deja el problema de fondo intacto."
+      ],
+      [
+        "¿Qué detecta el análisis de aceite?",
+        "Partículas de desgaste que indican qué componente se está deteriorando, contaminación por agua o partículas externas, y degradación del propio aceite. Permite anticipar la falla sin abrir el equipo."
+      ],
+      [
+        "¿Manejan lubricantes marítimos?",
+        "Sí. Biomax tiene línea formulada para motores y sistemas de equipo marítimo y portuario."
+      ],
+      [
+        "¿Se encargan del aceite usado?",
+        "Sí. La gestión y disposición del aceite usado se maneja conforme a la normativa ambiental aplicable."
+      ],
+      [
+        "¿Asesoran en la selección del producto?",
+        "Sí. La selección depende de carga, temperatura de operación, entorno y tipo de equipo. Un lubricante inadecuado acorta la vida útil aunque sea de buena calidad."
+      ]
+    ],
+    "rel": [
+      "operacion-y-mantenimiento",
+      "integridad-mecanica",
+      "soluciones-ambientales",
+      "procura-internacional"
+    ]
+  },
+  "soluciones-ambientales": {
+    "num": "14",
+    "nombre": "Soluciones ambientales",
+    "title": "Soluciones Ambientales Industriales | STREX Holdings",
+    "desc": "Manejo de residuos industriales, control de derrames, remediación y cumplimiento de normativa ambiental en operaciones industriales y marítimas.",
+    "icon": "i-leaf",
+    "lead": "Manejo de residuos, control de derrames y cumplimiento ambiental en operación industrial. El componente que detiene una planta cuando falla, aunque rara vez aparezca en el cronograma.",
+    "facts": [
+      [
+        "Ejecuta",
+        "Biomax"
+      ],
+      [
+        "Alcance",
+        "Residuos, derrames y remediación"
+      ],
+      [
+        "Aplica a",
+        "Operación industrial y marítima"
+      ],
+      [
+        "Incluye",
+        "Documentación de cumplimiento"
+      ]
+    ],
+    "alcance_intro": "Gestión ambiental operativa, no solo el informe que exige la autoridad.",
+    "alcance": [
+      [
+        "i-leaf",
+        "Manejo de residuos",
+        "Clasificación, almacenamiento temporal, transporte y disposición final de residuos industriales."
+      ],
+      [
+        "i-drop",
+        "Control de derrames",
+        "Productos y procedimientos de contención, absorción y limpieza de derrames de hidrocarburos y químicos."
+      ],
+      [
+        "i-flask",
+        "Tratamiento de efluentes",
+        "Soluciones para el manejo y tratamiento de aguas residuales industriales."
+      ],
+      [
+        "i-ship",
+        "Servicios marítimos",
+        "Soluciones ambientales para operación portuaria y equipo marítimo."
+      ],
+      [
+        "i-shield",
+        "Cumplimiento normativo",
+        "Documentación, registros y soporte para auditorías y requerimientos de autoridad ambiental."
+      ],
+      [
+        "i-bulb",
+        "Capacitación",
+        "Formación del personal de planta en manejo de residuos y respuesta ante derrames."
+      ]
+    ],
+    "proceso_intro": "La gestión ambiental se diseña antes del incidente, no durante.",
+    "proceso": [
+      [
+        "Diagnóstico",
+        "Identificación de los residuos y riesgos ambientales reales de la operación."
+      ],
+      [
+        "Plan de manejo",
+        "Definición de clasificación, almacenamiento, rutas de disposición y responsables."
+      ],
+      [
+        "Implementación",
+        "Instalación de puntos de acopio, dotación de material de contención y señalización."
+      ],
+      [
+        "Operación y registro",
+        "Ejecución del plan con la trazabilidad documental que exige la autoridad."
+      ],
+      [
+        "Auditoría y ajuste",
+        "Verificación de cumplimiento y corrección de desviaciones detectadas."
+      ]
+    ],
+    "porque": [
+      [
+        "Ambiental que entiende la planta",
+        "El plan se diseña sobre la operación real, no como documento genérico para cumplir un requisito."
+      ],
+      [
+        "Respuesta ante derrames",
+        "Producto de contención y procedimiento definido antes de que ocurra el incidente."
+      ],
+      [
+        "Integrado a SSMA",
+        "La gestión ambiental va junto con seguridad y salud en los proyectos del grupo."
+      ]
+    ],
+    "faq": [
+      [
+        "¿Qué tipo de residuos manejan?",
+        "Residuos industriales generados en operación y en proyectos: aceites usados, material contaminado, residuos de construcción y residuos peligrosos con su clasificación correspondiente."
+      ],
+      [
+        "¿Atienden emergencias por derrame?",
+        "Sí. Suministramos producto de contención y absorción, y definimos el procedimiento de respuesta. Lo importante es tener ambos listos antes del incidente."
+      ],
+      [
+        "¿Entregan documentación para la autoridad ambiental?",
+        "Sí. La trazabilidad documental de la disposición de residuos es parte del servicio, y es lo que respalda el cumplimiento ante auditoría."
+      ],
+      [
+        "¿Trabajan en operación marítima y portuaria?",
+        "Sí. Biomax tiene línea de soluciones ambientales para equipo marítimo y operación portuaria."
+      ],
+      [
+        "¿Capacitan al personal de planta?",
+        "Sí. Formación en clasificación y manejo de residuos y en respuesta ante derrames, que es donde se decide si un incidente queda contenido o escala."
+      ]
+    ],
+    "rel": [
+      "seguridad-salud-y-medio-ambiente",
+      "lubricacion-industrial",
+      "operacion-y-mantenimiento",
+      "sistemas-de-almacenamiento"
     ]
   }
 }

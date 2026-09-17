@@ -27,7 +27,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-<link rel="icon" href="assets/logo-mark.png" type="image/png">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/favicon-512.png" sizes="512x512" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 </head>
 <body>
 
@@ -52,6 +54,7 @@
   <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6 8.5 7 8.5-7"/></symbol>
   <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
   <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16M14 6l6 6-6 6"/></symbol>
+  <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
   <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
   <symbol id="i-close" viewBox="0 0 24 24"><path d="m5 5 14 14M19 5 5 19"/></symbol>
   <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></symbol>
@@ -81,9 +84,14 @@
 
     <nav class="nav-links">
       <a href="#nosotros">Nosotros</a>
-      <a href="#servicios">Servicios</a>
+      <div class="nav-mega">
+        <button type="button" class="nav-mega-trigger" id="megaTrigger"
+                aria-expanded="false" aria-controls="megaPanel">
+          Servicios <svg class="icon chev"><use href="#i-chevron"/></svg>
+        </button>
+      </div>
       <a href="#capacidad">Capacidad</a>
-      <a href="#empresas">Empresas</a>
+      <a href="#empresas">Aliados</a>
       <a href="#industrias">Industrias</a>
       <a href="#contacto">Contacto</a>
     </nav>
@@ -99,6 +107,33 @@
   </div>
 </header>
 
+<!-- ============ MEGAMENÚ DE SERVICIOS ============ -->
+<div class="mega-panel" id="megaPanel" hidden aria-labelledby="megaTrigger">
+  <div class="container">
+    <div class="mega-head">
+      <span class="eyebrow">15 servicios</span>
+      <p>Cada disciplina con su propio equipo, bajo un solo contrato.</p>
+    </div>
+    <div class="mega-grid">
+      <a href="servicios/ingenieria-y-consultoria.html"><span class="n">01</span>Ingeniería y consultoría</a>
+      <a href="servicios/petroquimica.html"><span class="n">02</span>Petroquímica</a>
+      <a href="servicios/procura-internacional.html"><span class="n">03</span>Procura internacional</a>
+      <a href="servicios/construccion-e-infraestructura.html"><span class="n">04</span>Construcción e infraestructura</a>
+      <a href="servicios/montajes-industriales.html"><span class="n">05</span>Montajes industriales</a>
+      <a href="servicios/integridad-mecanica.html"><span class="n">06</span>Integridad mecánica</a>
+      <a href="servicios/operacion-y-mantenimiento.html"><span class="n">07</span>Operación y mantenimiento</a>
+      <a href="servicios/logistica-integral.html"><span class="n">08</span>Logística integral</a>
+      <a href="servicios/mineria.html"><span class="n">09</span>Minería</a>
+      <a href="servicios/soluciones-metalmecanicas.html"><span class="n">10</span>Soluciones metalmecánicas</a>
+      <a href="servicios/energia.html"><span class="n">11</span>Energía</a>
+      <a href="servicios/sistemas-de-almacenamiento.html"><span class="n">12</span>Sistemas de almacenamiento</a>
+      <a href="servicios/lubricacion-industrial.html"><span class="n">13</span>Lubricación industrial</a>
+      <a href="servicios/soluciones-ambientales.html"><span class="n">14</span>Soluciones ambientales</a>
+      <a href="servicios/seguridad-salud-y-medio-ambiente.html"><span class="n">15</span>Seguridad, salud y medio ambiente</a>
+    </div>
+  </div>
+</div>
+
 <div class="mobile-nav-backdrop" id="mobileNavBackdrop" hidden></div>
 
 <nav class="mobile-nav" id="mobileNav" aria-label="Menú principal" aria-hidden="true">
@@ -107,9 +142,28 @@
   </button>
   <div class="mobile-nav-links">
     <a href="#nosotros">Nosotros</a>
-    <a href="#servicios">Servicios</a>
+    <details class="mobile-svc">
+      <summary>Servicios <svg class="icon chev"><use href="#i-chevron"/></svg></summary>
+      <div class="mobile-svc-list">
+        <a href="servicios/ingenieria-y-consultoria.html">Ingeniería y consultoría</a>
+        <a href="servicios/petroquimica.html">Petroquímica</a>
+        <a href="servicios/procura-internacional.html">Procura internacional</a>
+        <a href="servicios/construccion-e-infraestructura.html">Construcción e infraestructura</a>
+        <a href="servicios/montajes-industriales.html">Montajes industriales</a>
+        <a href="servicios/integridad-mecanica.html">Integridad mecánica</a>
+        <a href="servicios/operacion-y-mantenimiento.html">Operación y mantenimiento</a>
+        <a href="servicios/logistica-integral.html">Logística integral</a>
+        <a href="servicios/mineria.html">Minería</a>
+        <a href="servicios/soluciones-metalmecanicas.html">Soluciones metalmecánicas</a>
+        <a href="servicios/energia.html">Energía</a>
+        <a href="servicios/sistemas-de-almacenamiento.html">Sistemas de almacenamiento</a>
+        <a href="servicios/lubricacion-industrial.html">Lubricación industrial</a>
+        <a href="servicios/soluciones-ambientales.html">Soluciones ambientales</a>
+        <a href="servicios/seguridad-salud-y-medio-ambiente.html">Seguridad, salud y medio ambiente</a>
+      </div>
+    </details>
     <a href="#capacidad">Capacidad</a>
-    <a href="#empresas">Empresas</a>
+    <a href="#empresas">Aliados</a>
     <a href="#industrias">Industrias</a>
     <a href="#contacto">Contacto</a>
   </div>
@@ -141,7 +195,7 @@
     </div>
 
     <div class="hero-stats" data-reveal-group>
-      <div class="hero-stat" data-reveal style="--i:0"><div class="num"><span data-count="6">0</span></div><div class="label">Empresas especializadas</div></div>
+      <div class="hero-stat" data-reveal style="--i:0"><div class="num"><span data-count="7">0</span></div><div class="label">Aliados especializados</div></div>
       <div class="hero-stat" data-reveal style="--i:1"><div class="num"><span class="plus">+</span><span data-count="15">0</span></div><div class="label">Años de experiencia</div></div>
       <div class="hero-stat" data-reveal style="--i:2"><div class="num"><span data-count="3">0</span></div><div class="label">Países con presencia</div></div>
       <div class="hero-stat" data-reveal style="--i:3"><div class="num"><span data-count="100">0</span><span class="plus">+</span></div><div class="label">Proyectos ejecutados</div></div>
@@ -213,19 +267,19 @@
 
     <div class="services-grid" data-reveal-group>
       <a class="service-card is-link" href="servicios/ingenieria-y-consultoria.html" data-reveal style="--i:0"><div class="num">01</div><svg class="icon"><use href="#i-crane"/></svg><h3>Ingeniería y consultoría</h3><span class="svc-more">Ver servicio <svg class="icon"><use href="#i-arrow"/></svg></span></a>
-      <div class="service-card" data-reveal style="--i:1"><div class="num">02</div><svg class="icon"><use href="#i-flask"/></svg><h3>Petroquímica</h3></div>
+      <a class="service-card is-link" href="servicios/petroquimica.html" data-reveal style="--i:1"><div class="num">02</div><svg class="icon"><use href="#i-flask"/></svg><h3>Petroquímica</h3><span class="svc-more">Ver servicio <svg class="icon"><use href="#i-arrow"/></svg></span></a>
       <a class="service-card is-link" href="servicios/procura-internacional.html" data-reveal style="--i:2"><div class="num">03</div><svg class="icon"><use href="#i-cart"/></svg><h3>Procura internacional</h3><span class="svc-more">Ver servicio <svg class="icon"><use href="#i-arrow"/></svg></span></a>
       <a class="service-card is-link" href="servicios/construccion-e-infraestructura.html" data-reveal style="--i:3"><div class="num">04</div><svg class="icon"><use href="#i-building"/></svg><h3>Construcción e infraestructura</h3><span class="svc-more">Ver servicio <svg class="icon"><use href="#i-arrow"/></svg></span></a>
       <a class="service-card is-link" href="servicios/montajes-industriales.html" data-reveal style="--i:4"><div class="num">05</div><svg class="icon"><use href="#i-gear"/></svg><h3>Montajes industriales</h3><span class="svc-more">Ver servicio <svg class="icon"><use href="#i-arrow"/></svg></span></a>
       <a class="service-card is-link" href="servicios/integridad-mecanica.html" data-reveal style="--i:5"><div class="num">06</div><svg class="icon"><use href="#i-shield"/></svg><h3>Integridad mecánica</h3><span class="svc-more">Ver servicio <svg class="icon"><use href="#i-arrow"/></svg></span></a>
       <a class="service-card is-link" href="servicios/operacion-y-mantenimiento.html" data-reveal style="--i:6"><div class="num">07</div><svg class="icon"><use href="#i-wrench"/></svg><h3>Operación y mantenimiento</h3><span class="svc-more">Ver servicio <svg class="icon"><use href="#i-arrow"/></svg></span></a>
       <a class="service-card is-link" href="servicios/logistica-integral.html" data-reveal style="--i:7"><div class="num">08</div><svg class="icon"><use href="#i-globe"/></svg><h3>Logística integral</h3><span class="svc-more">Ver servicio <svg class="icon"><use href="#i-arrow"/></svg></span></a>
-      <div class="service-card" data-reveal style="--i:8"><div class="num">09</div><svg class="icon"><use href="#i-truck"/></svg><h3>Minería</h3></div>
+      <a class="service-card is-link" href="servicios/mineria.html" data-reveal style="--i:8"><div class="num">09</div><svg class="icon"><use href="#i-truck"/></svg><h3>Minería</h3><span class="svc-more">Ver servicio <svg class="icon"><use href="#i-arrow"/></svg></span></a>
       <a class="service-card is-link" href="servicios/soluciones-metalmecanicas.html" data-reveal style="--i:9"><div class="num">10</div><svg class="icon"><use href="#i-factory"/></svg><h3>Soluciones metalmecánicas</h3><span class="svc-more">Ver servicio <svg class="icon"><use href="#i-arrow"/></svg></span></a>
-      <div class="service-card" data-reveal style="--i:10"><div class="num">11</div><svg class="icon"><use href="#i-bolt"/></svg><h3>Energía</h3></div>
+      <a class="service-card is-link" href="servicios/energia.html" data-reveal style="--i:10"><div class="num">11</div><svg class="icon"><use href="#i-bolt"/></svg><h3>Energía</h3><span class="svc-more">Ver servicio <svg class="icon"><use href="#i-arrow"/></svg></span></a>
       <a class="service-card is-link" href="servicios/sistemas-de-almacenamiento.html" data-reveal style="--i:11"><div class="num">12</div><svg class="icon"><use href="#i-drop"/></svg><h3>Sistemas de almacenamiento</h3><span class="svc-more">Ver servicio <svg class="icon"><use href="#i-arrow"/></svg></span></a>
-      <div class="service-card" data-reveal style="--i:12"><div class="num">13</div><svg class="icon"><use href="#i-drop"/></svg><h3>Lubricación industrial</h3></div>
-      <div class="service-card" data-reveal style="--i:13"><div class="num">14</div><svg class="icon"><use href="#i-leaf"/></svg><h3>Soluciones ambientales</h3></div>
+      <a class="service-card is-link" href="servicios/lubricacion-industrial.html" data-reveal style="--i:12"><div class="num">13</div><svg class="icon"><use href="#i-drop"/></svg><h3>Lubricación industrial</h3><span class="svc-more">Ver servicio <svg class="icon"><use href="#i-arrow"/></svg></span></a>
+      <a class="service-card is-link" href="servicios/soluciones-ambientales.html" data-reveal style="--i:13"><div class="num">14</div><svg class="icon"><use href="#i-leaf"/></svg><h3>Soluciones ambientales</h3><span class="svc-more">Ver servicio <svg class="icon"><use href="#i-arrow"/></svg></span></a>
       <a class="service-card is-link" href="servicios/seguridad-salud-y-medio-ambiente.html" data-reveal style="--i:14"><div class="num">15</div><svg class="icon"><use href="#i-shield"/></svg><h3>Seguridad, salud y medio ambiente</h3><span class="svc-more">Ver servicio <svg class="icon"><use href="#i-arrow"/></svg></span></a>
     </div>
   </div>
@@ -283,21 +337,50 @@
   </div>
 </section>
 
-<!-- ============ EMPRESAS ============ -->
+<!-- ============ ALIADOS ============ -->
 <section class="companies" id="empresas" aria-labelledby="companies-title">
   <div class="container">
     <div class="section-head" data-reveal>
-      <h2 id="companies-title">Nuestras empresas</h2>
-      <p>Empresas que hacen posible una integración real, cada una experta en su disciplina, operando bajo un mismo estándar de calidad y seguridad.</p>
+      <h2 id="companies-title">Nuestros aliados</h2>
+      <p>Empresas especializadas con las que ejecutamos. Cada una experta en su disciplina, trabajando bajo un mismo estándar de calidad y seguridad.</p>
     </div>
 
-    <div class="companies-grid" data-reveal-group>
-      <div class="company-card" data-reveal style="--i:0"><div class="tag">01 · Renta &amp; construcción</div><h3>Ingecar S.A.S.</h3><div class="sub">Ingeniería y equipo</div><p>Renta de maquinaria, obras civiles y construcción.</p></div>
-      <div class="company-card" data-reveal style="--i:1"><div class="tag">02 · Operación minera</div><h3>TCT Logística Integrada</h3><div class="sub">Logística integrada</div><p>Operación minera integral: superficie, subterránea y plantas de beneficio.</p></div>
-      <div class="company-card" data-reveal style="--i:2"><div class="tag">03 · Metalmecánica</div><h3>Metalprest Group</h3><div class="sub">Ingeniería especializada</div><p>Soluciones metalmecánicas e ingeniería especializada.</p></div>
-      <div class="company-card" data-reveal style="--i:3"><div class="tag">04 · Montaje industrial</div><h3>Totalmontajes S.A.S.</h3><div class="sub">Almacenamiento de hidrocarburos</div><p>Montaje, mantenimiento y sistemas de almacenamiento de hidrocarburos.</p></div>
-      <div class="company-card" data-reveal style="--i:4"><div class="tag">05 · Lubricantes</div><h3>Biomax</h3><div class="sub">Soluciones ambientales</div><p>Lubricantes sintéticos y soluciones ambientales industriales y marítimas.</p></div>
-      <div class="company-card" data-reveal style="--i:5"><div class="tag">06 · Control de calidad</div><h3>PTSC</h3><div class="sub">Petro Testing and Services Colombia</div><p>Gestión de integridad y control de calidad industrial.</p></div>
+    <div class="allies-grid" data-reveal-group>
+      <article class="ally-card" data-reveal style="--i:0">
+        <div class="ally-logo dark"><img src="assets/logos/ingecar.png" alt="Ingecar S.A.S." width="360" height="249" loading="lazy" decoding="async"></div>
+        <h3>Ingecar S.A.S.</h3>
+        <p>Renta de maquinaria, obras civiles y construcción.</p>
+      </article>
+      <article class="ally-card no-logo" data-reveal style="--i:1">
+        <div class="ally-logo"><span class="ally-mark">TCT</span></div>
+        <h3>TCT Logística Integrada</h3>
+        <p>Operación minera integral y logística de carga sobredimensionada.</p>
+      </article>
+      <article class="ally-card" data-reveal style="--i:2">
+        <div class="ally-logo dark"><img src="assets/logos/metalprest.png" alt="Metalprest Group" width="360" height="54" loading="lazy" decoding="async"></div>
+        <h3>Metalprest Group</h3>
+        <p>Soluciones metalmecánicas e ingeniería especializada.</p>
+      </article>
+      <article class="ally-card" data-reveal style="--i:3">
+        <div class="ally-logo dark"><img src="assets/logos/totalmontajes.png" alt="Totalmontajes S.A.S." width="356" height="364" loading="lazy" decoding="async"></div>
+        <h3>Totalmontajes S.A.S.</h3>
+        <p>Montaje, mantenimiento y sistemas de almacenamiento de hidrocarburos.</p>
+      </article>
+      <article class="ally-card" data-reveal style="--i:4">
+        <div class="ally-logo"><img src="assets/logos/biomax.svg" alt="Biomax" width="584" height="518" loading="lazy" decoding="async"></div>
+        <h3>Biomax</h3>
+        <p>Lubricantes sintéticos y soluciones ambientales industriales y marítimas.</p>
+      </article>
+      <article class="ally-card" data-reveal style="--i:5">
+        <div class="ally-logo"><img src="assets/logos/ptsc.png" alt="PTSC — Petro Testing and Services Colombia" width="360" height="127" loading="lazy" decoding="async"></div>
+        <h3>PTSC</h3>
+        <p>Gestión de integridad y control de calidad industrial.</p>
+      </article>
+      <article class="ally-card" data-reveal style="--i:6">
+        <div class="ally-logo"><img src="assets/logos/able.svg" alt="Able Industrial LLC" width="920" height="369" loading="lazy" decoding="async"></div>
+        <h3>Able Industrial</h3>
+        <p>Soldadura especializada, turnarounds y acceso por cuerda. Houston, Texas.</p>
+      </article>
     </div>
   </div>
 </section>
@@ -367,7 +450,7 @@
         <div class="contact-item">
           <div class="icon-badge"><svg class="icon"><use href="#i-phone"/></svg></div>
           <span class="label">Teléfono</span>
-          <a href="tel:+15617042432">+1 (561) 704-2432</a>
+          <a href="tel:+12027662938">+1 (202) 766-2938</a>
         </div>
         <div class="contact-item">
           <div class="icon-badge"><svg class="icon"><use href="#i-mail"/></svg></div>
@@ -436,7 +519,7 @@
       "slogan": "Where Industry Connects",
       "description": "Holding internacional que conecta empresas líderes para ofrecer soluciones integrales, innovadoras y sostenibles en energía, industria, minería, infraestructura y petroquímica.",
       "email": "business@strexholdings.com",
-      "telephone": "+1-561-704-2432",
+      "telephone": "+1-202-766-2938",
       "sameAs": [
         "https://www.instagram.com/strexholdings/"
       ],
@@ -448,18 +531,36 @@
         "postalCode": "77562",
         "addressCountry": "US"
       },
-      "contactPoint": [{
-        "@type": "ContactPoint",
-        "telephone": "+1-561-704-2432",
-        "email": "business@strexholdings.com",
-        "contactType": "sales",
-        "areaServed": ["US", "CO", "VE"],
-        "availableLanguage": ["es", "en"]
-      }],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+1-202-766-2938",
+          "email": "business@strexholdings.com",
+          "contactType": "sales",
+          "areaServed": [
+            "US",
+            "CO",
+            "VE"
+          ],
+          "availableLanguage": [
+            "es",
+            "en"
+          ]
+        }
+      ],
       "areaServed": [
-        { "@type": "Country", "name": "Estados Unidos" },
-        { "@type": "Country", "name": "Colombia" },
-        { "@type": "Country", "name": "Venezuela" }
+        {
+          "@type": "Country",
+          "name": "Estados Unidos"
+        },
+        {
+          "@type": "Country",
+          "name": "Colombia"
+        },
+        {
+          "@type": "Country",
+          "name": "Venezuela"
+        }
       ],
       "knowsAbout": [
         "Proyectos EPC",
@@ -469,22 +570,47 @@
         "Petroquímica",
         "Operación y mantenimiento industrial"
       ],
-      "subOrganization": [
-        { "@type": "Organization", "name": "Ingecar S.A.S." },
-        { "@type": "Organization", "name": "TCT Logística Integrada" },
-        { "@type": "Organization", "name": "Metalprest Group" },
-        { "@type": "Organization", "name": "Totalmontajes S.A.S." },
-        { "@type": "Organization", "name": "Biomax" },
-        { "@type": "Organization", "name": "PTSC — Petro Testing and Services Colombia" }
+      "member": [
+        {
+          "@type": "Organization",
+          "name": "Ingecar S.A.S."
+        },
+        {
+          "@type": "Organization",
+          "name": "TCT Logística Integrada"
+        },
+        {
+          "@type": "Organization",
+          "name": "Metalprest Group"
+        },
+        {
+          "@type": "Organization",
+          "name": "Totalmontajes S.A.S."
+        },
+        {
+          "@type": "Organization",
+          "name": "Biomax"
+        },
+        {
+          "@type": "Organization",
+          "name": "PTSC — Petro Testing and Services Colombia"
+        },
+        {
+          "@type": "Organization",
+          "name": "Able Industrial LLC",
+          "url": "https://able-industrial.com"
+        }
       ]
     },
     {
       "@type": "LocalBusiness",
       "@id": "https://strexholdings.com/#sede-usa",
       "name": "STREX Holdings — Sede Estados Unidos",
-      "parentOrganization": { "@id": "https://strexholdings.com/#organization" },
+      "parentOrganization": {
+        "@id": "https://strexholdings.com/#organization"
+      },
       "url": "https://strexholdings.com/",
-      "telephone": "+1-561-704-2432",
+      "telephone": "+1-202-766-2938",
       "email": "business@strexholdings.com",
       "image": "https://strexholdings.com/assets/hero-refinery.jpg",
       "address": {
@@ -500,9 +626,11 @@
       "@type": "LocalBusiness",
       "@id": "https://strexholdings.com/#sede-colombia",
       "name": "STREX Holdings — Oficina Colombia",
-      "parentOrganization": { "@id": "https://strexholdings.com/#organization" },
+      "parentOrganization": {
+        "@id": "https://strexholdings.com/#organization"
+      },
       "url": "https://strexholdings.com/",
-      "telephone": "+1-561-704-2432",
+      "telephone": "+1-202-766-2938",
       "email": "business@strexholdings.com",
       "image": "https://strexholdings.com/assets/hero-refinery.jpg",
       "address": {
@@ -519,7 +647,9 @@
       "url": "https://strexholdings.com/",
       "name": "STREX Holdings",
       "inLanguage": "es",
-      "publisher": { "@id": "https://strexholdings.com/#organization" }
+      "publisher": {
+        "@id": "https://strexholdings.com/#organization"
+      }
     }
   ]
 }
