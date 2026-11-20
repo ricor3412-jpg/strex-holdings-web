@@ -211,6 +211,10 @@ Decisiones del usuario (2026-11-20): seguir el PDF al pie de la letra, publicar,
 - [x] Fotos de stock de dominio público o CC0 para 7 divisiones (`assets/CREDITOS-FOTOS.md`)
 - [x] Header: el logo ya no se trunca en ningún ancho de 320 a 1920 px (antes fallaba entre 870 y 1100 px)
 - [x] Verificado: 22 páginas sin errores de consola ni 404 y sin desborde a 1440 y 390 px; enlaces internos y JSON-LD válidos
+- [x] Commit `c98b1f3` con push a `origin/main` (2026-11-20)
+- [ ] ⛔ **Redeploy manual en Coolify** (VPS `31.97.147.5`, servicio strexholdings): Coolify
+      **no despliega solo** al hacer push. A los 5 min, producción seguía con la versión vieja
+      (`/en/` → 404). Activar también «Auto Deploy» para que no vuelva a pasar
 - [ ] **Validar con el cliente** qué servicios presta directamente y cuáles mediante terceros (PDF §20). Hoy la web lo cubre con la nota "directamente o mediante compañías especializadas"
 - [ ] **Validar la sección Experiencia internacional**: el PDF pide evidencia y permiso de cada aliado antes de publicar países. Se publicó el texto del PDF §14 con su descargo
 - [ ] Revisar la traducción EN con un especialista del sector (PDF §20)
