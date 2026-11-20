@@ -214,3 +214,42 @@
 @media (hover: none) {
   .svc-card:hover, .svc-related a:hover { transform: none; }
 }
+
+/* ---------- Divisiones (nov-2026) ---------- */
+/* Foto de la división detrás del hero, oscurecida para mantener el contraste del texto */
+.svc-hero.has-photo { position: relative; overflow: hidden; isolation: isolate; }
+.svc-hero.has-photo::before {
+  content: "";
+  position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(100deg, rgba(6,15,28,0.94) 0%, rgba(6,15,28,0.82) 55%, rgba(6,15,28,0.6) 100%), var(--photo) center / cover no-repeat;
+}
+
+.svc-checklist {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 12px 28px;
+  margin: 0; padding: 0; list-style: none;
+}
+.svc-checklist li {
+  display: flex; gap: 12px; align-items: flex-start;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--paper-dim);
+  font-size: 15.5px; line-height: 1.55; color: var(--navy-900);
+}
+.svc-checklist .icon { flex-shrink: 0; width: 18px; height: 18px; margin-top: 3px; color: var(--blue-500); }
+.svc-note { margin-top: 28px; max-width: 80ch; font-size: 13.5px; line-height: 1.65; color: var(--slate-700); }
+
+.svc-modalities {
+  display: flex; flex-wrap: wrap; gap: 10px;
+  margin: 0; padding: 0; list-style: none;
+}
+.svc-modalities li {
+  padding: 11px 18px;
+  border: 1px solid var(--paper-dim);
+  border-radius: 999px;
+  background: var(--paper);
+  font-size: 14px; color: var(--navy-900);
+}
+@media (max-width: 560px) {
+  .svc-checklist { grid-template-columns: 1fr; }
+}

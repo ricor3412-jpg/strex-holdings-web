@@ -1,99 +1,179 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://strexholdings.com/</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-11-20</lastmod>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://strexholdings.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://strexholdings.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://strexholdings.com/"/>
   </url>
   <url>
-    <loc>https://strexholdings.com/servicios/construccion-e-infraestructura.html</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://strexholdings.com/en/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://strexholdings.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://strexholdings.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://strexholdings.com/"/>
   </url>
   <url>
-    <loc>https://strexholdings.com/servicios/energia.html</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://strexholdings.com/divisiones/perforacion-y-servicios-a-pozos.html</loc>
+    <lastmod>2026-11-20</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://strexholdings.com/divisiones/perforacion-y-servicios-a-pozos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://strexholdings.com/en/divisions/drilling-and-well-services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://strexholdings.com/divisiones/perforacion-y-servicios-a-pozos.html"/>
   </url>
   <url>
-    <loc>https://strexholdings.com/servicios/ingenieria-y-consultoria.html</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://strexholdings.com/en/divisions/drilling-and-well-services.html</loc>
+    <lastmod>2026-11-20</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://strexholdings.com/divisiones/perforacion-y-servicios-a-pozos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://strexholdings.com/en/divisions/drilling-and-well-services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://strexholdings.com/divisiones/perforacion-y-servicios-a-pozos.html"/>
   </url>
   <url>
-    <loc>https://strexholdings.com/servicios/integridad-mecanica.html</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://strexholdings.com/divisiones/produccion-y-optimizacion-de-campos.html</loc>
+    <lastmod>2026-11-20</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://strexholdings.com/divisiones/produccion-y-optimizacion-de-campos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://strexholdings.com/en/divisions/production-and-field-optimization.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://strexholdings.com/divisiones/produccion-y-optimizacion-de-campos.html"/>
   </url>
   <url>
-    <loc>https://strexholdings.com/servicios/logistica-integral.html</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://strexholdings.com/en/divisions/production-and-field-optimization.html</loc>
+    <lastmod>2026-11-20</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://strexholdings.com/divisiones/produccion-y-optimizacion-de-campos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://strexholdings.com/en/divisions/production-and-field-optimization.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://strexholdings.com/divisiones/produccion-y-optimizacion-de-campos.html"/>
   </url>
   <url>
-    <loc>https://strexholdings.com/servicios/lubricacion-industrial.html</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://strexholdings.com/divisiones/generacion-electrica.html</loc>
+    <lastmod>2026-11-20</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://strexholdings.com/divisiones/generacion-electrica.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://strexholdings.com/en/divisions/oilfield-power-generation.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://strexholdings.com/divisiones/generacion-electrica.html"/>
   </url>
   <url>
-    <loc>https://strexholdings.com/servicios/mineria.html</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://strexholdings.com/en/divisions/oilfield-power-generation.html</loc>
+    <lastmod>2026-11-20</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://strexholdings.com/divisiones/generacion-electrica.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://strexholdings.com/en/divisions/oilfield-power-generation.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://strexholdings.com/divisiones/generacion-electrica.html"/>
   </url>
   <url>
-    <loc>https://strexholdings.com/servicios/montajes-industriales.html</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://strexholdings.com/divisiones/quimica-y-petroquimica.html</loc>
+    <lastmod>2026-11-20</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://strexholdings.com/divisiones/quimica-y-petroquimica.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://strexholdings.com/en/divisions/chemical-and-petrochemical-solutions.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://strexholdings.com/divisiones/quimica-y-petroquimica.html"/>
   </url>
   <url>
-    <loc>https://strexholdings.com/servicios/operacion-y-mantenimiento.html</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://strexholdings.com/en/divisions/chemical-and-petrochemical-solutions.html</loc>
+    <lastmod>2026-11-20</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://strexholdings.com/divisiones/quimica-y-petroquimica.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://strexholdings.com/en/divisions/chemical-and-petrochemical-solutions.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://strexholdings.com/divisiones/quimica-y-petroquimica.html"/>
   </url>
   <url>
-    <loc>https://strexholdings.com/servicios/petroquimica.html</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://strexholdings.com/divisiones/maritimo-y-offshore.html</loc>
+    <lastmod>2026-11-20</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://strexholdings.com/divisiones/maritimo-y-offshore.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://strexholdings.com/en/divisions/marine-and-offshore-services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://strexholdings.com/divisiones/maritimo-y-offshore.html"/>
   </url>
   <url>
-    <loc>https://strexholdings.com/servicios/procura-internacional.html</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://strexholdings.com/en/divisions/marine-and-offshore-services.html</loc>
+    <lastmod>2026-11-20</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://strexholdings.com/divisiones/maritimo-y-offshore.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://strexholdings.com/en/divisions/marine-and-offshore-services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://strexholdings.com/divisiones/maritimo-y-offshore.html"/>
   </url>
   <url>
-    <loc>https://strexholdings.com/servicios/seguridad-salud-y-medio-ambiente.html</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://strexholdings.com/divisiones/ingenieria-mantenimiento-e-integridad.html</loc>
+    <lastmod>2026-11-20</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://strexholdings.com/divisiones/ingenieria-mantenimiento-e-integridad.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://strexholdings.com/en/divisions/engineering-and-asset-integrity.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://strexholdings.com/divisiones/ingenieria-mantenimiento-e-integridad.html"/>
   </url>
   <url>
-    <loc>https://strexholdings.com/servicios/sistemas-de-almacenamiento.html</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://strexholdings.com/en/divisions/engineering-and-asset-integrity.html</loc>
+    <lastmod>2026-11-20</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://strexholdings.com/divisiones/ingenieria-mantenimiento-e-integridad.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://strexholdings.com/en/divisions/engineering-and-asset-integrity.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://strexholdings.com/divisiones/ingenieria-mantenimiento-e-integridad.html"/>
   </url>
   <url>
-    <loc>https://strexholdings.com/servicios/soluciones-ambientales.html</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://strexholdings.com/divisiones/gas-natural-gnl-y-glp.html</loc>
+    <lastmod>2026-11-20</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://strexholdings.com/divisiones/gas-natural-gnl-y-glp.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://strexholdings.com/en/divisions/natural-gas-and-energy-infrastructure.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://strexholdings.com/divisiones/gas-natural-gnl-y-glp.html"/>
   </url>
   <url>
-    <loc>https://strexholdings.com/servicios/soluciones-metalmecanicas.html</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://strexholdings.com/en/divisions/natural-gas-and-energy-infrastructure.html</loc>
+    <lastmod>2026-11-20</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://strexholdings.com/divisiones/gas-natural-gnl-y-glp.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://strexholdings.com/en/divisions/natural-gas-and-energy-infrastructure.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://strexholdings.com/divisiones/gas-natural-gnl-y-glp.html"/>
+  </url>
+  <url>
+    <loc>https://strexholdings.com/divisiones/infraestructura-y-energias-renovables.html</loc>
+    <lastmod>2026-11-20</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://strexholdings.com/divisiones/infraestructura-y-energias-renovables.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://strexholdings.com/en/divisions/infrastructure-and-industrial-projects.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://strexholdings.com/divisiones/infraestructura-y-energias-renovables.html"/>
+  </url>
+  <url>
+    <loc>https://strexholdings.com/en/divisions/infrastructure-and-industrial-projects.html</loc>
+    <lastmod>2026-11-20</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://strexholdings.com/divisiones/infraestructura-y-energias-renovables.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://strexholdings.com/en/divisions/infrastructure-and-industrial-projects.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://strexholdings.com/divisiones/infraestructura-y-energias-renovables.html"/>
+  </url>
+  <url>
+    <loc>https://strexholdings.com/divisiones/procura-y-cadena-de-suministro.html</loc>
+    <lastmod>2026-11-20</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://strexholdings.com/divisiones/procura-y-cadena-de-suministro.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://strexholdings.com/en/divisions/global-procurement-and-supply-chain.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://strexholdings.com/divisiones/procura-y-cadena-de-suministro.html"/>
+  </url>
+  <url>
+    <loc>https://strexholdings.com/en/divisions/global-procurement-and-supply-chain.html</loc>
+    <lastmod>2026-11-20</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://strexholdings.com/divisiones/procura-y-cadena-de-suministro.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://strexholdings.com/en/divisions/global-procurement-and-supply-chain.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://strexholdings.com/divisiones/procura-y-cadena-de-suministro.html"/>
+  </url>
+  <url>
+    <loc>https://strexholdings.com/divisiones/desarrollo-de-negocios-e-inversiones.html</loc>
+    <lastmod>2026-11-20</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://strexholdings.com/divisiones/desarrollo-de-negocios-e-inversiones.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://strexholdings.com/en/divisions/business-development-and-investment.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://strexholdings.com/divisiones/desarrollo-de-negocios-e-inversiones.html"/>
+  </url>
+  <url>
+    <loc>https://strexholdings.com/en/divisions/business-development-and-investment.html</loc>
+    <lastmod>2026-11-20</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://strexholdings.com/divisiones/desarrollo-de-negocios-e-inversiones.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://strexholdings.com/en/divisions/business-development-and-investment.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://strexholdings.com/divisiones/desarrollo-de-negocios-e-inversiones.html"/>
   </url>
 </urlset>

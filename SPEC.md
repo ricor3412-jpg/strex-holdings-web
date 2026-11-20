@@ -1,6 +1,6 @@
 # SPEC — STREX Holdings · Posicionamiento SEO
 
-> **Fuente de verdad del proyecto.** Última actualización: 2026-09-15
+> **Fuente de verdad del proyecto.** Última actualización: 2026-11-20
 > Cliente: STREX Holdings (contacto: Osvaldo Castellar)
 > Repo: https://github.com/ricor3412-jpg/strex-holdings-web
 
@@ -8,7 +8,9 @@
 
 ## 1. Qué es STREX Holdings
 
-Holding industrial internacional. Agrupa 6 empresas especializadas y vende
+Holding industrial internacional. **No es dueño de las empresas con las que
+trabaja: son aliados**, y desde nov-2026 no se nombran en público (ver
+[REESTRUCTURACION.md](REESTRUCTURACION.md)). Vende
 proyectos EPC llave en mano a los sectores de oil & gas, petroquímica, minería,
 energía e infraestructura.
 
@@ -48,8 +50,8 @@ el correo. Reemplazarlo en vez de añadir uno nuevo podría tumbar el email.
 
 **Nombre:** STREX Holdings
 
-**Teléfono:** `+1 (561) 704-2432`
-*(el anterior `+1 (561) 702-2422` era incorrecto — corregido 2026-09-15)*
+**Teléfono:** `+1 (202) 766-2938`
+*(antes `+1 (561) 704-2432`; cambiado el 2026-09-17 en el commit 384d365)*
 
 **Email:** business@strexholdings.com
 
@@ -195,6 +197,28 @@ logo de marca, skip link funcional, sin scroll horizontal.
 - [ ] `.footer-bottom a:hover` es código muerto: no hay enlaces ahí.
       Sugiere que faltan avisos legales (privacidad / términos)
 
+### Fase 5 — Reestructuración institucional (nov-2026) ✅ implementada el 2026-11-20
+Detalle y mapa de URLs en [REESTRUCTURACION.md](REESTRUCTURACION.md).
+Decisiones del usuario (2026-11-20): seguir el PDF al pie de la letra, publicar, usar fotos de stock y hacer la versión EN.
+- [x] Analizar el PDF maestro y el borrador frente al sitio actual
+- [x] Quitar a los aliados: sección, nav, JSON-LD, 8 logos y ~30 menciones en las páginas
+- [x] 10 divisiones × 2 idiomas generadas desde `_build/divisiones.json`
+- [x] Las 15 URLs viejas de `/servicios/` redirigen a su división (minería → #industrias, HSE → ingeniería)
+- [x] Sitemap con 22 URLs y `hreflang` es/en/x-default
+- [x] Portada según el PDF: hero §02, quiénes somos y misión/visión §03, modelo §16, experiencia §14 (con su descargo), industrias §17 (9), Venezuela §15, modalidades §17, presencia §18
+- [x] Cifras del hero sin fuente sustituidas por conteos del propio portafolio (10 divisiones, 9 industrias, 7 modalidades, 3 países foco)
+- [x] Versión EN completa (`/en/`)
+- [x] Fotos de stock de dominio público o CC0 para 7 divisiones (`assets/CREDITOS-FOTOS.md`)
+- [x] Header: el logo ya no se trunca en ningún ancho de 320 a 1920 px (antes fallaba entre 870 y 1100 px)
+- [x] Verificado: 22 páginas sin errores de consola ni 404 y sin desborde a 1440 y 390 px; enlaces internos y JSON-LD válidos
+- [ ] **Validar con el cliente** qué servicios presta directamente y cuáles mediante terceros (PDF §20). Hoy la web lo cubre con la nota "directamente o mediante compañías especializadas"
+- [ ] **Validar la sección Experiencia internacional**: el PDF pide evidencia y permiso de cada aliado antes de publicar países. Se publicó el texto del PDF §14 con su descargo
+- [ ] Revisar la traducción EN con un especialista del sector (PDF §20)
+- [ ] 301 reales en nginx/Coolify para `/servicios/*` (hoy meta refresh)
+- [ ] `www`: cambiar 307 → 301
+- [ ] Reenviar el sitemap en Search Console
+- [ ] qa-web y revisor-ux: no se corrieron (requieren aprobación del usuario)
+
 ### Fase 3 — Datos pendientes del cliente ⛔
 - [ ] Dirección de Venezuela
 - [ ] URL de LinkedIn y YouTube (si existen)
@@ -213,6 +237,9 @@ logo de marca, skip link funcional, sin scroll horizontal.
 - [ ] Blog: definir arquitectura y automatización
 
 #### Las 10 páginas y por qué esas
+
+> ⚠️ **Histórico, sustituido el 2026-11-20 por la Fase 5.** Las páginas de `/servicios/`
+> ahora solo redirigen a las 10 divisiones; `servicios.json` ya no existe.
 Se descartaron 5 de los 15 servicios de la home:
 
 | Descartado | Motivo |

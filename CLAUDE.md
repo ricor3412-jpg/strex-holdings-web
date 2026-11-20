@@ -3,16 +3,17 @@
 > Contexto rápido. La fuente de verdad es **[SPEC.md](SPEC.md)** — leerla antes de trabajar.
 
 ## Qué es
-Landing estática de un holding industrial (proyectos EPC, oil & gas, minería,
-petroquímica). HTML + CSS + JS vanilla, sin build ni dependencias.
+Sitio estático bilingüe (ES/EN) de un grupo empresarial de energía, oil & gas,
+industria e infraestructura. HTML + CSS + JS vanilla; todo el HTML sale de un
+generador Node sin dependencias.
 
 ## Stack
-- `index.html` · `styles.css` · `script.js` · `assets/`
+- `index.html` (ES) · `en/index.html` · `divisiones/` · `en/divisions/` · `styles.css` · `servicio.css` · `script.js` · `assets/`
 - Hosting: **VPS Hostinger** con Traefik (probablemente Coolify)
-- Dominio: `strexholdings.com` (⚠️ **la versión con `www` está caída** — ver SPEC §5)
+- Dominio: `strexholdings.com` (`www` ya responde, pero con **307** y no con 301; ver SPEC §5)
 
 ## Datos que NO se inventan
-- Teléfono: `+1 (561) 704-2432`
+- Teléfono: `+1 (202) 766-2938` (cambiado el 2026-09-17, commit 384d365; confirmar vigencia)
 - Email: `business@strexholdings.com`
 - Sede USA: 1919 S. Canal St, Highlands, TX 77562
 - Oficina CO: Cra. 51B #80-58, of. 909, Barranquilla
@@ -20,7 +21,8 @@ petroquímica). HTML + CSS + JS vanilla, sin build ni dependencias.
 - Venezuela, LinkedIn y YouTube: **pendientes, no rellenar con placeholders**
 
 Si cambia cualquiera de estos, hay que actualizarlo en **4 sitios**: el bloque de
-contacto, el JSON-LD del final de `index.html`, la SPEC y este archivo.
+contacto de `_build/cuerpo.es.html` y `cuerpo.en.html`, el JSON-LD de
+`portada()` y el contacto de `pagina()` en `_build/generar.js`, la SPEC y este archivo.
 
 ## Restricciones
 - `python` no está en el PATH → usar `uv run python`
@@ -30,19 +32,25 @@ contacto, el JSON-LD del final de `index.html`, la SPEC y este archivo.
 - ⚠️ No confundir con **Stratex Oil & Gas Holdings** (STTX), empresa cotizada
   distinta, mismo sector, nombre casi idéntico.
 
-## Páginas de servicio
-10 páginas bajo `servicios/`, generadas desde plantilla:
-
+## Cómo se genera el sitio (no editar HTML generado a mano)
 ```bash
-node _build/generar.js     # regenera las 9 + el sitemap
+node _build/generar.js   # portadas ES/EN, 20 páginas de división, 15 redirecciones y sitemap
 ```
-
-- Contenido en `_build/servicios.json`, plantilla en `_build/generar.js`
-- ⚠️ **`servicios/montajes-industriales.html` NO se regenera**: está escrita a
-  mano. Un cambio de plantilla hay que replicarlo ahí a mano.
-- Al añadir una página hay que enlazarla desde su tarjeta en `index.html`, o
-  queda huérfana para Google.
+- `_build/divisiones.json`: las 10 divisiones, ES y EN emparejadas (slug, textos, foto, icono, relacionadas).
+- `_build/cuerpo.es.html` / `cuerpo.en.html`: cuerpo de cada portada, con marcadores
+  `{{MEGA}}`, `{{MOBILE}}`, `{{CARDS}}` y `{{STEPS}}`. Las rutas del EN llevan `../`.
+- `_build/sprite.html`: iconos de la portada. Las divisiones usan su propio `SPRITE` en `generar.js`.
+- `servicios/*.html`: **solo redirecciones** (meta refresh + canonical) de las 15 URLs
+  viejas; ver `VIEJAS` en `generar.js`. El 301 real requiere nginx/Coolify.
+- Fotos de stock: dominio público o CC0, con origen en `assets/CREDITOS-FOTOS.md`.
+- Header: entre 861 y 1240 px se oculta el CTA y entre 861 y 960 px el selector de
+  idioma, para que el logo no se trunque. Cualquier enlace nuevo en el menú exige
+  volver a medir (`scrollWidth` de `.logo-word`).
+- Reglas editoriales del cliente (PDF §20): **no nombrar aliados**, no publicar cifras sin
+  fuente, no afirmar activos propios (taladros, flotas, plantas) ni contratos adjudicados.
 
 ## Estado
-Todo en la rama `seo/fase-1-fundacion`, **sin desplegar**. Lo siguiente es
-arreglar el `www` en el VPS. Ver [RUNBOOK_FASE_2.md](RUNBOOK_FASE_2.md).
+Reestructuración nov-2026 hecha: sin aliados, 10 divisiones, versión EN y Venezuela.
+El análisis está en [REESTRUCTURACION.md](REESTRUCTURACION.md) y el documento
+maestro del cliente es `Downloads/STREX_HOLDINGS_Contenido_Corporativo_Integral.pdf`.
+Pendientes en SPEC §6, Fase 5.

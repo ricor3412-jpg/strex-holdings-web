@@ -1,0 +1,352 @@
+<a href="#main" class="skip-link">Saltar al contenido principal</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="container">
+    <a href="#top" class="logo on-dark">
+      <img src="assets/logo-mark.png" alt="" aria-hidden="true" class="logo-mark"
+           width="200" height="69" fetchpriority="high" decoding="async">
+      <span class="logo-word">STREX <span>HOLDINGS</span><small>WHERE INDUSTRY CONNECTS</small></span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="#nosotros">Nosotros</a>
+      <div class="nav-mega">
+        <button type="button" class="nav-mega-trigger" id="megaTrigger"
+                aria-expanded="false" aria-controls="megaPanel">
+          Divisiones <svg class="icon chev"><use href="#i-chevron"/></svg>
+        </button>
+      </div>
+      <a href="#modelo">Modelo</a>
+      <a href="#industrias">Industrias</a>
+      <a href="#venezuela">Venezuela</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="en/" class="lang-switch" hreflang="en" lang="en" aria-label="Read this site in English">EN</a>
+      <a href="#contacto" class="btn btn-primary">
+        Solicitar propuesta <svg class="icon"><use href="#i-arrow"/></svg>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileNav">
+        <svg class="icon"><use href="#i-menu"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ MEGAMENÚ DE DIVISIONES ============ -->
+<div class="mega-panel" id="megaPanel" hidden aria-labelledby="megaTrigger">
+  <div class="container">
+    <div class="mega-head">
+      <span class="eyebrow">10 divisiones</span>
+      <p>Capacidades técnicas, operativas y comerciales organizadas por división de negocio.</p>
+    </div>
+    <div class="mega-grid">
+{{MEGA}}
+    </div>
+  </div>
+</div>
+
+<div class="mobile-nav-backdrop" id="mobileNavBackdrop" hidden></div>
+
+<nav class="mobile-nav" id="mobileNav" aria-label="Menú principal" aria-hidden="true">
+  <button class="mobile-nav-close" id="mobileNavClose" aria-label="Cerrar menú">
+    <svg class="icon"><use href="#i-close"/></svg>
+  </button>
+  <div class="mobile-nav-links">
+    <a href="#nosotros">Nosotros</a>
+    <details class="mobile-svc">
+      <summary>Divisiones <svg class="icon chev"><use href="#i-chevron"/></svg></summary>
+      <div class="mobile-svc-list">
+{{MOBILE}}
+      </div>
+    </details>
+    <a href="#modelo">Modelo</a>
+    <a href="#industrias">Industrias</a>
+    <a href="#venezuela">Venezuela</a>
+    <a href="#contacto">Contacto</a>
+    <a href="en/" hreflang="en" lang="en">English</a>
+  </div>
+  <a href="#contacto" class="btn btn-primary mobile-nav-cta">Solicitar propuesta <svg class="icon"><use href="#i-arrow"/></svg></a>
+</nav>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top" aria-labelledby="hero-title">
+  <picture>
+    <source srcset="assets/hero-refinery.webp" type="image/webp">
+    <img src="assets/hero-refinery.jpg" alt="" class="hero-bg" aria-hidden="true"
+         width="1920" height="559" fetchpriority="high" decoding="async">
+  </picture>
+  <div class="hero-diagonal"></div>
+  <div class="hero-glow"></div>
+  <canvas id="network-canvas"></canvas>
+  <div class="container">
+    <div class="hero-content">
+      <h1 id="hero-title" data-reveal style="transition-delay:.08s">Soluciones integrales para la industria, la <em>energía</em> y el desarrollo de proyectos</h1>
+      <p class="lead" data-reveal style="transition-delay:.16s">
+        STREX HOLDINGS es un grupo empresarial internacional orientado al desarrollo de negocios, la estructuración de proyectos y la integración de soluciones técnicas, operativas y comerciales para sectores estratégicos de la economía.
+      </p>
+      <div class="hero-actions" data-reveal style="transition-delay:.24s">
+        <a href="#contacto" class="btn btn-primary">Solicitar propuesta <svg class="icon"><use href="#i-arrow"/></svg></a>
+        <a href="#divisiones" class="btn btn-ghost">Ver divisiones</a>
+      </div>
+    </div>
+
+    <div class="hero-stats" data-reveal-group>
+      <div class="hero-stat" data-reveal style="--i:0"><div class="num"><span data-count="10">0</span></div><div class="label">Divisiones de negocio</div></div>
+      <div class="hero-stat" data-reveal style="--i:1"><div class="num"><span data-count="9">0</span></div><div class="label">Industrias atendidas</div></div>
+      <div class="hero-stat" data-reveal style="--i:2"><div class="num"><span data-count="7">0</span></div><div class="label">Modalidades de participación</div></div>
+      <div class="hero-stat" data-reveal style="--i:3"><div class="num"><span data-count="3">0</span></div><div class="label">Países foco: EE.&nbsp;UU., Colombia y Venezuela</div></div>
+    </div>
+  </div>
+
+  <div class="scroll-cue"><span class="line"></span> Descubre más</div>
+</section>
+
+<!-- ============ QUIÉNES SOMOS ============ -->
+<section class="about" id="nosotros" aria-labelledby="about-title">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <h2 id="about-title">Quiénes somos</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-copy" data-reveal>
+        <p><strong>STREX HOLDINGS</strong> es una plataforma empresarial de proyección internacional dedicada a identificar, desarrollar y estructurar oportunidades de negocio en las industrias energética, petrolera, petroquímica, minera y de infraestructura.</p>
+        <p>Nuestro modelo integra desarrollo comercial, gestión de inversiones, procura internacional y coordinación de capacidades especializadas. Trabajamos con operadores, fabricantes, proveedores y empresas técnicas para formular soluciones ajustadas a las necesidades de cada proyecto.</p>
+        <p>Promovemos la articulación de experiencia internacional y conocimiento de los mercados locales, con énfasis en la disciplina contractual, la eficiencia operativa, la seguridad y la generación sostenible de valor.</p>
+
+        <div class="about-visual">
+          <picture>
+            <source srcset="assets/about-refinery.webp" type="image/webp">
+            <img src="assets/about-refinery.jpg" alt="Refinería de petróleo" class="about-visual-main"
+                 width="1000" height="517" loading="lazy" decoding="async">
+          </picture>
+          <!-- Sin <picture>: .about-visual-sub es position:absolute y el wrapper rompería el posicionamiento -->
+          <img src="assets/crane.webp" alt="Grúa de gran tonelaje en un montaje industrial" class="about-visual-sub"
+               width="400" height="533" loading="lazy" decoding="async">
+        </div>
+
+        <div class="mv-grid">
+          <div class="mv-card">
+            <div class="icon-badge"><svg class="icon"><use href="#i-target"/></svg></div>
+            <h3>Misión</h3>
+            <p>Impulsar proyectos y negocios estratégicos mediante la integración de capacidades empresariales, tecnologías y soluciones industriales que contribuyan a la competitividad y al desarrollo de nuestros clientes y mercados.</p>
+          </div>
+          <div class="mv-card">
+            <div class="icon-badge"><svg class="icon"><use href="#i-eye"/></svg></div>
+            <h3>Visión</h3>
+            <p>Consolidarnos como una plataforma empresarial internacional reconocida por su capacidad para estructurar oportunidades, articular soluciones industriales y desarrollar relaciones estratégicas de largo plazo.</p>
+          </div>
+        </div>
+      </div>
+
+      <div data-reveal style="transition-delay:.1s">
+        <h3 class="subhead">Nuestros valores</h3>
+        <div class="values-list" data-reveal-group>
+          <div class="value-item" data-reveal style="--i:0"><svg class="icon"><use href="#i-shield"/></svg><h4>Integridad</h4><p>Actuamos con ética, transparencia y responsabilidad en todo lo que hacemos.</p></div>
+          <div class="value-item" data-reveal style="--i:1"><svg class="icon"><use href="#i-bulb"/></svg><h4>Innovación</h4><p>Impulsamos soluciones creativas, eficientes y sostenibles.</p></div>
+          <div class="value-item" data-reveal style="--i:2"><svg class="icon"><use href="#i-shield"/></svg><h4>Seguridad</h4><p>Protegemos a nuestro equipo, activos y comunidades.</p></div>
+          <div class="value-item" data-reveal style="--i:3"><svg class="icon"><use href="#i-award"/></svg><h4>Excelencia</h4><p>Buscamos la mejora continua en cada proceso y proyecto.</p></div>
+          <div class="value-item" data-reveal style="--i:4"><svg class="icon"><use href="#i-handshake"/></svg><h4>Relaciones a largo plazo</h4><p>Construimos alianzas sólidas basadas en confianza y resultados.</p></div>
+          <div class="value-item" data-reveal style="--i:5"><svg class="icon"><use href="#i-leaf"/></svg><h4>Sostenibilidad</h4><p>Desarrollamos proyectos responsables con el entorno y las futuras generaciones.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DIVISIONES ============ -->
+<section class="services" id="divisiones" aria-labelledby="services-title">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <h2 id="services-title">Divisiones estratégicas</h2>
+      <p>Nuestra plataforma articula capacidades especializadas en exploración y producción de hidrocarburos, perforación y servicios a pozos, generación eléctrica, petroquímica, ingeniería, construcción, mantenimiento industrial, operaciones marítimas y procura internacional.</p>
+    </div>
+    <div class="services-grid" data-reveal-group>
+{{CARDS}}
+    </div>
+  </div>
+</section>
+
+<!-- ============ MODELO DE GESTIÓN ============ -->
+<section class="capability" id="modelo" aria-labelledby="capability-title">
+  <div class="container">
+    <div class="section-head light" data-reveal>
+      <h2 id="capability-title">Nuestro modelo de gestión</h2>
+      <p>Los proyectos industriales requieren más que la disponibilidad de equipos y servicios: exigen conocimiento del mercado, estructuración técnica, capacidad comercial, planificación financiera y coordinación eficiente de recursos.</p>
+      <div class="cap-note">De la oportunidad a la relación <span>de largo plazo</span></div>
+    </div>
+
+    <div class="cap-track" id="capTrack" role="region" aria-label="Etapas de nuestro modelo de gestión" tabindex="0">
+      <div class="cap-marquee" id="capMarquee">
+        <div class="cap-scroll">
+{{STEPS}}
+        </div>
+        <div class="cap-scroll" aria-hidden="true">
+{{STEPS}}
+        </div>
+      </div>
+    </div>
+
+    <div class="cap-hint" aria-hidden="true">
+      <svg class="icon"><use href="#i-arrow"/></svg> Desliza para ver todas las etapas
+    </div>
+
+    <div class="cap-footer" data-reveal>
+      <span class="cap-chip solid"><svg class="icon"><use href="#i-check"/></svg> Disciplina contractual</span>
+      <span class="cap-chip"><svg class="icon"><use href="#i-gear"/></svg> Eficiencia operativa</span>
+      <span class="cap-chip"><svg class="icon"><use href="#i-shield"/></svg> Seguridad</span>
+      <span class="cap-chip"><svg class="icon"><use href="#i-leaf"/></svg> Generación sostenible de valor</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCIA INTERNACIONAL ============ -->
+<section class="companies" id="experiencia" aria-labelledby="experience-title">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <h2 id="experience-title">Experiencia internacional de nuestro ecosistema empresarial</h2>
+      <p>STREX HOLDINGS articula una red de compañías especializadas, fabricantes, operadores y profesionales con experiencia en proyectos industriales y energéticos en distintos mercados internacionales.</p>
+    </div>
+
+    <div class="exp-grid" data-reveal-group>
+      <article class="exp-card" data-reveal style="--i:0"><svg class="icon"><use href="#i-flask"/></svg><h3>Refinerías y complejos petroquímicos</h3><p>Mantenimiento, ingeniería, integridad y paradas de planta.</p></article>
+      <article class="exp-card" data-reveal style="--i:1"><svg class="icon"><use href="#i-rig"/></svg><h3>Campos petroleros en Estados Unidos y México</h3><p>Servicios operativos, equipos y facilidades de producción.</p></article>
+      <article class="exp-card" data-reveal style="--i:2"><svg class="icon"><use href="#i-globe"/></svg><h3>Medio Oriente y Europa</h3><p>Proyectos energéticos e industriales.</p></article>
+      <article class="exp-card" data-reveal style="--i:3"><svg class="icon"><use href="#i-pin"/></svg><h3>Colombia y Venezuela</h3><p>Operaciones y proyectos industriales.</p></article>
+    </div>
+
+    <p class="exp-note" data-reveal>De acuerdo con los antecedentes comunicados por las organizaciones de nuestra red, sus equipos y compañías han participado en iniciativas en Arabia Saudita, Europa, Estados Unidos, México, Colombia y Venezuela, entre otras geografías. Esta trayectoria corresponde a los participantes respectivos y no implica, por sí sola, que STREX HOLDINGS haya sido contratista directo de esos proyectos.</p>
+  </div>
+</section>
+
+<!-- ============ INDUSTRIAS ============ -->
+<section class="industries" id="industrias" aria-labelledby="industries-title">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <h2 id="industries-title">Industrias que atendemos</h2>
+      <p>Los mercados a los que se dirige STREX HOLDINGS. Las divisiones explican las soluciones; las industrias, dónde se aplican.</p>
+    </div>
+
+    <div class="industries-grid" data-reveal-group>
+      <div class="industry-card has-photo" data-reveal style="--i:0;--photo:image-set(url('assets/div-produccion.webp') type('image/webp'), url('assets/div-produccion.jpg') type('image/jpeg'))"><svg class="icon"><use href="#i-drop"/></svg><h3>Exploración y producción de petróleo y gas</h3><p>Perforación, servicios a pozos, producción y optimización de campos.</p></div>
+      <div class="industry-card has-photo" data-reveal style="--i:1;--photo:image-set(url('assets/hero-refinery.webp') type('image/webp'), url('assets/hero-refinery.jpg') type('image/jpeg'))"><svg class="icon"><use href="#i-flask"/></svg><h3>Refinación y petroquímica</h3><p>Tratamientos químicos, paradas de planta, integridad y procura de repuestos.</p></div>
+      <div class="industry-card" data-reveal style="--i:2"><svg class="icon"><use href="#i-bolt"/></svg><h3>Generación y distribución eléctrica</h3><p>Generación para campos e industria, subestaciones y distribución.</p></div>
+      <div class="industry-card" data-reveal style="--i:3"><svg class="icon"><use href="#i-flame"/></svg><h3>Gas natural, GNL y GLP</h3><p>Compresión, procesamiento, almacenamiento, regasificación y suministro.</p></div>
+      <div class="industry-card has-photo" data-reveal style="--i:4;--photo:image-set(url('assets/port.webp') type('image/webp'), url('assets/port.jpg') type('image/jpeg'))"><svg class="icon"><use href="#i-ship"/></svg><h3>Operaciones marítimas y offshore</h3><p>Embarcaciones de apoyo, barcazas, logística portuaria y offshore.</p></div>
+      <div class="industry-card has-photo" data-reveal style="--i:5;--photo:image-set(url('assets/mining.webp') type('image/webp'), url('assets/mining.jpg') type('image/jpeg'))"><svg class="icon"><use href="#i-truck"/></svg><h3>Minería y recursos naturales</h3><p>Procura de equipos, generación, infraestructura y logística de proyectos.</p></div>
+      <div class="industry-card has-photo" data-reveal style="--i:6;--photo:image-set(url('assets/crane.webp') type('image/webp'), url('assets/crane.jpg') type('image/jpeg'))"><svg class="icon"><use href="#i-bridge"/></svg><h3>Infraestructura y construcción</h3><p>Obras civiles, infraestructura industrial, vial y de servicios públicos.</p></div>
+      <div class="industry-card" data-reveal style="--i:7"><svg class="icon"><use href="#i-leaf"/></svg><h3>Agua, saneamiento y medioambiente</h3><p>Acueductos, alcantarillados y plantas de tratamiento de agua.</p></div>
+      <div class="industry-card" data-reveal style="--i:8"><svg class="icon"><use href="#i-factory"/></svg><h3>Manufactura y logística industrial</h3><p>Abastecimiento industrial, mantenimiento y transporte multimodal.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VENEZUELA ============ -->
+<section class="venezuela" id="venezuela" aria-labelledby="venezuela-title">
+  <div class="container">
+    <div class="venezuela-grid">
+      <div data-reveal>
+        <span class="eyebrow">Prioridad estratégica de desarrollo</span>
+        <h2 id="venezuela-title">Venezuela: capacidades internacionales para la recuperación productiva y la reconstrucción industrial</h2>
+        <p>Venezuela representa un mercado prioritario dentro de la estrategia de desarrollo empresarial de STREX HOLDINGS. Su potencial energético, industrial y logístico plantea oportunidades para la rehabilitación de activos productivos, la modernización de instalaciones y la recuperación de infraestructura esencial.</p>
+        <p>Nuestro enfoque consiste en identificar proyectos viables, articular capacidades técnicas internacionales, promover esquemas de cooperación empresarial y contribuir a la estructuración de inversiones que apoyen la recuperación de la actividad productiva.</p>
+        <p class="venezuela-note">Este enfoque expresa una prioridad estratégica y no constituye una afirmación de adjudicaciones o inversiones ya comprometidas.</p>
+      </div>
+      <div data-reveal style="transition-delay:.1s">
+        <h3 class="venezuela-sub">Líneas prioritarias</h3>
+        <ul class="venezuela-list">
+          <li>Recuperación de pozos maduros e inactivos, perforación, workover y servicios a pozos.</li>
+          <li>Estimulación química, optimización de producción y facilidades de superficie.</li>
+          <li>Generación eléctrica para pozos, campos petroleros e instalaciones industriales.</li>
+          <li>Rehabilitación de refinerías, complejos petroquímicos y sistemas de almacenamiento.</li>
+          <li>Aprovechamiento de gas asociado, compresión, procesamiento y regasificación.</li>
+          <li>Servicios marítimos, barcazas, logística energética y apoyo portuario.</li>
+          <li>Rehabilitación de infraestructura hidráulica, eléctrica, vial e industrial.</li>
+          <li>Procura, transferencia tecnológica, desarrollo de proveedores y estructuración de inversión.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRESENCIA + MODALIDADES ============ -->
+<section class="presence" aria-labelledby="presence-title">
+  <div class="container">
+    <div class="presence-grid">
+      <div data-reveal>
+        <h2 id="presence-title" style="color:#fff;margin-top:14px;font-size:clamp(26px,3.4vw,36px)">Presencia internacional</h2>
+        <p class="presence-intro">Orientamos nuestra actividad al desarrollo de oportunidades en Estados Unidos y América Latina, con especial atención a Colombia y Venezuela, y a la articulación de capacidades de nuestro ecosistema empresarial en mercados internacionales.</p>
+        <div class="locations">
+          <div class="location-item"><div class="flag"><img src="assets/flag-us.svg" alt="" aria-hidden="true" width="24" height="16" loading="lazy" decoding="async"></div><div><h3>Estados Unidos</h3><p>Highlands, Texas — Sede principal</p></div><span class="badge">HQ</span></div>
+          <div class="location-item"><div class="flag"><img src="assets/flag-co.svg" alt="" aria-hidden="true" width="24" height="16" loading="lazy" decoding="async"></div><div><h3>Colombia</h3><p>Barranquilla — Oficina comercial</p></div></div>
+          <div class="location-item"><div class="flag"><img src="assets/flag-ve.svg" alt="" aria-hidden="true" width="24" height="16" loading="lazy" decoding="async"></div><div><h3>Venezuela</h3><p>Mercado prioritario de desarrollo</p></div></div>
+        </div>
+      </div>
+
+      <div data-reveal style="transition-delay:.1s">
+        <h2 style="color:#fff;margin-top:14px;font-size:clamp(26px,3.4vw,36px)">Modalidades de participación</h2>
+        <div class="diff-list" data-reveal-group>
+          <div class="diff-item" data-reveal style="--i:0"><div class="check"><svg class="icon"><use href="#i-check"/></svg></div><div><h3>Suministro y procura</h3><p>Equipos, materiales y tecnología.</p></div></div>
+          <div class="diff-item" data-reveal style="--i:1"><div class="check"><svg class="icon"><use href="#i-check"/></svg></div><div><h3>Servicios especializados</h3><p>Y alquiler de equipos.</p></div></div>
+          <div class="diff-item" data-reveal style="--i:2"><div class="check"><svg class="icon"><use href="#i-check"/></svg></div><div><h3>Operación y mantenimiento</h3><p>Contratos de O&amp;M.</p></div></div>
+          <div class="diff-item" data-reveal style="--i:3"><div class="check"><svg class="icon"><use href="#i-check"/></svg></div><div><h3>EPC, EPCM y llave en mano</h3><p>Mediante estructuras idóneas.</p></div></div>
+          <div class="diff-item" data-reveal style="--i:4"><div class="check"><svg class="icon"><use href="#i-check"/></svg></div><div><h3>Representación comercial</h3><p>Y desarrollo de mercados.</p></div></div>
+          <div class="diff-item" data-reveal style="--i:5"><div class="check"><svg class="icon"><use href="#i-check"/></svg></div><div><h3>Consorcios y joint ventures</h3><p>Uniones temporales y empresas conjuntas.</p></div></div>
+          <div class="diff-item" data-reveal style="--i:6"><div class="check"><svg class="icon"><use href="#i-check"/></svg></div><div><h3>Estructuración de inversiones</h3><p>Y desarrollo de proyectos.</p></div></div>
+        </div>
+        <p class="presence-note">Esquemas sujetos a evaluación contractual en cada caso; no implican que STREX ejecute directamente todos ellos.</p>
+      </div>
+    </div>
+
+    <div class="quote-block" data-reveal>
+      <p>“Conectamos capacidades globales con oportunidades de desarrollo industrial.” <span>STREX HOLDINGS · Where industry connects</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACTO ============ -->
+<section class="contact" id="contacto" aria-labelledby="contact-title">
+  <div class="container">
+    <div class="contact-panel" data-reveal>
+      <div class="contact-top">
+        <h2 id="contact-title">Hablemos de su próximo proyecto</h2>
+        <p>Para explorar oportunidades de inversión, desarrollo de negocios, suministro industrial o soluciones especializadas, contacte a nuestro equipo corporativo.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-item">
+          <div class="icon-badge"><svg class="icon"><use href="#i-phone"/></svg></div>
+          <span class="label">Teléfono</span>
+          <a href="tel:+12027662938">+1 (202) 766-2938</a>
+        </div>
+        <div class="contact-item">
+          <div class="icon-badge"><svg class="icon"><use href="#i-mail"/></svg></div>
+          <span class="label">Email</span>
+          <a href="mailto:business@strexholdings.com">business@strexholdings.com</a>
+        </div>
+        <div class="contact-item">
+          <div class="icon-badge"><svg class="icon"><use href="#i-globe"/></svg></div>
+          <span class="label">Web</span>
+          <a href="https://strexholdings.com" target="_blank" rel="noopener">strexholdings.com</a>
+        </div>
+        <div class="contact-item">
+          <div class="icon-badge"><svg class="icon"><use href="#i-pin"/></svg></div>
+          <span class="label">Sede · Estados Unidos</span>
+          <span class="val">1919 S. Canal St<br>Highlands, TX 77562</span>
+        </div>
+        <div class="contact-item">
+          <div class="icon-badge"><svg class="icon"><use href="#i-pin"/></svg></div>
+          <span class="label">Oficina · Colombia</span>
+          <span class="val">Cra. 51B #80-58, Oficina 909<br>Barranquilla, Atlántico</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
