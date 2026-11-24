@@ -144,7 +144,14 @@ function pagina(lang, d, num) {
   const defs = [...usados].map((k) => `  <symbol id="${k}" viewBox="0 0 24 24">${SPRITE[k]}</symbol>`).join('\n');
 
   const nav = t.nav.map(([id, txt]) => `      <a href="${homeHref}#${id}">${txt}</a>`).join('\n');
-  const servicios = c.servicios.map((s) => `      <li><svg class="icon"><use href="#i-check"/></svg>${esc(s)}</li>`).join('\n');
+  const todos = c.grupos.flatMap((g) => g.s);
+  const servicios = c.grupos.map((g, i) => `      <article class="svc-group">
+        <span class="svc-group-n">${String(i + 1).padStart(2, '0')} / ${String(c.grupos.length).padStart(2, '0')}</span>
+        <h3>${esc(g.t)}</h3>
+        <ul>
+${g.s.map((s) => `          <li><svg class="icon"><use href="#i-check"/></svg>${esc(s)}</li>`).join('\n')}
+        </ul>
+      </article>`).join('\n');
   const pasos = t.modelo.map(([h, p], i) => `      <li>
         <span class="n">0${i + 1}</span>
         <h3>${esc(h)}</h3>
@@ -173,7 +180,7 @@ function pagina(lang, d, num) {
         hasOfferCatalog: {
           '@type': 'OfferCatalog',
           name: c.nombre,
-          itemListElement: c.servicios.map((s) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name: s } })),
+          itemListElement: todos.map((s) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name: s } })),
         },
       },
       {
@@ -290,9 +297,9 @@ ${nav}
     <div class="section-head">
       <h2 id="serv-title">${t.servTitle}</h2>
     </div>
-    <ul class="svc-checklist">
+    <div class="svc-groups">
 ${servicios}
-    </ul>
+    </div>
     <p class="svc-note">${t.servNote}</p>
   </div>
 </section>
@@ -449,6 +456,18 @@ const PORTADA = {
     orgDesc: 'International business group focused on business development, project structuring and the integration of technical, operational and commercial solutions for the energy, oil, petrochemical, mining and infrastructure industries.',
   },
 };
+// Venezuela (PDF §15): cada línea prioritaria enlaza a la división que la cubre.
+// [icono, división, título ES, línea ES, título EN, línea EN]
+const VZ = [
+  ['i-rig', 'perforacion', 'Pozos maduros e inactivos', 'Recuperación de pozos maduros e inactivos, perforación, workover y servicios a pozos.', 'Mature and idle wells', 'Recovery of mature and idle wells, drilling, workover and well services.'],
+  ['i-gear', 'produccion', 'Producción y estimulación', 'Estimulación química, optimización de producción y facilidades de superficie.', 'Production and stimulation', 'Chemical stimulation, production optimization and surface facilities.'],
+  ['i-bolt', 'generacion', 'Generación eléctrica', 'Generación eléctrica para pozos, campos petroleros e instalaciones industriales.', 'Power generation', 'Power generation for wells, oilfields and industrial facilities.'],
+  ['i-factory', 'ingenieria', 'Refinerías y almacenamiento', 'Rehabilitación de refinerías, complejos petroquímicos y sistemas de almacenamiento.', 'Refineries and storage', 'Rehabilitation of refineries, petrochemical complexes and storage systems.'],
+  ['i-flame', 'gas', 'Gas asociado', 'Aprovechamiento de gas asociado, compresión, procesamiento y regasificación.', 'Associated gas', 'Associated gas recovery, compression, processing and regasification.'],
+  ['i-ship', 'maritimo', 'Servicios marítimos', 'Servicios marítimos, barcazas, logística energética y apoyo portuario.', 'Marine services', 'Marine services, barges, energy logistics and port support.'],
+  ['i-bridge', 'infraestructura', 'Infraestructura', 'Rehabilitación de infraestructura hidráulica, eléctrica, vial e industrial.', 'Infrastructure', 'Rehabilitation of water, power, road and industrial infrastructure.'],
+  ['i-cart', 'procura', 'Procura e inversión', 'Procura, transferencia tecnológica, desarrollo de proveedores y estructuración de inversión.', 'Procurement and investment', 'Procurement, technology transfer, supplier development and investment structuring.'],
+];
 const SPRITE_HOME = fs.readFileSync(path.join(__dirname, 'sprite.html'), 'utf8');
 
 function portada(lang) {
@@ -462,7 +481,16 @@ function portada(lang) {
   const steps = t.modelo.map(([h, txt], i) => `          <div class="cap-step"><div class="dot-line"><div class="dot">0${i + 1}</div><div class="bar"></div></div><h3>${esc(h)}</h3><p>${esc(txt)}</p></div>`).join('\n');
   const cuerpo = fs.readFileSync(path.join(__dirname, `cuerpo.${lang}.html`), 'utf8')
     .replace('{{MEGA}}', mega).replace('{{MOBILE}}', mobile).replace('{{CARDS}}', cards)
-    .replaceAll('{{STEPS}}', steps);
+    .replaceAll('{{STEPS}}', steps)
+    .replace('{{VZ}}', VZ.map(([ic, key, tEs, dEs, tEn, dEn], i) => {
+      const [tt, dd] = lang === 'es' ? [tEs, dEs] : [tEn, dEn];
+      return `      <a class="vz-card" href="${href(BY_KEY[key])}" data-reveal style="--i:${i}">
+        <div class="vz-top"><span class="vz-n">${String(i + 1).padStart(2, '0')}</span><svg class="icon"><use href="#${ic}"/></svg></div>
+        <h3>${esc(tt)}</h3>
+        <p>${esc(dd)}</p>
+        <span class="svc-more">${p.verDiv} <svg class="icon"><use href="#i-arrow"/></svg></span>
+      </a>`;
+    }).join('\n'));
 
   const org = {
     '@type': 'Organization',

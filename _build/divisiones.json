@@ -3,7 +3,12 @@
     "key": "perforacion",
     "icon": "i-rig",
     "foto": "div-perforacion",
-    "rel": ["produccion", "quimica", "generacion", "procura"],
+    "rel": [
+      "produccion",
+      "quimica",
+      "generacion",
+      "procura"
+    ],
     "es": {
       "slug": "perforacion-y-servicios-a-pozos",
       "nombre": "Perforación y servicios especializados a pozos",
@@ -11,19 +16,37 @@
       "title": "Perforación y servicios a pozos petroleros | STREX Holdings",
       "desc": "Taladros de perforación y workover, coiled tubing, wireline, cementación, control de presión, pruebas de pozos y abandono (P&A) para pozos de petróleo y gas.",
       "lead": "Soluciones para el ciclo de vida de pozos petroleros y gasíferos, desde la perforación y la completación hasta la intervención, la recuperación y el abandono, mediante tecnologías y equipos especializados.",
-      "industrias": ["Exploración y producción de petróleo y gas", "Gas natural, GNL y GLP"],
-      "servicios": [
-        "Taladros de perforación terrestre (drilling rigs) y equipos auxiliares",
-        "Taladros de reacondicionamiento (workover rigs) y servicio a pozos",
-        "Perforación direccional y horizontal; ingeniería de perforación",
-        "Servicios de cementación, completación y estimulación",
-        "Coiled tubing, slickline, wireline y registros eléctricos",
-        "Control de presión, equipos BOP y pruebas de integridad",
-        "Limpieza de pozos, pesca y recuperación de herramientas",
-        "Pruebas de pozos y evaluación de productividad",
-        "Tubería de perforación, casing, tubing y accesorios OCTG",
-        "Taponamiento y abandono de pozos (P&A)",
-        "Movilización, alquiler y suministro de equipos de perforación"
+      "industrias": [
+        "Exploración y producción de petróleo y gas",
+        "Gas natural, GNL y GLP"
+      ],
+      "grupos": [
+        {
+          "t": "Perforación, completación y equipos",
+          "s": [
+            "Taladros de perforación terrestre (drilling rigs) y equipos auxiliares",
+            "Perforación direccional y horizontal; ingeniería de perforación",
+            "Servicios de cementación, completación y estimulación",
+            "Tubería de perforación, casing, tubing y accesorios OCTG",
+            "Movilización, alquiler y suministro de equipos de perforación"
+          ]
+        },
+        {
+          "t": "Intervención y servicio a pozos",
+          "s": [
+            "Taladros de reacondicionamiento (workover rigs) y servicio a pozos",
+            "Coiled tubing, slickline, wireline y registros eléctricos",
+            "Limpieza de pozos, pesca y recuperación de herramientas",
+            "Pruebas de pozos y evaluación de productividad"
+          ]
+        },
+        {
+          "t": "Control de presión y abandono",
+          "s": [
+            "Control de presión, equipos BOP y pruebas de integridad",
+            "Taponamiento y abandono de pozos (P&A)"
+          ]
+        }
       ]
     },
     "en": {
@@ -33,19 +56,37 @@
       "title": "Drilling & Well Services for Oil and Gas | STREX Holdings",
       "desc": "Drilling and workover rigs, coiled tubing, wireline, cementing, pressure control, well testing and plug & abandonment (P&A) for oil and gas wells.",
       "lead": "Solutions across the life cycle of oil and gas wells, from drilling and completion to intervention, recovery and abandonment, delivered with specialized technologies and equipment.",
-      "industrias": ["Oil & gas exploration and production", "Natural gas, LNG and LPG"],
-      "servicios": [
-        "Land drilling rigs and auxiliary equipment",
-        "Workover rigs and well servicing",
-        "Directional and horizontal drilling; drilling engineering",
-        "Cementing, completion and stimulation services",
-        "Coiled tubing, slickline, wireline and well logging",
-        "Pressure control, BOP equipment and integrity testing",
-        "Well cleanout, fishing and tool recovery",
-        "Well testing and productivity evaluation",
-        "Drill pipe, casing, tubing and OCTG accessories",
-        "Plug and abandonment (P&A)",
-        "Mobilization, rental and supply of drilling equipment"
+      "industrias": [
+        "Oil & gas exploration and production",
+        "Natural gas, LNG and LPG"
+      ],
+      "grupos": [
+        {
+          "t": "Drilling, completion and equipment",
+          "s": [
+            "Land drilling rigs and auxiliary equipment",
+            "Directional and horizontal drilling; drilling engineering",
+            "Cementing, completion and stimulation services",
+            "Drill pipe, casing, tubing and OCTG accessories",
+            "Mobilization, rental and supply of drilling equipment"
+          ]
+        },
+        {
+          "t": "Well intervention and servicing",
+          "s": [
+            "Workover rigs and well servicing",
+            "Coiled tubing, slickline, wireline and well logging",
+            "Well cleanout, fishing and tool recovery",
+            "Well testing and productivity evaluation"
+          ]
+        },
+        {
+          "t": "Pressure control and abandonment",
+          "s": [
+            "Pressure control, BOP equipment and integrity testing",
+            "Plug and abandonment (P&A)"
+          ]
+        }
       ]
     }
   },
@@ -53,7 +94,12 @@
     "key": "produccion",
     "icon": "i-gear",
     "foto": "div-produccion",
-    "rel": ["perforacion", "quimica", "generacion", "gas"],
+    "rel": [
+      "perforacion",
+      "quimica",
+      "generacion",
+      "gas"
+    ],
     "es": {
       "slug": "produccion-y-optimizacion-de-campos",
       "nombre": "Producción y optimización de campos",
@@ -61,17 +107,34 @@
       "title": "Producción y optimización de campos petroleros | STREX Holdings",
       "desc": "Levantamiento artificial (ESP, PCP, gas lift), facilidades de producción temprana, manejo de crudo pesado, reactivación de pozos y operación de facilidades de superficie.",
       "lead": "Integración de tecnologías y servicios para mejorar la productividad de los activos, incrementar la confiabilidad de las instalaciones y apoyar la recuperación de campos maduros.",
-      "industrias": ["Exploración y producción de petróleo y gas"],
-      "servicios": [
-        "Sistemas de levantamiento artificial ESP, PCP, bombeo mecánico y gas lift",
-        "Bombeo multifásico y transferencia de fluidos",
-        "Unidades de producción temprana y facilidades modulares",
-        "Separadores, manifolds, estaciones de flujo y medición",
-        "Tratamiento y manejo de crudo pesado y extrapesado",
-        "Optimización de pozos y reactivación de pozos inactivos",
-        "Manejo, tratamiento e inyección de agua producida",
-        "Instrumentación, automatización y monitoreo de producción",
-        "Operación y mantenimiento de facilidades de superficie"
+      "industrias": [
+        "Exploración y producción de petróleo y gas"
+      ],
+      "grupos": [
+        {
+          "t": "Levantamiento artificial y bombeo",
+          "s": [
+            "Sistemas de levantamiento artificial ESP, PCP, bombeo mecánico y gas lift",
+            "Bombeo multifásico y transferencia de fluidos"
+          ]
+        },
+        {
+          "t": "Facilidades, automatización y operación",
+          "s": [
+            "Unidades de producción temprana y facilidades modulares",
+            "Separadores, manifolds, estaciones de flujo y medición",
+            "Instrumentación, automatización y monitoreo de producción",
+            "Operación y mantenimiento de facilidades de superficie"
+          ]
+        },
+        {
+          "t": "Optimización y manejo de fluidos",
+          "s": [
+            "Tratamiento y manejo de crudo pesado y extrapesado",
+            "Optimización de pozos y reactivación de pozos inactivos",
+            "Manejo, tratamiento e inyección de agua producida"
+          ]
+        }
       ]
     },
     "en": {
@@ -81,17 +144,34 @@
       "title": "Oilfield Production & Field Optimization | STREX Holdings",
       "desc": "Artificial lift (ESP, PCP, gas lift), early production facilities, heavy oil handling, well reactivation and surface facility operations.",
       "lead": "Technologies and services that raise asset productivity, improve the reliability of production facilities and support the recovery of mature fields.",
-      "industrias": ["Oil & gas exploration and production"],
-      "servicios": [
-        "Artificial lift: ESP, PCP, rod pumping and gas lift",
-        "Multiphase pumping and fluid transfer",
-        "Early production units and modular facilities",
-        "Separators, manifolds, flow stations and metering",
-        "Heavy and extra-heavy crude treatment and handling",
-        "Well optimization and reactivation of idle wells",
-        "Produced water handling, treatment and injection",
-        "Production instrumentation, automation and monitoring",
-        "Operation and maintenance of surface facilities"
+      "industrias": [
+        "Oil & gas exploration and production"
+      ],
+      "grupos": [
+        {
+          "t": "Artificial lift and pumping",
+          "s": [
+            "Artificial lift: ESP, PCP, rod pumping and gas lift",
+            "Multiphase pumping and fluid transfer"
+          ]
+        },
+        {
+          "t": "Facilities, automation and operations",
+          "s": [
+            "Early production units and modular facilities",
+            "Separators, manifolds, flow stations and metering",
+            "Production instrumentation, automation and monitoring",
+            "Operation and maintenance of surface facilities"
+          ]
+        },
+        {
+          "t": "Optimization and fluid handling",
+          "s": [
+            "Heavy and extra-heavy crude treatment and handling",
+            "Well optimization and reactivation of idle wells",
+            "Produced water handling, treatment and injection"
+          ]
+        }
       ]
     }
   },
@@ -99,7 +179,12 @@
     "key": "generacion",
     "icon": "i-bolt",
     "foto": "div-generacion",
-    "rel": ["gas", "produccion", "infraestructura", "procura"],
+    "rel": [
+      "gas",
+      "produccion",
+      "infraestructura",
+      "procura"
+    ],
     "es": {
       "slug": "generacion-electrica",
       "nombre": "Generación eléctrica para pozos e instalaciones industriales",
@@ -107,18 +192,36 @@
       "title": "Generación eléctrica para pozos y campos petroleros | STREX Holdings",
       "desc": "Generación dedicada para pozos y sistemas ESP, plantas móviles y modulares, aprovechamiento de gas asociado, cogeneración, microredes y subestaciones.",
       "lead": "Soluciones de generación, distribución y continuidad energética para pozos, taladros, estaciones de producción e infraestructura remota.",
-      "industrias": ["Generación y distribución eléctrica", "Exploración y producción de petróleo y gas"],
-      "servicios": [
-        "Generación dedicada para pozos petroleros y sistemas ESP",
-        "Generadores diésel, a gas natural y bicombustibles",
-        "Plantas móviles, modulares y temporales de generación",
-        "Generación para taladros, campamentos y facilidades de superficie",
-        "Aprovechamiento de gas asociado para generación eléctrica",
-        "Turbinas, cogeneración y soluciones de recuperación de calor",
-        "Microredes, soluciones híbridas y almacenamiento energético",
-        "Transformadores, subestaciones y distribución eléctrica",
-        "Operación, mantenimiento y suministro de repuestos",
-        "Estructuración de esquemas de alquiler, suministro por capacidad o energía"
+      "industrias": [
+        "Generación y distribución eléctrica",
+        "Exploración y producción de petróleo y gas"
+      ],
+      "grupos": [
+        {
+          "t": "Generación en sitio",
+          "s": [
+            "Generación dedicada para pozos petroleros y sistemas ESP",
+            "Generadores diésel, a gas natural y bicombustibles",
+            "Plantas móviles, modulares y temporales de generación",
+            "Generación para taladros, campamentos y facilidades de superficie"
+          ]
+        },
+        {
+          "t": "Gas, cogeneración y soluciones híbridas",
+          "s": [
+            "Aprovechamiento de gas asociado para generación eléctrica",
+            "Turbinas, cogeneración y soluciones de recuperación de calor",
+            "Microredes, soluciones híbridas y almacenamiento energético"
+          ]
+        },
+        {
+          "t": "Distribución, operación y contratos",
+          "s": [
+            "Transformadores, subestaciones y distribución eléctrica",
+            "Operación, mantenimiento y suministro de repuestos",
+            "Estructuración de esquemas de alquiler, suministro por capacidad o energía"
+          ]
+        }
       ]
     },
     "en": {
@@ -128,18 +231,36 @@
       "title": "Power Generation for Oil Wells and Industrial Sites | STREX Holdings",
       "desc": "Dedicated power for wells and ESP systems, mobile and modular plants, associated gas to power, cogeneration, microgrids and substations.",
       "lead": "Power generation, distribution and energy continuity solutions for wells, drilling rigs, production stations and remote infrastructure.",
-      "industrias": ["Power generation and distribution", "Oil & gas exploration and production"],
-      "servicios": [
-        "Dedicated power for oil wells and ESP systems",
-        "Diesel, natural gas and dual-fuel generators",
-        "Mobile, modular and temporary power plants",
-        "Power for drilling rigs, camps and surface facilities",
-        "Associated gas to power",
-        "Turbines, cogeneration and heat recovery solutions",
-        "Microgrids, hybrid solutions and energy storage",
-        "Transformers, substations and power distribution",
-        "Operation, maintenance and spare parts supply",
-        "Structuring of rental, capacity-based or energy-based supply schemes"
+      "industrias": [
+        "Power generation and distribution",
+        "Oil & gas exploration and production"
+      ],
+      "grupos": [
+        {
+          "t": "On-site generation",
+          "s": [
+            "Dedicated power for oil wells and ESP systems",
+            "Diesel, natural gas and dual-fuel generators",
+            "Mobile, modular and temporary power plants",
+            "Power for drilling rigs, camps and surface facilities"
+          ]
+        },
+        {
+          "t": "Gas, cogeneration and hybrid solutions",
+          "s": [
+            "Associated gas to power",
+            "Turbines, cogeneration and heat recovery solutions",
+            "Microgrids, hybrid solutions and energy storage"
+          ]
+        },
+        {
+          "t": "Distribution, operations and contracts",
+          "s": [
+            "Transformers, substations and power distribution",
+            "Operation, maintenance and spare parts supply",
+            "Structuring of rental, capacity-based or energy-based supply schemes"
+          ]
+        }
       ]
     }
   },
@@ -147,7 +268,12 @@
     "key": "quimica",
     "icon": "i-flask",
     "foto": "hero-refinery",
-    "rel": ["produccion", "perforacion", "ingenieria", "procura"],
+    "rel": [
+      "produccion",
+      "perforacion",
+      "ingenieria",
+      "procura"
+    ],
     "es": {
       "slug": "quimica-y-petroquimica",
       "nombre": "Petroquímica y soluciones químicas para pozos",
@@ -155,19 +281,37 @@
       "title": "Petroquímica y tratamientos químicos para pozos | STREX Holdings",
       "desc": "Estimulación química, acidificación, reductores de viscosidad, inhibidores de corrosión, demulsificantes, dosificación química y tratamientos para refinerías.",
       "lead": "Desarrollo y articulación de tratamientos químicos para la productividad de pozos, la protección de activos y los procesos industriales.",
-      "industrias": ["Exploración y producción de petróleo y gas", "Refinación y petroquímica"],
-      "servicios": [
-        "Estimulación química y tratamientos de daño de formación",
-        "Acidificación matricial y limpieza química especializada",
-        "Reductores de viscosidad y mejoradores de flujo",
-        "Tratamientos para parafinas, asfaltenos e incrustaciones",
-        "Demulsificantes y auxiliares de separación de crudo",
-        "Inhibidores de corrosión, incrustaciones y biocidas",
-        "Fluidos y aditivos para perforación y completación",
-        "Sistemas de dosificación e inyección química",
-        "Pruebas de laboratorio, compatibilidad y evaluación de desempeño",
-        "Formulación, procura, almacenamiento y logística de productos químicos",
-        "Tratamientos químicos para refinerías e instalaciones industriales"
+      "industrias": [
+        "Exploración y producción de petróleo y gas",
+        "Refinación y petroquímica"
+      ],
+      "grupos": [
+        {
+          "t": "Estimulación y productividad de pozos",
+          "s": [
+            "Estimulación química y tratamientos de daño de formación",
+            "Acidificación matricial y limpieza química especializada",
+            "Reductores de viscosidad y mejoradores de flujo",
+            "Tratamientos para parafinas, asfaltenos e incrustaciones"
+          ]
+        },
+        {
+          "t": "Tratamiento de crudo y protección de activos",
+          "s": [
+            "Demulsificantes y auxiliares de separación de crudo",
+            "Inhibidores de corrosión, incrustaciones y biocidas",
+            "Fluidos y aditivos para perforación y completación"
+          ]
+        },
+        {
+          "t": "Dosificación, laboratorio y suministro",
+          "s": [
+            "Sistemas de dosificación e inyección química",
+            "Pruebas de laboratorio, compatibilidad y evaluación de desempeño",
+            "Formulación, procura, almacenamiento y logística de productos químicos",
+            "Tratamientos químicos para refinerías e instalaciones industriales"
+          ]
+        }
       ]
     },
     "en": {
@@ -177,19 +321,37 @@
       "title": "Petrochemical and Well Chemical Treatments | STREX Holdings",
       "desc": "Chemical stimulation, acidizing, viscosity reducers, corrosion inhibitors, demulsifiers, chemical injection systems and treatments for refineries.",
       "lead": "Development and coordination of chemical treatments for well productivity, asset protection and industrial processes.",
-      "industrias": ["Oil & gas exploration and production", "Refining and petrochemicals"],
-      "servicios": [
-        "Chemical stimulation and formation damage treatments",
-        "Matrix acidizing and specialized chemical cleaning",
-        "Viscosity reducers and flow improvers",
-        "Paraffin, asphaltene and scale treatments",
-        "Demulsifiers and crude separation aids",
-        "Corrosion and scale inhibitors and biocides",
-        "Drilling and completion fluids and additives",
-        "Chemical dosing and injection systems",
-        "Laboratory testing, compatibility and performance evaluation",
-        "Formulation, procurement, storage and logistics of chemicals",
-        "Chemical treatments for refineries and industrial facilities"
+      "industrias": [
+        "Oil & gas exploration and production",
+        "Refining and petrochemicals"
+      ],
+      "grupos": [
+        {
+          "t": "Well stimulation and productivity",
+          "s": [
+            "Chemical stimulation and formation damage treatments",
+            "Matrix acidizing and specialized chemical cleaning",
+            "Viscosity reducers and flow improvers",
+            "Paraffin, asphaltene and scale treatments"
+          ]
+        },
+        {
+          "t": "Crude treatment and asset protection",
+          "s": [
+            "Demulsifiers and crude separation aids",
+            "Corrosion and scale inhibitors and biocides",
+            "Drilling and completion fluids and additives"
+          ]
+        },
+        {
+          "t": "Dosing, laboratory and supply",
+          "s": [
+            "Chemical dosing and injection systems",
+            "Laboratory testing, compatibility and performance evaluation",
+            "Formulation, procurement, storage and logistics of chemicals",
+            "Chemical treatments for refineries and industrial facilities"
+          ]
+        }
       ]
     }
   },
@@ -197,7 +359,12 @@
     "key": "maritimo",
     "icon": "i-ship",
     "foto": "div-maritimo",
-    "rel": ["gas", "procura", "ingenieria", "negocios"],
+    "rel": [
+      "gas",
+      "procura",
+      "ingenieria",
+      "negocios"
+    ],
     "es": {
       "slug": "maritimo-y-offshore",
       "nombre": "Embarcaciones, logística marítima y offshore",
@@ -205,18 +372,36 @@
       "title": "Embarcaciones offshore, barcazas y logística marítima | STREX Holdings",
       "desc": "Embarcaciones OSV y PSV, remolcadores, barcazas, buques tanque, fletamento, logística portuaria y soluciones marítimas para GNL y GLP.",
       "lead": "Soluciones de apoyo marítimo, transporte especializado y logística para operaciones energéticas, portuarias y offshore.",
-      "industrias": ["Operaciones marítimas y offshore", "Gas natural, GNL y GLP"],
-      "servicios": [
-        "Embarcaciones de apoyo offshore (OSV) y suministro a plataformas (PSV)",
-        "Remolcadores, barcazas y embarcaciones multipropósito",
-        "Buques tanque y transporte marítimo de hidrocarburos",
-        "Barcazas de almacenamiento y suministro de combustibles y GLP",
-        "Fletamento y arrendamiento de embarcaciones",
-        "Logística portuaria, terminales y transporte de carga de proyecto",
-        "Apoyo marítimo a construcción y mantenimiento offshore",
-        "Inspección, mantenimiento y procura de equipos navales",
-        "Evaluación de soluciones flotantes de almacenamiento y regasificación (FSRU)",
-        "Estructuración logística para proyectos de GNL y GLP"
+      "industrias": [
+        "Operaciones marítimas y offshore",
+        "Gas natural, GNL y GLP"
+      ],
+      "grupos": [
+        {
+          "t": "Embarcaciones y apoyo offshore",
+          "s": [
+            "Embarcaciones de apoyo offshore (OSV) y suministro a plataformas (PSV)",
+            "Remolcadores, barcazas y embarcaciones multipropósito",
+            "Apoyo marítimo a construcción y mantenimiento offshore"
+          ]
+        },
+        {
+          "t": "Transporte y almacenamiento de hidrocarburos",
+          "s": [
+            "Buques tanque y transporte marítimo de hidrocarburos",
+            "Barcazas de almacenamiento y suministro de combustibles y GLP",
+            "Fletamento y arrendamiento de embarcaciones"
+          ]
+        },
+        {
+          "t": "Logística, puertos y GNL/GLP",
+          "s": [
+            "Logística portuaria, terminales y transporte de carga de proyecto",
+            "Inspección, mantenimiento y procura de equipos navales",
+            "Evaluación de soluciones flotantes de almacenamiento y regasificación (FSRU)",
+            "Estructuración logística para proyectos de GNL y GLP"
+          ]
+        }
       ]
     },
     "en": {
@@ -226,18 +411,36 @@
       "title": "Offshore Vessels, Barges and Marine Logistics | STREX Holdings",
       "desc": "OSV and PSV vessels, tugs, barges, tankers, chartering, port logistics and marine solutions for LNG and LPG.",
       "lead": "Marine support, specialized transport and logistics for energy, port and offshore operations.",
-      "industrias": ["Marine and offshore operations", "Natural gas, LNG and LPG"],
-      "servicios": [
-        "Offshore support vessels (OSV) and platform supply vessels (PSV)",
-        "Tugs, barges and multipurpose vessels",
-        "Tankers and marine transport of hydrocarbons",
-        "Storage and supply barges for fuels and LPG",
-        "Vessel chartering and leasing",
-        "Port logistics, terminals and project cargo",
-        "Marine support for offshore construction and maintenance",
-        "Inspection, maintenance and procurement of marine equipment",
-        "Evaluation of floating storage and regasification units (FSRU)",
-        "Logistics structuring for LNG and LPG projects"
+      "industrias": [
+        "Marine and offshore operations",
+        "Natural gas, LNG and LPG"
+      ],
+      "grupos": [
+        {
+          "t": "Vessels and offshore support",
+          "s": [
+            "Offshore support vessels (OSV) and platform supply vessels (PSV)",
+            "Tugs, barges and multipurpose vessels",
+            "Marine support for offshore construction and maintenance"
+          ]
+        },
+        {
+          "t": "Hydrocarbon transport and storage",
+          "s": [
+            "Tankers and marine transport of hydrocarbons",
+            "Storage and supply barges for fuels and LPG",
+            "Vessel chartering and leasing"
+          ]
+        },
+        {
+          "t": "Logistics, ports and LNG/LPG",
+          "s": [
+            "Port logistics, terminals and project cargo",
+            "Inspection, maintenance and procurement of marine equipment",
+            "Evaluation of floating storage and regasification units (FSRU)",
+            "Logistics structuring for LNG and LPG projects"
+          ]
+        }
       ]
     }
   },
@@ -245,7 +448,12 @@
     "key": "ingenieria",
     "icon": "i-wrench",
     "foto": "about-refinery",
-    "rel": ["infraestructura", "quimica", "procura", "generacion"],
+    "rel": [
+      "infraestructura",
+      "quimica",
+      "procura",
+      "generacion"
+    ],
     "es": {
       "slug": "ingenieria-mantenimiento-e-integridad",
       "nombre": "Ingeniería, mantenimiento e integridad industrial",
@@ -253,19 +461,43 @@
       "title": "Ingeniería, mantenimiento e integridad de activos | STREX Holdings",
       "desc": "Ingeniería conceptual, básica y de detalle, EPC y EPCM, paradas de planta, mantenimiento electromecánico, ensayos no destructivos e integridad de ductos.",
       "lead": "Servicios para la modernización, el mantenimiento, la inspección y la continuidad operativa de instalaciones industriales y energéticas.",
-      "industrias": ["Refinación y petroquímica", "Generación y distribución eléctrica", "Manufactura y logística industrial"],
-      "servicios": [
-        "Ingeniería conceptual, básica y de detalle",
-        "Gestión y estructuración de proyectos EPC y EPCM",
-        "Paradas de planta, turnarounds y mantenimiento mayor de refinerías",
-        "Mantenimiento mecánico, eléctrico y electromecánico",
-        "Equipos rotativos, bombas, compresores y turbinas",
-        "Fabricación y montaje de estructuras, tanques y tuberías",
-        "Intercambiadores de calor y recipientes a presión",
-        "Ensayos no destructivos, inspección y control de calidad",
-        "Integridad de ductos, corrosión y recubrimientos",
-        "Precomisionamiento, comisionamiento y puesta en marcha",
-        "Confiabilidad, mantenimiento predictivo e instrumentación"
+      "industrias": [
+        "Refinación y petroquímica",
+        "Generación y distribución eléctrica",
+        "Manufactura y logística industrial"
+      ],
+      "grupos": [
+        {
+          "t": "Ingeniería y gestión de proyectos",
+          "s": [
+            "Ingeniería conceptual, básica y de detalle",
+            "Gestión y estructuración de proyectos EPC y EPCM"
+          ]
+        },
+        {
+          "t": "Mantenimiento y paradas de planta",
+          "s": [
+            "Paradas de planta, turnarounds y mantenimiento mayor de refinerías",
+            "Mantenimiento mecánico, eléctrico y electromecánico",
+            "Equipos rotativos, bombas, compresores y turbinas"
+          ]
+        },
+        {
+          "t": "Fabricación y montaje",
+          "s": [
+            "Fabricación y montaje de estructuras, tanques y tuberías",
+            "Intercambiadores de calor y recipientes a presión",
+            "Precomisionamiento, comisionamiento y puesta en marcha"
+          ]
+        },
+        {
+          "t": "Inspección e integridad",
+          "s": [
+            "Ensayos no destructivos, inspección y control de calidad",
+            "Integridad de ductos, corrosión y recubrimientos",
+            "Confiabilidad, mantenimiento predictivo e instrumentación"
+          ]
+        }
       ]
     },
     "en": {
@@ -275,19 +507,43 @@
       "title": "Engineering, Maintenance and Asset Integrity | STREX Holdings",
       "desc": "Conceptual, basic and detailed engineering, EPC and EPCM, plant turnarounds, electromechanical maintenance, NDT and pipeline integrity.",
       "lead": "Services for the modernization, maintenance, inspection and operational continuity of industrial and energy facilities.",
-      "industrias": ["Refining and petrochemicals", "Power generation and distribution", "Manufacturing and industrial logistics"],
-      "servicios": [
-        "Conceptual, basic and detailed engineering",
-        "EPC and EPCM project management and structuring",
-        "Plant shutdowns, turnarounds and major refinery maintenance",
-        "Mechanical, electrical and electromechanical maintenance",
-        "Rotating equipment, pumps, compressors and turbines",
-        "Fabrication and erection of structures, tanks and piping",
-        "Heat exchangers and pressure vessels",
-        "Non-destructive testing, inspection and quality control",
-        "Pipeline integrity, corrosion and coatings",
-        "Pre-commissioning, commissioning and start-up",
-        "Reliability, predictive maintenance and instrumentation"
+      "industrias": [
+        "Refining and petrochemicals",
+        "Power generation and distribution",
+        "Manufacturing and industrial logistics"
+      ],
+      "grupos": [
+        {
+          "t": "Engineering and project management",
+          "s": [
+            "Conceptual, basic and detailed engineering",
+            "EPC and EPCM project management and structuring"
+          ]
+        },
+        {
+          "t": "Maintenance and turnarounds",
+          "s": [
+            "Plant shutdowns, turnarounds and major refinery maintenance",
+            "Mechanical, electrical and electromechanical maintenance",
+            "Rotating equipment, pumps, compressors and turbines"
+          ]
+        },
+        {
+          "t": "Fabrication and installation",
+          "s": [
+            "Fabrication and erection of structures, tanks and piping",
+            "Heat exchangers and pressure vessels",
+            "Pre-commissioning, commissioning and start-up"
+          ]
+        },
+        {
+          "t": "Inspection and integrity",
+          "s": [
+            "Non-destructive testing, inspection and quality control",
+            "Pipeline integrity, corrosion and coatings",
+            "Reliability, predictive maintenance and instrumentation"
+          ]
+        }
       ]
     }
   },
@@ -295,7 +551,12 @@
     "key": "gas",
     "icon": "i-flame",
     "foto": "div-gas",
-    "rel": ["generacion", "maritimo", "produccion", "infraestructura"],
+    "rel": [
+      "generacion",
+      "maritimo",
+      "produccion",
+      "infraestructura"
+    ],
     "es": {
       "slug": "gas-natural-gnl-y-glp",
       "nombre": "Gas natural, GNL, GLP y procesamiento",
@@ -303,17 +564,35 @@
       "title": "Gas natural, GNL y GLP: procesamiento y suministro | STREX Holdings",
       "desc": "Compresión y tratamiento de gas, deshidratación y endulzamiento, aprovechamiento de gas asociado, soluciones modulares de GNL y GLP, regasificación y suministro.",
       "lead": "Estructuración de soluciones para el tratamiento, el aprovechamiento, el transporte, el almacenamiento y el suministro de gas natural y sus derivados.",
-      "industrias": ["Gas natural, GNL y GLP", "Generación y distribución eléctrica"],
-      "servicios": [
-        "Captación, acondicionamiento, compresión y tratamiento de gas",
-        "Deshidratación, endulzamiento y procesamiento de gas natural",
-        "Aprovechamiento y reducción de venteo de gas asociado",
-        "Estaciones de compresión, regulación y medición",
-        "Infraestructura de transporte y distribución de gas",
-        "Soluciones modulares para GNL y GLP",
-        "Almacenamiento, regasificación y suministro de gas",
-        "Infraestructura energética a gas y generación distribuida",
-        "Desarrollo comercial y estructuración de proyectos gasíferos"
+      "industrias": [
+        "Gas natural, GNL y GLP",
+        "Generación y distribución eléctrica"
+      ],
+      "grupos": [
+        {
+          "t": "Tratamiento y procesamiento",
+          "s": [
+            "Captación, acondicionamiento, compresión y tratamiento de gas",
+            "Deshidratación, endulzamiento y procesamiento de gas natural",
+            "Aprovechamiento y reducción de venteo de gas asociado"
+          ]
+        },
+        {
+          "t": "Compresión, transporte y distribución",
+          "s": [
+            "Estaciones de compresión, regulación y medición",
+            "Infraestructura de transporte y distribución de gas"
+          ]
+        },
+        {
+          "t": "GNL, GLP y suministro",
+          "s": [
+            "Soluciones modulares para GNL y GLP",
+            "Almacenamiento, regasificación y suministro de gas",
+            "Infraestructura energética a gas y generación distribuida",
+            "Desarrollo comercial y estructuración de proyectos gasíferos"
+          ]
+        }
       ]
     },
     "en": {
@@ -323,17 +602,35 @@
       "title": "Natural Gas, LNG and LPG Processing and Supply | STREX Holdings",
       "desc": "Gas compression and treatment, dehydration and sweetening, associated gas recovery, modular LNG and LPG solutions, regasification and supply.",
       "lead": "Solutions for the treatment, use, transport, storage and supply of natural gas and its derivatives.",
-      "industrias": ["Natural gas, LNG and LPG", "Power generation and distribution"],
-      "servicios": [
-        "Gas gathering, conditioning, compression and treatment",
-        "Dehydration, sweetening and natural gas processing",
-        "Associated gas recovery and flaring/venting reduction",
-        "Compression, regulation and metering stations",
-        "Gas transmission and distribution infrastructure",
-        "Modular LNG and LPG solutions",
-        "Gas storage, regasification and supply",
-        "Gas-fired energy infrastructure and distributed generation",
-        "Commercial development and structuring of gas projects"
+      "industrias": [
+        "Natural gas, LNG and LPG",
+        "Power generation and distribution"
+      ],
+      "grupos": [
+        {
+          "t": "Treatment and processing",
+          "s": [
+            "Gas gathering, conditioning, compression and treatment",
+            "Dehydration, sweetening and natural gas processing",
+            "Associated gas recovery and flaring/venting reduction"
+          ]
+        },
+        {
+          "t": "Compression, transport and distribution",
+          "s": [
+            "Compression, regulation and metering stations",
+            "Gas transmission and distribution infrastructure"
+          ]
+        },
+        {
+          "t": "LNG, LPG and supply",
+          "s": [
+            "Modular LNG and LPG solutions",
+            "Gas storage, regasification and supply",
+            "Gas-fired energy infrastructure and distributed generation",
+            "Commercial development and structuring of gas projects"
+          ]
+        }
       ]
     }
   },
@@ -341,7 +638,12 @@
     "key": "infraestructura",
     "icon": "i-bridge",
     "foto": "crane",
-    "rel": ["ingenieria", "generacion", "procura", "negocios"],
+    "rel": [
+      "ingenieria",
+      "generacion",
+      "procura",
+      "negocios"
+    ],
     "es": {
       "slug": "infraestructura-y-energias-renovables",
       "nombre": "Infraestructura, construcción y energías renovables",
@@ -349,17 +651,41 @@
       "title": "Infraestructura, construcción y energía solar | STREX Holdings",
       "desc": "Infraestructura industrial y obras civiles, acueductos y plantas de tratamiento de agua, vías y campamentos, subestaciones, energía solar fotovoltaica e interventoría.",
       "lead": "Desarrollo y coordinación de soluciones para infraestructura productiva, servicios públicos y proyectos de transición energética.",
-      "industrias": ["Infraestructura y construcción", "Agua, saneamiento y medioambiente", "Generación y distribución eléctrica"],
-      "servicios": [
-        "Construcción de infraestructura industrial y obras civiles",
-        "Acueductos, alcantarillados y redes hidráulicas",
-        "Plantas de tratamiento de agua potable y residual",
-        "Estaciones de bombeo e infraestructura de saneamiento",
-        "Infraestructura vial, logística y campamentos industriales",
-        "Montajes electromecánicos y construcción de subestaciones",
-        "Generación solar fotovoltaica y sistemas híbridos",
-        "Gerencia, supervisión e interventoría de proyectos",
-        "Estructuración técnica y contractual de proyectos de infraestructura"
+      "industrias": [
+        "Infraestructura y construcción",
+        "Agua, saneamiento y medioambiente",
+        "Generación y distribución eléctrica"
+      ],
+      "grupos": [
+        {
+          "t": "Obras civiles e industriales",
+          "s": [
+            "Construcción de infraestructura industrial y obras civiles",
+            "Infraestructura vial, logística y campamentos industriales"
+          ]
+        },
+        {
+          "t": "Agua y saneamiento",
+          "s": [
+            "Acueductos, alcantarillados y redes hidráulicas",
+            "Plantas de tratamiento de agua potable y residual",
+            "Estaciones de bombeo e infraestructura de saneamiento"
+          ]
+        },
+        {
+          "t": "Energía y transición energética",
+          "s": [
+            "Montajes electromecánicos y construcción de subestaciones",
+            "Generación solar fotovoltaica y sistemas híbridos"
+          ]
+        },
+        {
+          "t": "Gerencia y estructuración",
+          "s": [
+            "Gerencia, supervisión e interventoría de proyectos",
+            "Estructuración técnica y contractual de proyectos de infraestructura"
+          ]
+        }
       ]
     },
     "en": {
@@ -369,17 +695,41 @@
       "title": "Infrastructure, Construction and Solar Energy | STREX Holdings",
       "desc": "Industrial infrastructure and civil works, water systems and treatment plants, roads and camps, substations, solar PV and project supervision.",
       "lead": "Development and coordination of solutions for productive infrastructure, public utilities and energy transition projects.",
-      "industrias": ["Infrastructure and construction", "Water, sanitation and environment", "Power generation and distribution"],
-      "servicios": [
-        "Industrial infrastructure and civil works",
-        "Water supply, sewerage and hydraulic networks",
-        "Drinking water and wastewater treatment plants",
-        "Pumping stations and sanitation infrastructure",
-        "Roads, logistics infrastructure and industrial camps",
-        "Electromechanical installation and substation construction",
-        "Solar photovoltaic generation and hybrid systems",
-        "Project management, supervision and owner's engineering",
-        "Technical and contractual structuring of infrastructure projects"
+      "industrias": [
+        "Infrastructure and construction",
+        "Water, sanitation and environment",
+        "Power generation and distribution"
+      ],
+      "grupos": [
+        {
+          "t": "Civil and industrial works",
+          "s": [
+            "Industrial infrastructure and civil works",
+            "Roads, logistics infrastructure and industrial camps"
+          ]
+        },
+        {
+          "t": "Water and sanitation",
+          "s": [
+            "Water supply, sewerage and hydraulic networks",
+            "Drinking water and wastewater treatment plants",
+            "Pumping stations and sanitation infrastructure"
+          ]
+        },
+        {
+          "t": "Power and energy transition",
+          "s": [
+            "Electromechanical installation and substation construction",
+            "Solar photovoltaic generation and hybrid systems"
+          ]
+        },
+        {
+          "t": "Management and structuring",
+          "s": [
+            "Project management, supervision and owner's engineering",
+            "Technical and contractual structuring of infrastructure projects"
+          ]
+        }
       ]
     }
   },
@@ -387,7 +737,12 @@
     "key": "procura",
     "icon": "i-cart",
     "foto": "div-procura",
-    "rel": ["maritimo", "perforacion", "ingenieria", "negocios"],
+    "rel": [
+      "maritimo",
+      "perforacion",
+      "ingenieria",
+      "negocios"
+    ],
     "es": {
       "slug": "procura-y-cadena-de-suministro",
       "nombre": "Procura internacional y cadena de suministro",
@@ -395,17 +750,31 @@
       "title": "Procura internacional de equipos petroleros e industriales | STREX Holdings",
       "desc": "Suministro de taladros y equipos petroleros, tubería OCTG, válvulas, bombas, compresores, equipos de generación, coordinación aduanera y logística multimodal.",
       "lead": "Gestión del abastecimiento industrial para proyectos de energía, hidrocarburos, construcción y manufactura, mediante cadenas de suministro nacionales e internacionales.",
-      "industrias": ["Exploración y producción de petróleo y gas", "Refinación y petroquímica", "Manufactura y logística industrial"],
-      "servicios": [
-        "Suministro de taladros, equipos petroleros y maquinaria",
-        "Tuberías OCTG, line pipe, válvulas, bridas y conexiones",
-        "Bombas, compresores, motores y sistemas eléctricos",
-        "Equipos de generación, automatización e instrumentación",
-        "Equipos y repuestos para refinerías y plantas",
-        "Suministro de químicos y consumibles industriales",
-        "Identificación, evaluación y homologación de fabricantes",
-        "Importación, exportación y coordinación aduanera",
-        "Transporte multimodal y logística de cargas especiales"
+      "industrias": [
+        "Exploración y producción de petróleo y gas",
+        "Refinación y petroquímica",
+        "Manufactura y logística industrial"
+      ],
+      "grupos": [
+        {
+          "t": "Equipos y materiales",
+          "s": [
+            "Suministro de taladros, equipos petroleros y maquinaria",
+            "Tuberías OCTG, line pipe, válvulas, bridas y conexiones",
+            "Bombas, compresores, motores y sistemas eléctricos",
+            "Equipos de generación, automatización e instrumentación",
+            "Equipos y repuestos para refinerías y plantas",
+            "Suministro de químicos y consumibles industriales"
+          ]
+        },
+        {
+          "t": "Proveedores, aduanas y logística",
+          "s": [
+            "Identificación, evaluación y homologación de fabricantes",
+            "Importación, exportación y coordinación aduanera",
+            "Transporte multimodal y logística de cargas especiales"
+          ]
+        }
       ]
     },
     "en": {
@@ -415,17 +784,31 @@
       "title": "Global Procurement of Oilfield and Industrial Equipment | STREX Holdings",
       "desc": "Supply of drilling rigs and oilfield equipment, OCTG pipe, valves, pumps, compressors, power equipment, customs coordination and multimodal logistics.",
       "lead": "Industrial sourcing for energy, hydrocarbon, construction and manufacturing projects through domestic and international supply chains.",
-      "industrias": ["Oil & gas exploration and production", "Refining and petrochemicals", "Manufacturing and industrial logistics"],
-      "servicios": [
-        "Supply of drilling rigs, oilfield equipment and machinery",
-        "OCTG, line pipe, valves, flanges and fittings",
-        "Pumps, compressors, motors and electrical systems",
-        "Power generation, automation and instrumentation equipment",
-        "Equipment and spare parts for refineries and plants",
-        "Supply of chemicals and industrial consumables",
-        "Manufacturer identification, evaluation and qualification",
-        "Import, export and customs coordination",
-        "Multimodal transport and special cargo logistics"
+      "industrias": [
+        "Oil & gas exploration and production",
+        "Refining and petrochemicals",
+        "Manufacturing and industrial logistics"
+      ],
+      "grupos": [
+        {
+          "t": "Equipment and materials",
+          "s": [
+            "Supply of drilling rigs, oilfield equipment and machinery",
+            "OCTG, line pipe, valves, flanges and fittings",
+            "Pumps, compressors, motors and electrical systems",
+            "Power generation, automation and instrumentation equipment",
+            "Equipment and spare parts for refineries and plants",
+            "Supply of chemicals and industrial consumables"
+          ]
+        },
+        {
+          "t": "Suppliers, customs and logistics",
+          "s": [
+            "Manufacturer identification, evaluation and qualification",
+            "Import, export and customs coordination",
+            "Multimodal transport and special cargo logistics"
+          ]
+        }
       ]
     }
   },
@@ -433,7 +816,12 @@
     "key": "negocios",
     "icon": "i-handshake",
     "foto": "div-negocios",
-    "rel": ["procura", "gas", "infraestructura", "perforacion"],
+    "rel": [
+      "procura",
+      "gas",
+      "infraestructura",
+      "perforacion"
+    ],
     "es": {
       "slug": "desarrollo-de-negocios-e-inversiones",
       "nombre": "Desarrollo de negocios, inversiones y proyectos",
@@ -441,17 +829,36 @@
       "title": "Desarrollo de negocios y estructuración de inversiones | STREX Holdings",
       "desc": "Desarrollo de negocios internacionales, representación comercial, evaluación de oportunidades de inversión, consorcios y joint ventures, prefactibilidad y precalificación.",
       "lead": "Gestión comercial y empresarial para conectar capital, tecnología, mercados y oportunidades industriales.",
-      "industrias": ["Exploración y producción de petróleo y gas", "Infraestructura y construcción", "Minería y recursos naturales"],
-      "servicios": [
-        "Desarrollo de negocios y expansión internacional",
-        "Representación comercial y desarrollo de mercados",
-        "Identificación y evaluación de oportunidades de inversión",
-        "Estructuración de alianzas, consorcios y joint ventures",
-        "Modelos de participación, contratación y suministro",
-        "Estudios de prefactibilidad y coordinación de estudios técnicos",
-        "Identificación de socios, operadores e inversionistas",
-        "Precalificación y acompañamiento comercial en procesos de contratación",
-        "Estrategias comerciales, posicionamiento y transformación digital"
+      "industrias": [
+        "Exploración y producción de petróleo y gas",
+        "Infraestructura y construcción",
+        "Minería y recursos naturales"
+      ],
+      "grupos": [
+        {
+          "t": "Desarrollo comercial",
+          "s": [
+            "Desarrollo de negocios y expansión internacional",
+            "Representación comercial y desarrollo de mercados",
+            "Estrategias comerciales, posicionamiento y transformación digital"
+          ]
+        },
+        {
+          "t": "Inversiones y alianzas",
+          "s": [
+            "Identificación y evaluación de oportunidades de inversión",
+            "Estructuración de alianzas, consorcios y joint ventures",
+            "Modelos de participación, contratación y suministro",
+            "Identificación de socios, operadores e inversionistas"
+          ]
+        },
+        {
+          "t": "Estudios y contratación",
+          "s": [
+            "Estudios de prefactibilidad y coordinación de estudios técnicos",
+            "Precalificación y acompañamiento comercial en procesos de contratación"
+          ]
+        }
       ]
     },
     "en": {
@@ -461,17 +868,36 @@
       "title": "Business Development and Investment Structuring | STREX Holdings",
       "desc": "International business development, commercial representation, investment opportunity assessment, consortia and joint ventures, pre-feasibility and prequalification.",
       "lead": "Commercial and corporate management that connects capital, technology, markets and industrial opportunities.",
-      "industrias": ["Oil & gas exploration and production", "Infrastructure and construction", "Mining and natural resources"],
-      "servicios": [
-        "Business development and international expansion",
-        "Commercial representation and market development",
-        "Identification and assessment of investment opportunities",
-        "Structuring of alliances, consortia and joint ventures",
-        "Participation, contracting and supply models",
-        "Pre-feasibility studies and coordination of technical studies",
-        "Identification of partners, operators and investors",
-        "Prequalification and commercial support in tender processes",
-        "Commercial strategy, positioning and digital transformation"
+      "industrias": [
+        "Oil & gas exploration and production",
+        "Infrastructure and construction",
+        "Mining and natural resources"
+      ],
+      "grupos": [
+        {
+          "t": "Commercial development",
+          "s": [
+            "Business development and international expansion",
+            "Commercial representation and market development",
+            "Commercial strategy, positioning and digital transformation"
+          ]
+        },
+        {
+          "t": "Investments and partnerships",
+          "s": [
+            "Identification and assessment of investment opportunities",
+            "Structuring of alliances, consortia and joint ventures",
+            "Participation, contracting and supply models",
+            "Identification of partners, operators and investors"
+          ]
+        },
+        {
+          "t": "Studies and tenders",
+          "s": [
+            "Pre-feasibility studies and coordination of technical studies",
+            "Prequalification and commercial support in tender processes"
+          ]
+        }
       ]
     }
   }

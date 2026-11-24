@@ -36,9 +36,14 @@ contacto de `_build/cuerpo.es.html` y `cuerpo.en.html`, el JSON-LD de
 ```bash
 node _build/generar.js   # portadas ES/EN, 20 páginas de división, 15 redirecciones y sitemap
 ```
-- `_build/divisiones.json`: las 10 divisiones, ES y EN emparejadas (slug, textos, foto, icono, relacionadas).
+- `_build/divisiones.json`: las 10 divisiones, ES y EN emparejadas (slug, textos, foto, icono,
+  relacionadas). Los servicios van en `grupos: [{ t, s: [...] }]`, y ES y EN tienen el mismo orden.
 - `_build/cuerpo.es.html` / `cuerpo.en.html`: cuerpo de cada portada, con marcadores
-  `{{MEGA}}`, `{{MOBILE}}`, `{{CARDS}}` y `{{STEPS}}`. Las rutas del EN llevan `../`.
+  `{{MEGA}}`, `{{MOBILE}}`, `{{CARDS}}`, `{{STEPS}}` y `{{VZ}}` (tarjetas de Venezuela, datos en
+  `VZ` de `generar.js`). Las rutas del EN llevan `../`.
+- **Despliegue:** Coolify no despliega solo con el push; hay que pulsar Redeploy.
+- **Caché:** nginx no envía `Cache-Control`. Tras publicar, el cliente puede ver la versión
+  vieja durante días: que recargue con Ctrl+F5.
 - `_build/sprite.html`: iconos de la portada. Las divisiones usan su propio `SPRITE` en `generar.js`.
 - `servicios/*.html`: **solo redirecciones** (meta refresh + canonical) de las 15 URLs
   viejas; ver `VIEJAS` en `generar.js`. El 301 real requiere nginx/Coolify.
