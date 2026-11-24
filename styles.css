@@ -1189,9 +1189,8 @@ section { position: relative; }
 .vz-callout {
   display: flex; gap: 14px; align-items: flex-start;
   margin-top: 28px; padding: 18px 22px;
-  border-left: 3px solid var(--blue-500);
   background: var(--paper);
-  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  border-radius: var(--radius-sm);
 }
 .vz-callout .icon { flex-shrink: 0; width: 20px; height: 20px; color: var(--blue-500); margin-top: 1px; }
 .vz-callout p { font-size: 14px; line-height: 1.6; color: var(--slate-700); }

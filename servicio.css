@@ -229,7 +229,6 @@
   padding: 28px 26px;
   background: var(--white);
   border: 1px solid var(--paper-dim);
-  border-top: 3px solid var(--blue-500);
   border-radius: var(--radius);
 }
 .svc-group-n { font-family: var(--font-head); font-size: 12px; font-weight: 700; letter-spacing: 0.08em; color: var(--blue-500); }
